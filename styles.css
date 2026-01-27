@@ -78,8 +78,9 @@ body {
 
 .language-switcher {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    /* Safe area for devices with notches */
+    top: max(20px, env(safe-area-inset-top, 20px));
+    right: max(20px, env(safe-area-inset-right, 20px));
     z-index: 1000;
 }
 
@@ -110,6 +111,20 @@ body {
     transform: translateY(0) scale(0.98);
 }
 
+.lang-toggle:focus-visible {
+    outline: 2px solid var(--primary-green);
+    outline-offset: 2px;
+}
+
+/* Better touch feedback on mobile */
+@media (hover: none) and (pointer: coarse) {
+    .lang-toggle:active {
+        background: var(--primary-green);
+        color: var(--bg-white);
+        transform: scale(0.95);
+    }
+}
+
 .lang-text {
     font-weight: 700;
     min-width: 30px;
@@ -122,21 +137,49 @@ body {
 
 @media (max-width: 768px) {
     .language-switcher {
-        top: 10px;
-        right: 10px;
+        top: max(12px, env(safe-area-inset-top, 12px));
+        right: max(12px, env(safe-area-inset-right, 12px));
     }
     
     .lang-toggle {
-        padding: 8px 12px;
-        font-size: 12px;
+        padding: 10px 14px;
+        font-size: 13px;
+        min-width: 60px;
+        min-height: 44px; /* Better touch target */
+        gap: 6px;
     }
     
     .lang-text {
-        min-width: 24px;
+        min-width: 28px;
+        font-size: 13px;
     }
     
     .lang-icon {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .language-switcher {
+        top: max(10px, env(safe-area-inset-top, 10px));
+        right: max(10px, env(safe-area-inset-right, 10px));
+    }
+    
+    .lang-toggle {
+        padding: 10px 12px;
+        font-size: 12px;
+        min-width: 56px;
+        min-height: 44px;
+        gap: 5px;
+    }
+    
+    .lang-text {
+        min-width: 26px;
+        font-size: 12px;
+    }
+    
+    .lang-icon {
+        font-size: 15px;
     }
 }
 
