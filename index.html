@@ -11,21 +11,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button id="langToggle" class="lang-toggle" aria-label="Switch language">
+            <span class="lang-text" id="langText">EN</span>
+            <span class="lang-icon">🌐</span>
+        </button>
+    </div>
+    
     <!-- Hero Section -->
     <section class="hero" id="hero">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-heading">
+                    <h1 class="hero-heading" data-i18n="hero.title">
                         Your Smart WhatsApp Assistant for Business
                     </h1>
-                    <p class="hero-subheadline">
+                    <p class="hero-subheadline" data-i18n="hero.subtitle">
                         Replies to customers, takes bookings, and accepts Mpesa — automatically.
                     </p>
                     <div class="hero-cta">
-                        <a href="#get-started" class="btn btn-primary">Get Started</a>
+                        <a href="#get-started" class="btn btn-primary" data-i18n="hero.cta">Get Started</a>
                     </div>
-                    <p class="hero-supporting">
+                    <p class="hero-supporting" data-i18n="hero.supporting">
                         Built for Kenyan businesses 🇰🇪
                     </p>
                 </div>
@@ -37,31 +45,31 @@
                                     <div class="whatsapp-contact">
                                         <div class="contact-avatar"></div>
                                         <div class="contact-info">
-                                            <div class="contact-name">Mama Sarah's Salon</div>
-                                            <div class="contact-status">online</div>
+                                            <div class="contact-name" data-i18n="chat.contactName">Mama Sarah's Salon</div>
+                                            <div class="contact-status" data-i18n="chat.status">online</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="chat-messages">
                                     <div class="message message-incoming">
                                         <div class="message-bubble incoming">
-                                            <p>Hi, do you have time for a haircut today?</p>
+                                            <p data-i18n="chat.message1">Hi, do you have time for a haircut today?</p>
                                         </div>
                                     </div>
                                     <div class="message message-outgoing">
                                         <div class="message-bubble outgoing">
-                                            <p>Yes! We have slots at 2pm, 3pm, and 4pm. Which works for you?</p>
+                                            <p data-i18n="chat.message2">Yes! We have slots at 2pm, 3pm, and 4pm. Which works for you?</p>
                                         </div>
                                     </div>
                                     <div class="message message-incoming">
                                         <div class="message-bubble incoming">
-                                            <p>3pm works. How much?</p>
+                                            <p data-i18n="chat.message3">3pm works. How much?</p>
                                         </div>
                                     </div>
                                     <div class="message message-outgoing">
                                         <div class="message-bubble outgoing">
-                                            <p>KES 500. You can pay via M-Pesa. Tap here to pay:</p>
-                                            <div class="mpesa-button">Pay KES 500</div>
+                                            <p data-i18n="chat.message4">KES 500. You can pay via M-Pesa. Tap here to pay:</p>
+                                            <div class="mpesa-button" data-i18n="chat.payButton">Pay KES 500</div>
                                         </div>
                                     </div>
                                 </div>
@@ -82,7 +90,7 @@
     <!-- Why Biashara-Assistant -->
     <section class="why-section" id="why">
         <div class="container">
-            <h2 class="section-heading">Why Choose Biashara-Assistant?</h2>
+            <h2 class="section-heading" data-i18n="why.title">Why Choose Biashara-Assistant?</h2>
             <div class="why-grid">
                 <div class="why-card">
                     <div class="why-icon">
@@ -91,8 +99,8 @@
                             <path d="M12 6v6l4 2" stroke="#25D366" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </div>
-                    <h3 class="why-card-heading">Save Hours Every Day</h3>
-                    <p class="why-card-body">Stop manually replying to every message. Biashara-Assistant handles customer inquiries 24/7, so you can focus on growing your business.</p>
+                    <h3 class="why-card-heading" data-i18n="why.card1.title">Save Hours Every Day</h3>
+                    <p class="why-card-body" data-i18n="why.card1.body">Stop manually replying to every message. Biashara-Assistant handles customer inquiries 24/7, so you can focus on growing your business.</p>
                 </div>
                 <div class="why-card">
                     <div class="why-icon">
@@ -101,8 +109,8 @@
                             <path d="M13.73 21a2 2 0 0 1-3.46 0" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="why-card-heading">Never Miss a Customer</h3>
-                    <p class="why-card-body">Instant replies mean customers get answers immediately, even when you're busy. Turn every inquiry into a sale.</p>
+                    <h3 class="why-card-heading" data-i18n="why.card2.title">Never Miss a Customer</h3>
+                    <p class="why-card-body" data-i18n="why.card2.body">Instant replies mean customers get answers immediately, even when you're busy. Turn every inquiry into a sale.</p>
                 </div>
                 <div class="why-card">
                     <div class="why-icon">
@@ -110,8 +118,8 @@
                             <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="why-card-heading">Get Paid Faster</h3>
-                    <p class="why-card-body">Accept M-Pesa payments directly through WhatsApp. No need to share numbers or wait for confirmations—payments happen in the chat.</p>
+                    <h3 class="why-card-heading" data-i18n="why.card3.title">Get Paid Faster</h3>
+                    <p class="why-card-body" data-i18n="why.card3.body">Accept M-Pesa payments directly through WhatsApp. No need to share numbers or wait for confirmations—payments happen in the chat.</p>
                 </div>
             </div>
         </div>
@@ -120,7 +128,7 @@
     <!-- How It Works -->
     <section class="how-section" id="how">
         <div class="container">
-            <h2 class="section-heading">How It Works</h2>
+            <h2 class="section-heading" data-i18n="how.title">How It Works</h2>
             <div class="steps-container">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -130,8 +138,8 @@
                             <path d="M14 2v6h6" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="step-heading">Sign Up in Minutes</h3>
-                    <p class="step-body">Fill out a simple form with your business details. No technical skills needed.</p>
+                    <h3 class="step-heading" data-i18n="how.step1.title">Sign Up in Minutes</h3>
+                    <p class="step-body" data-i18n="how.step1.body">Fill out a simple form with your business details. No technical skills needed.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
@@ -140,8 +148,8 @@
                             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="step-heading">Connect Your WhatsApp</h3>
-                    <p class="step-body">Link your business WhatsApp number. We'll guide you through the simple setup process.</p>
+                    <h3 class="step-heading" data-i18n="how.step2.title">Connect Your WhatsApp</h3>
+                    <p class="step-body" data-i18n="how.step2.body">Link your business WhatsApp number. We'll guide you through the simple setup process.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
@@ -151,8 +159,8 @@
                             <path d="M12 1v6m0 6v6M23 12h-6m-6 0H1" stroke="#25D366" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </div>
-                    <h3 class="step-heading">Customize Your Bot</h3>
-                    <p class="step-body">Set your business hours, services, prices, and payment options. Make it yours.</p>
+                    <h3 class="step-heading" data-i18n="how.step3.title">Customize Your Bot</h3>
+                    <p class="step-body" data-i18n="how.step3.body">Set your business hours, services, prices, and payment options. Make it yours.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
@@ -161,8 +169,8 @@
                             <path d="M5 3l14 9-14 9V3z" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="step-heading">Start Receiving Customers</h3>
-                    <p class="step-body">Your bot is live! Customers can now book, ask questions, and pay—all automatically.</p>
+                    <h3 class="step-heading" data-i18n="how.step4.title">Start Receiving Customers</h3>
+                    <p class="step-body" data-i18n="how.step4.body">Your bot is live! Customers can now book, ask questions, and pay—all automatically.</p>
                 </div>
             </div>
         </div>
@@ -171,7 +179,7 @@
     <!-- Features -->
     <section class="features-section" id="features">
         <div class="container">
-            <h2 class="section-heading">Everything You Need to Run Your Business</h2>
+            <h2 class="section-heading" data-i18n="features.title">Everything You Need to Run Your Business</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -248,7 +256,7 @@
     <!-- Who It's For -->
     <section class="who-section" id="who">
         <div class="container">
-            <h2 class="section-heading">Perfect for Kenyan Small Businesses</h2>
+            <h2 class="section-heading" data-i18n="who.title">Perfect for Kenyan Small Businesses</h2>
             <div class="business-types">
                 <div class="business-type">
                     <div class="business-visual">
@@ -317,7 +325,7 @@
     <!-- Pricing -->
     <section class="pricing-section" id="pricing">
         <div class="container">
-            <h2 class="section-heading">Simple, Transparent Pricing</h2>
+            <h2 class="section-heading" data-i18n="pricing.title">Simple, Transparent Pricing</h2>
             <div class="pricing-card">
                 <h3 class="pricing-plan">Starter Plan</h3>
                 <div class="pricing-amount">KES 2,500<span class="pricing-period">/month</span></div>
@@ -345,43 +353,43 @@
     <!-- Get Started Form -->
     <section class="form-section" id="get-started">
         <div class="container">
-            <h2 class="section-heading">Get Started in 5 Minutes</h2>
-            <p class="form-subheading">Fill out the form below and we'll set up your Biashara-Assistant right away.</p>
+            <h2 class="section-heading" data-i18n="form.title">Get Started in 5 Minutes</h2>
+            <p class="form-subheading" data-i18n="form.subtitle">Fill out the form below and we'll set up your Biashara-Assistant right away.</p>
             <form class="signup-form" id="signupForm">
                 <div class="form-group">
-                    <label for="business-name">Business Name *</label>
-                    <input type="text" id="business-name" name="businessName" placeholder="e.g., Mama Sarah's Salon" required>
+                    <label for="business-name" data-i18n="form.businessName.label">Business Name *</label>
+                    <input type="text" id="business-name" name="businessName" data-i18n-placeholder="form.businessName.placeholder" placeholder="e.g., Mama Sarah's Salon" required>
                 </div>
                 <div class="form-group">
-                    <label for="your-name">Your Name *</label>
-                    <input type="text" id="your-name" name="yourName" placeholder="e.g., Sarah Wanjiku" required>
+                    <label for="your-name" data-i18n="form.yourName.label">Your Name *</label>
+                    <input type="text" id="your-name" name="yourName" data-i18n-placeholder="form.yourName.placeholder" placeholder="e.g., Sarah Wanjiku" required>
                 </div>
                 <div class="form-group">
-                    <label for="phone">WhatsApp Business Number *</label>
-                    <input type="tel" id="phone" name="phone" placeholder="e.g., 0712 345 678" required>
-                    <span class="form-helper">The number customers will message</span>
+                    <label for="phone" data-i18n="form.phone.label">WhatsApp Business Number *</label>
+                    <input type="tel" id="phone" name="phone" data-i18n-placeholder="form.phone.placeholder" placeholder="e.g., 0712 345 678" required>
+                    <span class="form-helper" data-i18n="form.phone.helper">The number customers will message</span>
                 </div>
                 <div class="form-group">
-                    <label for="business-type">What type of business? *</label>
+                    <label for="business-type" data-i18n="form.businessType.label">What type of business? *</label>
                     <select id="business-type" name="businessType" required>
-                        <option value="">Select your business type</option>
-                        <option value="salon">Salon/Barbershop</option>
-                        <option value="restaurant">Restaurant/Café</option>
-                        <option value="service">Service Provider</option>
-                        <option value="retail">Retail Shop</option>
-                        <option value="other">Other</option>
+                        <option value="" data-i18n="form.businessType.default">Select your business type</option>
+                        <option value="salon" data-i18n="form.businessType.salon">Salon/Barbershop</option>
+                        <option value="restaurant" data-i18n="form.businessType.restaurant">Restaurant/Café</option>
+                        <option value="service" data-i18n="form.businessType.service">Service Provider</option>
+                        <option value="retail" data-i18n="form.businessType.retail">Retail Shop</option>
+                        <option value="other" data-i18n="form.businessType.other">Other</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email Address *</label>
-                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
-                    <span class="form-helper">We'll send setup instructions here</span>
+                    <label for="email" data-i18n="form.email.label">Email Address *</label>
+                    <input type="email" id="email" name="email" data-i18n-placeholder="form.email.placeholder" placeholder="your@email.com" required>
+                    <span class="form-helper" data-i18n="form.email.helper">We'll send setup instructions here</span>
                 </div>
                 <div class="form-group">
-                    <label for="additional-info">Tell us about your business (optional)</label>
-                    <textarea id="additional-info" name="additionalInfo" rows="4" placeholder="Any specific requirements or questions?"></textarea>
+                    <label for="additional-info" data-i18n="form.additionalInfo.label">Tell us about your business (optional)</label>
+                    <textarea id="additional-info" name="additionalInfo" rows="4" data-i18n-placeholder="form.additionalInfo.placeholder" placeholder="Any specific requirements or questions?"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary btn-full">Start My Free Trial</button>
+                <button type="submit" class="btn btn-primary btn-full" data-i18n="form.submit">Start My Free Trial</button>
                 <div class="form-trust">
                     <p>🔒 Your information is secure. We'll never share your data.</p>
                     <p class="form-legal">By submitting, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
@@ -393,8 +401,8 @@
     <!-- Final CTA -->
     <section class="final-cta" id="cta">
         <div class="container">
-            <h2 class="cta-heading">Ready to Grow Your Biashara?</h2>
-            <p class="cta-subheading">Join hundreds of Kenyan businesses using Biashara-Assistant to serve customers better.</p>
+            <h2 class="cta-heading" data-i18n="cta.title">Ready to Grow Your Biashara?</h2>
+            <p class="cta-subheading" data-i18n="cta.subtitle">Join hundreds of Kenyan businesses using Biashara-Assistant to serve customers better.</p>
             <div class="cta-buttons">
                 <a href="#get-started" class="btn btn-cta-primary">Start Free Trial Now</a>
             </div>

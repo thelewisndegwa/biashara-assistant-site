@@ -73,6 +73,74 @@ body {
 }
 
 /* ============================================
+   Language Switcher
+   ============================================ */
+
+.language-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: var(--bg-white);
+    border: 2px solid var(--primary-green);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-green);
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+.lang-toggle:hover {
+    background: var(--primary-green);
+    color: var(--bg-white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.lang-toggle:active {
+    transform: translateY(0) scale(0.98);
+}
+
+.lang-text {
+    font-weight: 700;
+    min-width: 30px;
+    text-align: center;
+}
+
+.lang-icon {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .language-switcher {
+        top: 10px;
+        right: 10px;
+    }
+    
+    .lang-toggle {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    
+    .lang-text {
+        min-width: 24px;
+    }
+    
+    .lang-icon {
+        font-size: 16px;
+    }
+}
+
+/* ============================================
    Container & Layout
    ============================================ */
 
