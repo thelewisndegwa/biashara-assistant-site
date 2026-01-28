@@ -319,6 +319,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-text {
     text-align: center;
+    position: relative;
 }
 
 @media (min-width: 1024px) {
@@ -483,7 +484,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 12px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 .phone-screen {
@@ -493,6 +494,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 600px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
 }
 
 .whatsapp-header {
@@ -649,34 +652,49 @@ h1, h2, h3, h4, h5, h6 {
 
 .floating-whatsapp-icon {
     position: absolute;
-    top: -20px;
-    right: -20px;
-    animation: float 3s ease-in-out infinite;
-    z-index: 3;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: floatMobile 3s ease-in-out infinite;
+    z-index: 5;
     pointer-events: none;
 }
 
-@keyframes float {
+@keyframes floatMobile {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0px);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-12px);
+    }
+}
+
+@keyframes floatDesktop {
     0%, 100% {
         transform: translateY(0px);
     }
     50% {
-        transform: translateY(-20px);
+        transform: translateY(-12px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .floating-whatsapp-icon {
+        left: 0;
+        transform: translateY(0px);
+        top: -50px;
+        animation: floatDesktop 3s ease-in-out infinite;
     }
 }
 
 @media (max-width: 768px) {
-    /* Keep it inside the phone so it doesn't overlap the CTA above */
     .floating-whatsapp-icon {
-        top: 10px;
-        right: 10px;
-        z-index: 3;
-        opacity: 0.95;
+        top: -35px;
     }
 
     .floating-whatsapp-icon svg {
-        width: 44px;
-        height: 44px;
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -790,6 +808,16 @@ h1, h2, h3, h4, h5, h6 {
 .step {
     text-align: center;
     position: relative;
+    background: var(--bg-white);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.step:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
 }
 
 .step-number {
