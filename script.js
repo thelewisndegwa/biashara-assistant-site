@@ -45,7 +45,37 @@ const translations = {
             }
         },
         features: {
-            title: "Everything You Need to Run Your Business"
+            title: "Everything You Need to Run Your Business",
+            card1: {
+                badge: "24/7 Available",
+                heading: "Smart Auto-Reply",
+                body: "Automatically answer common questions about your services, hours, and location."
+            },
+            card2: {
+                badge: "Instant Notifications",
+                heading: "Easy Bookings",
+                body: "Customers can book appointments or services directly through WhatsApp. You get instant notifications."
+            },
+            card3: {
+                badge: "Auto-Saved",
+                heading: "Capture Every Lead",
+                body: "Automatically collect customer names, phone numbers, and inquiry details. Never lose a potential sale."
+            },
+            card4: {
+                badge: "Secure",
+                heading: "M-Pesa Payments",
+                body: "Accept payments directly in the chat. Customers pay via M-Pesa without leaving WhatsApp."
+            },
+            card5: {
+                badge: "Customizable",
+                heading: "Smart Scheduling",
+                body: "Set your business hours. The bot automatically tells customers when you're available."
+            },
+            card6: {
+                badge: "Insights",
+                heading: "Track Your Growth",
+                body: "See how many customers you're reaching, bookings made, and payments received—all in one place."
+            }
         },
         who: {
             title: "Perfect for Kenyan Small Businesses"
@@ -101,6 +131,28 @@ const translations = {
             message3: "3pm works. How much?",
             message4: "KES 500. You can pay via M-Pesa. Tap here to pay:",
             payButton: "Pay KES 500"
+        },
+        footer: {
+            brand: "Biashara-Assistant",
+            tagline: "Your WhatsApp business assistant",
+            product: "Product",
+            company: "Company",
+            legal: "Legal",
+            features: "Features",
+            howItWorks: "How It Works",
+            pricing: "Pricing",
+            faq: "FAQ",
+            aboutUs: "About Us",
+            contact: "Contact",
+            blog: "Blog",
+            careers: "Careers",
+            termsOfService: "Terms of Service",
+            privacyPolicy: "Privacy Policy",
+            refundPolicy: "Refund Policy",
+            copyright: "© 2026 Biashara-Assistant. All rights reserved.",
+            madeInKenya: "Made with ❤️ in Kenya",
+            terms: "Terms",
+            privacy: "Privacy"
         }
     },
     sw: {
@@ -145,7 +197,37 @@ const translations = {
             }
         },
         features: {
-            title: "Kila Kitu Unachohitaji Kuendesha Biashara Yako"
+            title: "Kila Kitu Unachohitaji Kuendesha Biashara Yako",
+            card1: {
+                badge: "Inapatikana Masaa 24",
+                heading: "Jibu la Kiotomatiki la Kipaji",
+                body: "Jibu maswali ya kawaida kuhusu huduma zako, masaa, na eneo kiotomatiki."
+            },
+            card2: {
+                badge: "Arifa za Haraka",
+                heading: "Mareservi Rahisi",
+                body: "Wateja wanaweza kujireservi au huduma moja kwa moja kupitia WhatsApp. Unapata arifa za haraka."
+            },
+            card3: {
+                badge: "Imehifadhiwa Kiotomatiki",
+                heading: "Kamata Kila Mteja",
+                body: "Kusanya majina ya wateja, nambari za simu, na maelezo ya maswali kiotomatiki. Usikose uuzaji wowote unaowezekana."
+            },
+            card4: {
+                badge: "Salama",
+                heading: "Malipo ya M-Pesa",
+                body: "Kubali malipo moja kwa moja kwenye mazungumzo. Wateja hulipa kupitia M-Pesa bila kuacha WhatsApp."
+            },
+            card5: {
+                badge: "Inaweza Kusanishwa",
+                heading: "Ratiba ya Kipaji",
+                body: "Weka masaa ya biashara yako. Boti inawaambia wateja kiotomatiki wakati unapatikana."
+            },
+            card6: {
+                badge: "Ufahamu",
+                heading: "Fuata Ukuaji Wako",
+                body: "Ona wateja wangapi unawafikia, mareservi yaliyofanywa, na malipo yaliyopokelewa—yote katika sehemu moja."
+            }
         },
         who: {
             title: "Inafaa Kwa Biashara Ndogo za Kenya"
@@ -201,6 +283,28 @@ const translations = {
             message3: "Saa 3 inanifaa. Ni kiasi gani?",
             message4: "KES 500. Unaweza kulipa kupitia M-Pesa. Bofya hapa kulipa:",
             payButton: "Lipa KES 500"
+        },
+        footer: {
+            brand: "Biashara-Assistant",
+            tagline: "Msaidizi wako wa WhatsApp wa biashara",
+            product: "Bidhaa",
+            company: "Kampuni",
+            legal: "Kisheria",
+            features: "Vipengele",
+            howItWorks: "Inavyofanya Kazi",
+            pricing: "Bei",
+            faq: "Maswali Yanayoulizwa Mara Kwa Mara",
+            aboutUs: "Kuhusu Sisi",
+            contact: "Wasiliana",
+            blog: "Blogu",
+            careers: "Kazi",
+            termsOfService: "Sheria za Huduma",
+            privacyPolicy: "Sera ya Faragha",
+            refundPolicy: "Sera ya Rudi Pesa",
+            copyright: "© 2026 Biashara-Assistant. Haki zote zimehifadhiwa.",
+            madeInKenya: "Imetengenezwa kwa ❤️ nchini Kenya",
+            terms: "Sheria",
+            privacy: "Faragha"
         }
     }
 };
