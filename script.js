@@ -321,6 +321,22 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!validateForm(data)) {
                 return;
             }
+
+            // Send details to WhatsApp
+            const whatsappNumber = '16086081288'; // International format without +
+            const messageLines = [
+                'New Biashara-Assistant signup request:',
+                `Business Name: ${data.businessName || ''}`,
+                `Your Name: ${data.yourName || ''}`,
+                `WhatsApp Business Number: ${data.phone || ''}`,
+                `Business Type: ${data.businessType || ''}`,
+                `Email: ${data.email || ''}`,
+                '',
+                `Additional Info: ${data.additionalInfo || 'N/A'}`
+            ];
+            const whatsappText = messageLines.join('\n');
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`;
+            window.open(whatsappUrl, '_blank');
             
             // Show success message (since there's no backend)
             showFormSuccess();

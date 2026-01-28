@@ -355,6 +355,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-cta {
     margin-bottom: var(--spacing-md);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+@media (min-width: 1024px) {
+    .hero-cta {
+        justify-content: flex-start;
+    }
+}
+
+.btn-whatsapp {
+    background-color: #22C55E;
+    color: var(--bg-white);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-whatsapp:hover {
+    background-color: #16A34A;
+    box-shadow: 0 6px 16px rgba(34, 197, 94, 0.4);
+    transform: translateY(-2px);
 }
 
 .hero-supporting {
