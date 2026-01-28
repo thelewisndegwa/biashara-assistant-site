@@ -195,17 +195,78 @@ const translations = {
             subtitle: "Join hundreds of Kenyan businesses using Biashara-Assistant to serve customers better.",
             button: "Start Free Trial Now"
         },
-        chat: {
-            contactName: "Mama Sarah's Salon",
-            status: "online",
-            message1: "Hi, do you have time for a haircut today?",
-            message2: "Yes! We have slots at 2pm, 3pm, and 4pm. Which works for you?",
-            message3: "3pm works. How much?",
-            message4: "KES 500. Please pay via M-Pesa Buy Goods:",
-            paymentDetails: "Till Number: 123456",
-            message5: "Great! Your reservation is confirmed:",
-            reservationDetails: "📅 Date: Tomorrow at 3pm\n💇 Service: Haircut\n💰 Amount: KES 500",
-            message6: "⏰ Reminder: Your appointment is tomorrow at 3pm. See you then! 😊"
+        chatDemoTabs: {
+            salon: "Salon",
+            clinic: "Clinic",
+            realestate: "Real Estate",
+            school: "School",
+            hotel: "Hotel",
+            church: "Church"
+        },
+        chatDemo: {
+            salon: {
+                contactName: "Mama Sarah's Salon",
+                status: "online",
+                m1: "Hi, are you available tomorrow?",
+                m2: "Yes—2pm, 3pm, or 4pm. Which works for you?",
+                m3: "3pm.",
+                m4: "Great. Haircut is KES 500. Pay via M-Pesa Buy Goods:",
+                pay: "Till Number: 123456",
+                m5: "Booked ✅",
+                details: "📅 Tomorrow 3:00pm\n💇 Haircut\n💰 KES 500",
+                m6: "Reminder: today at 3pm. See you soon."
+            },
+            clinic: {
+                contactName: "GreenCare Clinic",
+                status: "online",
+                m1: "Hi, I need to see a doctor.",
+                m2: "Sure—what service do you need? (Consultation / Lab / Dental)",
+                m3: "Consultation.",
+                m4: "Available times: 10:30am or 2:00pm. Which do you prefer?",
+                m5: "2:00pm.",
+                m6: "Please share your full name + NHIF/insurance (if any). A staff member will confirm shortly."
+            },
+            realestate: {
+                contactName: "Nairobi Homes",
+                status: "online",
+                m1: "I'm looking for a 2 bedroom.",
+                m2: "Great—what location do you prefer?",
+                m3: "Kilimani.",
+                m4: "Budget range?",
+                m5: "Up to 60k.",
+                m6: "When can you view? (Sat 11am / Sat 2pm / Sun 1pm)",
+                m7: "Thanks—an agent will contact you to confirm."
+            },
+            school: {
+                contactName: "Bright Future School",
+                status: "online",
+                m1: "Hi, I want to join Form 1.",
+                m2: "Great—what term are you applying for?",
+                m3: "Term 2.",
+                m4: "Requirements: birth cert, KCPE result slip, 2 passport photos.",
+                m5: "Fees & key dates are available. Want the full fee structure?",
+                m6: "Share the student's name + KCPE marks and we'll guide the next step."
+            },
+            hotel: {
+                contactName: "Coastline Hotel",
+                status: "online",
+                m1: "Do you have rooms this weekend?",
+                m2: "Sure—what dates and how many guests?",
+                m3: "Fri–Sun, 2 adults.",
+                m4: "Options: Standard / Deluxe. Which do you prefer?",
+                m5: "Deluxe.",
+                m6: "Thanks—share your name + phone. Staff will confirm availability and send payment details."
+            },
+            church: {
+                contactName: "NewLife Church",
+                status: "online",
+                m1: "What time is service?",
+                m2: "Sunday services: 8am & 10:30am. Midweek: Wed 6pm.",
+                m3: "Any youth events?",
+                m4: "Youth fellowship: Sat 3pm. Want the weekly schedule?",
+                m5: "Yes.",
+                m6: "Here it is. Would you like to join a department or volunteer?"
+            }
         },
         footer: {
             brand: "Biashara-Assistant",
@@ -422,17 +483,78 @@ const translations = {
             subtitle: "Jiunge na mamia ya biashara za Kenya zinazotumia Biashara-Assistant kuwahudumia wateja vyema zaidi.",
             button: "Anza Jaribio Bure Sasa"
         },
-        chat: {
-            contactName: "Salon ya Mama Sarah",
-            status: "huko mtandaoni",
-            message1: "Hujambo, una muda wa kunyoa leo?",
-            message2: "Ndio! Tuna nafasi saa 2 asubuhi, 3 asubuhi, na 4 asubuhi. Ipi inakufaa?",
-            message3: "Saa 3 inanifaa. Ni kiasi gani?",
-            message4: "KES 500. Tafadhali lipa kupitia M-Pesa Buy Goods:",
-            paymentDetails: "Nambari ya Till: 123456",
-            message5: "Vizuri! Mareservi yako imethibitishwa:",
-            reservationDetails: "📅 Tarehe: Kesho saa 3 asubuhi\n💇 Huduma: Kunyoa\n💰 Kiasi: KES 500",
-            message6: "⏰ Ukumbusho: Miadi yako ni kesho saa 3 asubuhi. Tutaonana hapo! 😊"
+        chatDemoTabs: {
+            salon: "Salon",
+            clinic: "Kliniki",
+            realestate: "Mali",
+            school: "Shule",
+            hotel: "Hoteli",
+            church: "Kanisa"
+        },
+        chatDemo: {
+            salon: {
+                contactName: "Salon ya Mama Sarah",
+                status: "huko mtandaoni",
+                m1: "Hujambo, mna nafasi kesho?",
+                m2: "Ndio—saa 2, 3, au 4. Ipi inakufaa?",
+                m3: "Saa 3.",
+                m4: "Sawa. Kunyoa ni KES 500. Lipa kwa M-Pesa Buy Goods:",
+                pay: "Nambari ya Till: 123456",
+                m5: "Imethibitishwa ✅",
+                details: "📅 Kesho saa 3:00\n💇 Kunyoa\n💰 KES 500",
+                m6: "Ukumbusho: leo saa 3. Tutaonana."
+            },
+            clinic: {
+                contactName: "GreenCare Kliniki",
+                status: "huko mtandaoni",
+                m1: "Hujambo, nahitaji kumuona daktari.",
+                m2: "Sawa—unahitaji huduma gani? (Ushauri / Maabara / Meno)",
+                m3: "Ushauri.",
+                m4: "Nafasi: 10:30 au 2:00. Unapendelea ipi?",
+                m5: "2:00.",
+                m6: "Tafadhali tuma jina kamili + NHIF/bima (kama ipo). Mfanyakazi atathibitisha hivi karibuni."
+            },
+            realestate: {
+                contactName: "Nairobi Homes",
+                status: "huko mtandaoni",
+                m1: "Natafuta nyumba ya vyumba 2.",
+                m2: "Sawa—unapendelea eneo gani?",
+                m3: "Kilimani.",
+                m4: "Bajeti yako ni kiasi gani?",
+                m5: "Hadi 60k.",
+                m6: "Unaweza kuja kuona lini? (Jumamosi 11 / Jumamosi 2 / Jumapili 1)",
+                m7: "Asante—wakala atakupigia kuthibitisha."
+            },
+            school: {
+                contactName: "Bright Future School",
+                status: "huko mtandaoni",
+                m1: "Hujambo, nataka kujiunga Form 1.",
+                m2: "Sawa—unaomba muhula gani?",
+                m3: "Muhula wa 2.",
+                m4: "Mahitaji: cheti cha kuzaliwa, slip ya KCPE, picha 2 za pasipoti.",
+                m5: "Ada na tarehe muhimu zipo. Unataka muundo kamili wa ada?",
+                m6: "Tuma jina la mwanafunzi + alama za KCPE tuanze."
+            },
+            hotel: {
+                contactName: "Coastline Hoteli",
+                status: "huko mtandaoni",
+                m1: "Mna vyumba wikendi hii?",
+                m2: "Sawa—tarehe gani na wageni wangapi?",
+                m3: "Ijumaa–Jumapili, watu wazima 2.",
+                m4: "Chaguo: Standard / Deluxe. Unapendelea ipi?",
+                m5: "Deluxe.",
+                m6: "Asante—tuma jina + simu. Wafanyakazi watathibitisha upatikanaji na kutuma malipo."
+            },
+            church: {
+                contactName: "NewLife Church",
+                status: "huko mtandaoni",
+                m1: "Ibada ni saa ngapi?",
+                m2: "Ibada za Jumapili: 8am & 10:30am. Kati ya wiki: Jumatano 6pm.",
+                m3: "Kuna youth events?",
+                m4: "Youth fellowship: Jumamosi 3pm. Unataka ratiba ya wiki?",
+                m5: "Ndiyo.",
+                m6: "Hii hapa. Ungependa kujiunga idara au kujitolea?"
+            }
         },
         footer: {
             brand: "Biashara-Assistant",
@@ -806,76 +928,259 @@ document.addEventListener('DOMContentLoaded', function() {
     // ============================================
     // Animated Chat Demo
     // ============================================
-    
-    function animateChatDemo() {
-        const messages = document.querySelectorAll('.message[data-message]');
+
+    const CHAT_INDUSTRIES = ['salon', 'clinic', 'realestate', 'school', 'hotel', 'church'];
+
+    // Defines bubble structure per industry (keys live under translations.{lang}.chatDemo.<industry>.*)
+    const CHAT_DEMO_STRUCTURE = {
+        salon: [
+            { dir: 'in', keys: ['m1'] },
+            { dir: 'out', keys: ['m2'] },
+            { dir: 'in', keys: ['m3'] },
+            { dir: 'out', keys: ['m4', 'pay'], prelineKeys: ['pay'] },
+            { dir: 'out', keys: ['m5', 'details'], prelineKeys: ['details'] },
+            { dir: 'out', keys: ['m6'] },
+        ],
+        clinic: [
+            { dir: 'in', keys: ['m1'] },
+            { dir: 'out', keys: ['m2'] },
+            { dir: 'in', keys: ['m3'] },
+            { dir: 'out', keys: ['m4'] },
+            { dir: 'in', keys: ['m5'] },
+            { dir: 'out', keys: ['m6'] },
+        ],
+        realestate: [
+            { dir: 'in', keys: ['m1'] },
+            { dir: 'out', keys: ['m2'] },
+            { dir: 'in', keys: ['m3'] },
+            { dir: 'out', keys: ['m4'] },
+            { dir: 'in', keys: ['m5'] },
+            { dir: 'out', keys: ['m6'] },
+            { dir: 'out', keys: ['m7'] },
+        ],
+        school: [
+            { dir: 'in', keys: ['m1'] },
+            { dir: 'out', keys: ['m2'] },
+            { dir: 'in', keys: ['m3'] },
+            { dir: 'out', keys: ['m4'] },
+            { dir: 'out', keys: ['m5'] },
+            { dir: 'out', keys: ['m6'] },
+        ],
+        hotel: [
+            { dir: 'in', keys: ['m1'] },
+            { dir: 'out', keys: ['m2'] },
+            { dir: 'in', keys: ['m3'] },
+            { dir: 'out', keys: ['m4'] },
+            { dir: 'in', keys: ['m5'] },
+            { dir: 'out', keys: ['m6'] },
+        ],
+        church: [
+            { dir: 'in', keys: ['m1'] },
+            { dir: 'out', keys: ['m2'] },
+            { dir: 'in', keys: ['m3'] },
+            { dir: 'out', keys: ['m4'] },
+            { dir: 'in', keys: ['m5'] },
+            { dir: 'out', keys: ['m6'] },
+        ],
+    };
+
+    let currentChatIndustry = 'salon';
+    let chatAutoRotateTimer = null;
+    let userStoppedAutoRotate = false;
+    let chatAnimationRunId = 0;
+
+    function setActiveIndustryPill(industry) {
+        document.querySelectorAll('.industry-pill').forEach(btn => {
+            const isActive = btn.getAttribute('data-industry') === industry;
+            btn.classList.toggle('active', isActive);
+            btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
+    }
+
+    function clearChatMessages(chatMessages, typingIndicator) {
+        // Remove everything except typing indicator
+        const nodesToRemove = [];
+        chatMessages.childNodes.forEach(node => {
+            if (node !== typingIndicator) nodesToRemove.push(node);
+        });
+        nodesToRemove.forEach(n => chatMessages.removeChild(n));
+    }
+
+    function renderChatDemo(industry) {
+        if (!CHAT_INDUSTRIES.includes(industry)) return;
+
+        const chatMessages = document.getElementById('chatMessages');
+        const typingIndicator = document.getElementById('typingIndicator');
+        const contactNameEl = document.getElementById('chatContactName');
+        const contactStatusEl = document.getElementById('chatContactStatus');
+
+        if (!chatMessages || !typingIndicator || !contactNameEl || !contactStatusEl) return;
+
+        currentChatIndustry = industry;
+        setActiveIndustryPill(industry);
+
+        // Reset typing indicator
+        typingIndicator.classList.remove('active');
+
+        // Make sure typing indicator stays last
+        if (typingIndicator.parentElement === chatMessages) {
+            chatMessages.appendChild(typingIndicator);
+        }
+
+        clearChatMessages(chatMessages, typingIndicator);
+
+        // Set contact header keys
+        contactNameEl.setAttribute('data-i18n', `chatDemo.${industry}.contactName`);
+        contactStatusEl.setAttribute('data-i18n', `chatDemo.${industry}.status`);
+
+        const structure = CHAT_DEMO_STRUCTURE[industry] || [];
+        structure.forEach((msg, idx) => {
+            const messageEl = document.createElement('div');
+            messageEl.className = `message ${msg.dir === 'out' ? 'message-outgoing' : 'message-incoming'}`;
+            messageEl.setAttribute('data-message', String(idx + 1));
+
+            const bubble = document.createElement('div');
+            bubble.className = `message-bubble ${msg.dir === 'out' ? 'outgoing' : 'incoming'}`;
+
+            const prelineSet = new Set(msg.prelineKeys || []);
+            msg.keys.forEach((k, lineIdx) => {
+                const p = document.createElement('p');
+                p.setAttribute('data-i18n', `chatDemo.${industry}.${k}`);
+                if (prelineSet.has(k)) {
+                    p.classList.add('preline');
+                    if (lineIdx > 0) p.style.marginTop = '8px';
+                    if (k === 'pay') p.style.fontWeight = '600';
+                } else if (lineIdx > 0) {
+                    p.style.marginTop = '8px';
+                }
+                bubble.appendChild(p);
+            });
+
+            messageEl.appendChild(bubble);
+            chatMessages.insertBefore(messageEl, typingIndicator);
+        });
+
+        // Translate freshly injected nodes
+        setLanguage(currentLang);
+
+        // Restart animation safely
+        startChatAnimation();
+    }
+
+    function startChatAnimation() {
+        chatAnimationRunId += 1;
+        const runId = chatAnimationRunId;
+        animateChatDemo(runId);
+    }
+
+    function animateChatDemo(runId) {
+        const messages = document.querySelectorAll('#chatMessages .message[data-message]');
         const typingIndicator = document.getElementById('typingIndicator');
         const chatMessages = document.getElementById('chatMessages');
-        
+
         if (!messages.length || !typingIndicator || !chatMessages) return;
-        
+
         // Reset all messages to hidden
         messages.forEach(msg => {
             msg.style.opacity = '0';
             msg.style.transform = 'translateY(10px)';
             msg.style.display = 'none';
         });
-        
-        // Clear chat and show typing indicator
+
         typingIndicator.classList.remove('active');
-        
+
+        // per-message timing (slightly more natural than fixed arrays)
+        const baseDelayIn = 1100;
+        const baseDelayOut = 1500;
+        const baseTyping = 900;
+        const endLoopPause = 2600;
+
         let currentMessage = 0;
-        const messageDelays = [1000, 2000, 1500, 2000, 2500, 3000]; // Delay before each message appears
-        const typingDelays = [800, 1000, 800, 1000, 1000, 1000]; // How long typing indicator shows
-        
+
+        function isStillActive() {
+            return runId === chatAnimationRunId;
+        }
+
         function showNextMessage() {
+            if (!isStillActive()) return;
+
             if (currentMessage >= messages.length) {
-                // Restart animation after a delay
                 setTimeout(() => {
-                    animateChatDemo();
-                }, 3000);
+                    if (!isStillActive()) return;
+                    startChatAnimation();
+                }, endLoopPause);
                 return;
             }
-            
+
             const message = messages[currentMessage];
             const isOutgoing = message.classList.contains('message-outgoing');
-            
-            // Show typing indicator for outgoing messages (bot responses)
+
+            const afterShowDelay = isOutgoing ? baseDelayOut : baseDelayIn;
+
             if (isOutgoing) {
                 typingIndicator.classList.add('active');
                 setTimeout(() => {
+                    if (!isStillActive()) return;
                     typingIndicator.classList.remove('active');
-                    // Show the message
+
                     message.style.display = 'flex';
                     setTimeout(() => {
+                        if (!isStillActive()) return;
                         message.style.opacity = '1';
                         message.style.transform = 'translateY(0)';
-                        // Scroll to bottom
                         chatMessages.scrollTop = chatMessages.scrollHeight;
                     }, 50);
-                    currentMessage++;
-                    setTimeout(showNextMessage, messageDelays[currentMessage - 1] || 2000);
-                }, typingDelays[currentMessage] || 1000);
+
+                    currentMessage += 1;
+                    setTimeout(showNextMessage, afterShowDelay);
+                }, baseTyping);
             } else {
-                // For incoming messages, show directly
                 message.style.display = 'flex';
                 setTimeout(() => {
+                    if (!isStillActive()) return;
                     message.style.opacity = '1';
                     message.style.transform = 'translateY(0)';
-                    // Scroll to bottom
                     chatMessages.scrollTop = chatMessages.scrollHeight;
                 }, 50);
-                currentMessage++;
-                setTimeout(showNextMessage, messageDelays[currentMessage - 1] || 2000);
+
+                currentMessage += 1;
+                setTimeout(showNextMessage, afterShowDelay);
             }
         }
-        
-        // Start animation after initial delay
-        setTimeout(showNextMessage, 1000);
+
+        setTimeout(showNextMessage, 700);
     }
-    
-    // Start chat animation when page loads
-    setTimeout(() => {
-        animateChatDemo();
-    }, 500);
+
+    function stopAutoRotate() {
+        if (chatAutoRotateTimer) {
+            clearInterval(chatAutoRotateTimer);
+            chatAutoRotateTimer = null;
+        }
+    }
+
+    function startAutoRotate() {
+        stopAutoRotate();
+        if (userStoppedAutoRotate) return;
+
+        chatAutoRotateTimer = setInterval(() => {
+            if (userStoppedAutoRotate) return;
+            const idx = CHAT_INDUSTRIES.indexOf(currentChatIndustry);
+            const next = CHAT_INDUSTRIES[(idx + 1) % CHAT_INDUSTRIES.length];
+            renderChatDemo(next);
+        }, 12000);
+    }
+
+    // Hook up tab clicks
+    document.querySelectorAll('.industry-pill').forEach(btn => {
+        btn.addEventListener('click', () => {
+            userStoppedAutoRotate = true;
+            stopAutoRotate();
+            const industry = btn.getAttribute('data-industry') || 'salon';
+            renderChatDemo(industry);
+        });
+    });
+
+    // Initial render + animation + auto-rotate
+    renderChatDemo('salon');
+    startAutoRotate();
 });

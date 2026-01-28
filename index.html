@@ -28,7 +28,7 @@
                         Your Smart WhatsApp Assistant for Business
                     </h1>
                     <p class="hero-subheadline" data-i18n="hero.subtitle">
-                        Replies to customers, takes bookings, and accepts Mpesa — automatically.
+                        Turns your WhatsApp into a 24/7 premium front desk — instantly answering customers, booking services, and collecting M-Pesa payments without extra staff.
                     </p>
                     <div class="hero-cta">
                         <a href="#get-started" class="btn btn-primary" data-i18n="hero.cta">Get Started</a>
@@ -41,6 +41,14 @@
                     </p>
                 </div>
                 <div class="hero-illustration">
+                    <div class="industry-tabs" role="tablist" aria-label="Industry examples">
+                        <button type="button" class="industry-pill active" data-industry="salon" role="tab" aria-selected="true" data-i18n="chatDemoTabs.salon">Salon</button>
+                        <button type="button" class="industry-pill" data-industry="clinic" role="tab" aria-selected="false" data-i18n="chatDemoTabs.clinic">Clinic</button>
+                        <button type="button" class="industry-pill" data-industry="realestate" role="tab" aria-selected="false" data-i18n="chatDemoTabs.realestate">Real Estate</button>
+                        <button type="button" class="industry-pill" data-industry="school" role="tab" aria-selected="false" data-i18n="chatDemoTabs.school">School</button>
+                        <button type="button" class="industry-pill" data-industry="hotel" role="tab" aria-selected="false" data-i18n="chatDemoTabs.hotel">Hotel</button>
+                        <button type="button" class="industry-pill" data-industry="church" role="tab" aria-selected="false" data-i18n="chatDemoTabs.church">Church</button>
+                    </div>
                     <div class="phone-mockup">
                         <div class="phone-frame">
                             <div class="phone-screen">
@@ -48,44 +56,13 @@
                                     <div class="whatsapp-contact">
                                         <div class="contact-avatar"></div>
                                         <div class="contact-info">
-                                            <div class="contact-name" data-i18n="chat.contactName">Mama Sarah's Salon</div>
-                                            <div class="contact-status" data-i18n="chat.status">online</div>
+                                            <div class="contact-name" id="chatContactName" data-i18n="chatDemo.salon.contactName">Mama Sarah's Salon</div>
+                                            <div class="contact-status" id="chatContactStatus" data-i18n="chatDemo.salon.status">online</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="chat-messages" id="chatMessages">
-                                    <div class="message message-incoming" data-message="1">
-                                        <div class="message-bubble incoming">
-                                            <p data-i18n="chat.message1">Hi, do you have time for a haircut today?</p>
-                                        </div>
-                                    </div>
-                                    <div class="message message-outgoing" data-message="2">
-                                        <div class="message-bubble outgoing">
-                                            <p data-i18n="chat.message2">Yes! We have slots at 2pm, 3pm, and 4pm. Which works for you?</p>
-                                        </div>
-                                    </div>
-                                    <div class="message message-incoming" data-message="3">
-                                        <div class="message-bubble incoming">
-                                            <p data-i18n="chat.message3">3pm works. How much?</p>
-                                        </div>
-                                    </div>
-                                    <div class="message message-outgoing" data-message="4">
-                                        <div class="message-bubble outgoing">
-                                            <p data-i18n="chat.message4">KES 500. Please pay via M-Pesa Buy Goods:</p>
-                                            <p style="font-weight: 600; margin-top: 8px; white-space: pre-line;" data-i18n="chat.paymentDetails">Till Number: 123456</p>
-                                        </div>
-                                    </div>
-                                    <div class="message message-outgoing" data-message="5">
-                                        <div class="message-bubble outgoing">
-                                            <p data-i18n="chat.message5">Great! Your reservation is confirmed:</p>
-                                            <p style="margin-top: 8px; white-space: pre-line;" data-i18n="chat.reservationDetails">📅 Date: Tomorrow at 3pm<br>💇 Service: Haircut<br>💰 Amount: KES 500</p>
-                                        </div>
-                                    </div>
-                                    <div class="message message-outgoing" data-message="6">
-                                        <div class="message-bubble outgoing">
-                                            <p data-i18n="chat.message6">⏰ Reminder: Your appointment is tomorrow at 3pm. See you then! 😊</p>
-                                        </div>
-                                    </div>
+                                    <!-- Chat messages are injected by script.js (per industry) -->
                                     <div class="typing-indicator" id="typingIndicator">
                                         <div class="typing-dots">
                                             <div class="typing-dot"></div>
