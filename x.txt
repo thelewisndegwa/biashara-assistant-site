@@ -1,0 +1,238 @@
+Biashara-Assistant turns your WhatsApp into a 24/7 premium front desk — instantly answering customers, booking services, and collecting M-Pesa payments without extra staff.
+
+🏗️ Biashara Assistant — Multi-Industry Architecture
+🔑 Core Principle
+You are not building 7 bots.
+You are building 1 platform with:
+Shared infrastructure
+Shared conversation engine
+Industry-specific configs, flows, and rules
+
+1️⃣ High-Level Architecture (Unchanged Core)
+Customer (WhatsApp)
+        |
+Meta WhatsApp Cloud API
+        |
+Webhook + Message Router
+        |
+Conversation Engine (State Machine)
+        |
++-----------------------------+
+|                             |
+Business Logic Engine     AI Assist Layer
+(Rules, Validation)       (Intent + Language)
+        |
+Multi-Tenant Database
+        |
+Admin Dashboard
+
+✅ This stays the same for all industries.
+
+2️⃣ Industry Abstraction Layer (THIS IS THE KEY)
+Add an Industry Profile per business.
+industry_type
+salon
+barber
+clinic
+real_estate
+school
+hotel
+church
+
+Every business has:
+business_id
+industry_type
+
+From here, everything branches cleanly.
+
+3️⃣ Industry Playbooks (What Changes Per Industry)
+A. Salon & Barber 💈💅
+Primary Goal: Fast bookings + walk-ins
+Flows
+Services & prices
+Booking
+Walk-in
+Reminders
+Send inspiration photo
+Key Entities
+Service
+Stylist (optional)
+Appointment
+Tone
+Friendly
+Casual
+Fast
+
+B. Clinics 🏥
+Primary Goal: Trust + appointment accuracy
+Flows
+Services
+Doctor availability
+Appointment booking
+Insurance accepted
+Human escalation early
+Key Entities
+Service
+Doctor
+Appointment
+Insurance (text-only in v1)
+Tone
+Calm
+Professional
+Reassuring
+🚫 No diagnosis. Ever.
+
+C. Real Estate Agents 🏘️
+Primary Goal: Lead qualification
+Flows
+Property inquiry
+Budget capture
+Location preference
+Viewing scheduling
+Agent handoff
+Key Entities
+Property
+Lead
+Viewing
+Tone
+Professional
+Helpful
+Confident
+Bot never negotiates price.
+
+D. Schools 🎓
+Primary Goal: Reduce admin workload
+Flows
+Admissions info
+Fees
+Requirements
+Important dates
+Human escalation
+Key Entities
+Program
+Intake
+Inquiry (not appointment)
+Tone
+Respectful
+Formal
+Clear
+No automated “booking” — just structured inquiries.
+
+E. Hotels 🏨
+Primary Goal: Convert inquiries → bookings
+Flows
+Room types & rates
+Availability inquiry
+Reservation request
+Amenities
+Directions
+Key Entities
+Room type
+Booking request (not confirmed)
+Guest inquiry
+Bot does not confirm bookings without staff.
+
+F. Churches ⛪
+Primary Goal: Information & engagement
+Flows
+Service times
+Events
+Departments
+Giving info
+Volunteer signup
+Key Entities
+Event
+Department
+Inquiry
+Tone
+Warm
+Respectful
+Community-focused
+
+4️⃣ Conversation Engine (Shared, Config-Driven)
+The engine is universal, but behavior is driven by config.
+Example:
+{
+  "industry": "salon",
+  "features": {
+    "booking": true,
+    "walk_in": true,
+    "payments": false,
+    "reminders": true
+  }
+}
+
+vs
+{
+  "industry": "church",
+  "features": {
+    "booking": false,
+    "walk_in": false,
+    "reminders": false,
+    "events": true
+  }
+}
+
+👉 Same engine, different switches.
+
+5️⃣ AI Layer (Industry-Aware, Still Controlled)
+AI prompt includes:
+You are a WhatsApp assistant for a {industry_type} business.
+Follow the approved flows.
+Do not invent services or prices.
+Escalate when unsure.
+
+AI handles:
+Intent detection
+Language detection (EN/SW)
+Natural phrasing
+Logic still lives in your code.
+
+6️⃣ Database Structure (Universal, Clean)
+Core Tables
+businesses
+services
+users
+conversations
+Optional / Industry Tables
+appointments (salon, barber, clinic)
+properties (real estate)
+inquiries (school, hotel, church)
+events (church)
+rooms (hotel)
+All linked by:
+business_id
+
+
+7️⃣ Admin Dashboard (Industry-Adaptive UI)
+Same dashboard, different sections appear:
+Salon → “Appointments”
+Clinic → “Appointments + Doctors”
+Church → “Events”
+School → “Inquiries”
+Real Estate → “Leads”
+This keeps UX simple.
+
+8️⃣ Why This Architecture Is 🔥
+One codebase
+Easy onboarding
+Easy sales pitch
+Easy referrals
+Easy to expand (lawyers, gyms, pharmacies next)
+You are building a platform, not a chatbot.
+
+9️⃣ Recommended Build Order (Founder-Smart)
+1️⃣ Salon / Barber
+2️⃣ Clinic
+3️⃣ Real Estate
+4️⃣ School
+5️⃣ Hotel
+6️⃣ Church
+Each one reuses 80% of the system.
+
+
+Abstract
+
+Kenya represents one of the most dynamic mobile-first digital economies in the world, characterized by rapid smartphone adoption, widespread mobile payment usage, and extensive reliance on messaging platforms such as WhatsApp for business communication. As artificial intelligence (AI) tools become increasingly accessible, understanding the factors that influence trust and adoption among small business owners is critical. This project proposes an empirical study of a WhatsApp-based AI assistant designed and built by the researcher for small businesses in Kenya. Rather than prioritizing technical efficiency alone, the study centers on understanding the social, technical, and cultural factors that shape business owners’ trust in and willingness to adopt AI assistants for customer-facing interactions. Using a mixed-methods approach, the research combines system usage data with surveys and semi-structured interviews conducted before and after deployment. Secondary measures, such as response time and missed inquiries, are used to contextualize adoption outcomes. By examining real-world use in a fast-growing, mobile-first market, this project contributes to human-centered AI research and offers insights into designing trustworthy, culturally aligned AI systems for small businesses in the Global South.
+
+

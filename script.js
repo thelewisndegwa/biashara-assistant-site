@@ -6,7 +6,7 @@ const translations = {
     en: {
         hero: {
             title: "Your Smart WhatsApp Assistant for Business",
-            subtitle: "Replies to customers, takes bookings, and accepts Mpesa — automatically.",
+            subtitle: "Turns your WhatsApp into a 24/7 premium front desk — instantly answering customers, booking services, and collecting M-Pesa payments without extra staff.",
             cta: "Get Started",
             whatsappButton: "Message us on WhatsApp",
             supporting: "Built for Kenyan businesses 🇰🇪"
@@ -82,35 +82,51 @@ const translations = {
             title: "Perfect for Kenyan Small Businesses",
             salon: {
                 heading: "Salons & Barbershops",
-                body: "Let customers book haircuts, treatments, and appointments. Show available time slots and accept deposits.",
-                feature1: "Book appointments",
-                feature2: "Show service menu",
-                feature3: "Accept deposits",
-                feature4: "Send reminders"
+                body: "Fast bookings and walk-ins. Show services & prices, book appointments, send reminders, and accept deposits automatically.",
+                feature1: "Service menu & prices",
+                feature2: "Instant bookings",
+                feature3: "Walk-in support",
+                feature4: "Automated reminders"
             },
-            restaurant: {
-                heading: "Restaurants & Cafés",
-                body: "Take orders, reservations, and payments. Share daily specials and menu items automatically.",
-                feature1: "Take orders",
-                feature2: "Table reservations",
-                feature3: "Menu sharing",
-                feature4: "Payment collection"
+            clinic: {
+                heading: "Clinics",
+                body: "Build trust with accurate appointments. Show services, doctor availability, handle insurance inquiries, and escalate to staff when needed.",
+                feature1: "Doctor availability",
+                feature2: "Appointment booking",
+                feature3: "Insurance info",
+                feature4: "Staff escalation"
             },
-            service: {
-                heading: "Service Providers",
-                body: "Capture leads, schedule service calls, and get paid upfront. Perfect for plumbers, electricians, cleaners, and more.",
-                feature1: "Lead capture",
-                feature2: "Schedule calls",
-                feature3: "Quote sharing",
-                feature4: "Payment collection"
+            realestate: {
+                heading: "Real Estate Agents",
+                body: "Qualify leads automatically. Capture property inquiries, budget, location preferences, schedule viewings, and hand off to agents.",
+                feature1: "Lead qualification",
+                feature2: "Budget capture",
+                feature3: "Viewing scheduling",
+                feature4: "Agent handoff"
             },
-            retail: {
-                heading: "Retail Shops",
-                body: "Showcase products, answer questions, and process orders. Great for clothing, electronics, and specialty stores.",
-                feature1: "Product catalog",
-                feature2: "Order processing",
-                feature3: "Inventory updates",
-                feature4: "Delivery coordination"
+            school: {
+                heading: "Schools",
+                body: "Reduce admin workload. Answer admissions questions, share fees, requirements, important dates, and escalate complex inquiries.",
+                feature1: "Admissions info",
+                feature2: "Fees & requirements",
+                feature3: "Important dates",
+                feature4: "Structured inquiries"
+            },
+            hotel: {
+                heading: "Hotels",
+                body: "Convert inquiries to bookings. Show room types & rates, check availability, handle reservation requests, share amenities and directions.",
+                feature1: "Room types & rates",
+                feature2: "Availability inquiry",
+                feature3: "Reservation requests",
+                feature4: "Amenities & directions"
+            },
+            church: {
+                heading: "Churches",
+                body: "Information and engagement. Share service times, events, departments, giving information, and volunteer signup opportunities.",
+                feature1: "Service times",
+                feature2: "Events & departments",
+                feature3: "Giving information",
+                feature4: "Volunteer signup"
             }
         },
         pricing: {
@@ -151,9 +167,11 @@ const translations = {
                 label: "What type of business? *",
                 default: "Select your business type",
                 salon: "Salon/Barbershop",
-                restaurant: "Restaurant/Café",
-                service: "Service Provider",
-                retail: "Retail Shop",
+                clinic: "Clinic",
+                realestate: "Real Estate",
+                school: "School",
+                hotel: "Hotel",
+                church: "Church",
                 other: "Other"
             },
             email: {
@@ -215,7 +233,7 @@ const translations = {
     sw: {
         hero: {
             title: "Msaidizi Wako wa WhatsApp wa Kibiashara",
-            subtitle: "Hujibu wateja, huchukua mareservi, na hukubali malipo ya M-Pesa — kiotomatiki.",
+            subtitle: "Inageuza WhatsApp yako kuwa ofisi ya mbele ya hali ya juu masaa 24 — kujibu wateja mara moja, kujireservi huduma, na kukusanya malipo ya M-Pesa bila wafanyakazi wa ziada.",
             cta: "Anza Sasa",
             whatsappButton: "Tutumie ujumbe kwa WhatsApp",
             supporting: "Imeundwa kwa biashara za Kenya 🇰🇪"
@@ -291,35 +309,51 @@ const translations = {
             title: "Inafaa Kwa Biashara Ndogo za Kenya",
             salon: {
                 heading: "Salon na Vibarberi",
-                body: "Wacha wateja wajireservi kunyoa, matibabu, na miadi. Onyesha nafasi zilizopo na kubali malipo ya awali.",
-                feature1: "Jireservi miadi",
-                feature2: "Onyesha orodha ya huduma",
-                feature3: "Kubali malipo ya awali",
-                feature4: "Tuma ukumbusho"
+                body: "Mareservi ya haraka na wateja wa kuja moja kwa moja. Onyesha huduma na bei, jireservi miadi, tuma ukumbusho, na kubali malipo ya awali kiotomatiki.",
+                feature1: "Orodha ya huduma na bei",
+                feature2: "Mareservi ya haraka",
+                feature3: "Msaada wa wateja wa kuja moja kwa moja",
+                feature4: "Ukumbusho wa kiotomatiki"
             },
-            restaurant: {
-                heading: "Mkahawa na Kahawa",
-                body: "Chukua maagizo, mareservi, na malipo. Shiriki maalum ya kila siku na vitu vya menyu kiotomatiki.",
-                feature1: "Chukua maagizo",
-                feature2: "Mareservi ya meza",
-                feature3: "Kushiriki menyu",
-                feature4: "Kukusanya malipo"
+            clinic: {
+                heading: "Kliniki",
+                body: "Jenga uaminifu kwa miadi sahihi. Onyesha huduma, upatikanaji wa daktari, shughulikia maswali ya bima, na ongeza kwa wafanyakazi inapohitajika.",
+                feature1: "Upatikanaji wa daktari",
+                feature2: "Kujireservi miadi",
+                feature3: "Taarifa za bima",
+                feature4: "Kuongeza kwa wafanyakazi"
             },
-            service: {
-                heading: "Watoa Huduma",
-                body: "Kamata wateja wanaowezekana, ratibu wito wa huduma, na ulipwe mapema. Inafaa kwa wafundi wa bomba, waelektroniki, wafuaji, na wengineo.",
-                feature1: "Kamata wateja wanaowezekana",
-                feature2: "Ratibu wito",
-                feature3: "Kushiriki bei",
-                feature4: "Kukusanya malipo"
+            realestate: {
+                heading: "Wakala wa Mali za Isimu",
+                body: "Thibitisha wateja wanaowezekana kiotomatiki. Kamata maswali ya mali, bajeti, mapendeleo ya eneo, ratibu maonyesho, na wasilisha kwa wakala.",
+                feature1: "Uthibitishaji wa wateja wanaowezekana",
+                feature2: "Kukamata bajeti",
+                feature3: "Kuratibu maonyesho",
+                feature4: "Kuwasilisha kwa wakala"
             },
-            retail: {
-                heading: "Maduka ya Rejareja",
-                body: "Onyesha bidhaa, jibu maswali, na usindike maagizo. Inafaa kwa nguo, vifaa vya elektroniki, na maduka maalum.",
-                feature1: "Katalogi ya bidhaa",
-                feature2: "Usindikaji wa maagizo",
-                feature3: "Sasisho la hesabu",
-                feature4: "Uratibu wa uwasilishaji"
+            school: {
+                heading: "Shule",
+                body: "Punguza mzigo wa utawala. Jibu maswali ya uandikishaji, shiriki ada, mahitaji, tarehe muhimu, na ongeza maswali magumu.",
+                feature1: "Taarifa za uandikishaji",
+                feature2: "Ada na mahitaji",
+                feature3: "Tarehe muhimu",
+                feature4: "Maswali yaliyopangwa"
+            },
+            hotel: {
+                heading: "Hoteli",
+                body: "Badilisha maswali kuwa mareservi. Onyesha aina za vyumba na bei, angalia upatikanaji, shughulikia maombi ya mareservi, shiriki vifaa na maelekezo.",
+                feature1: "Aina za vyumba na bei",
+                feature2: "Swali la upatikanaji",
+                feature3: "Maombi ya mareservi",
+                feature4: "Vifaa na maelekezo"
+            },
+            church: {
+                heading: "Makanisa",
+                body: "Taarifa na ushiriki. Shiriki nyakati za ibada, matukio, idara, taarifa za kutoa, na fursa za kujisajili kama mtu wa kujitolea.",
+                feature1: "Nyakati za ibada",
+                feature2: "Matukio na idara",
+                feature3: "Taarifa za kutoa",
+                feature4: "Kujisajili kama mtu wa kujitolea"
             }
         },
         pricing: {
@@ -360,9 +394,11 @@ const translations = {
                 label: "Ni aina gani ya biashara? *",
                 default: "Chagua aina ya biashara yako",
                 salon: "Salon/Kinyozi",
-                restaurant: "Mkahawa/Kahawa",
-                service: "Mtoa Huduma",
-                retail: "Duka la Rejareja",
+                clinic: "Kliniki",
+                realestate: "Mali za Isimu",
+                school: "Shule",
+                hotel: "Hoteli",
+                church: "Kanisa",
                 other: "Nyingine"
             },
             email: {
