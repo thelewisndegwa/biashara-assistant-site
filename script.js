@@ -183,8 +183,11 @@ const translations = {
             message1: "Hi, do you have time for a haircut today?",
             message2: "Yes! We have slots at 2pm, 3pm, and 4pm. Which works for you?",
             message3: "3pm works. How much?",
-            message4: "KES 500. You can pay via M-Pesa. Tap here to pay:",
-            payButton: "Pay KES 500"
+            message4: "KES 500. Please pay via M-Pesa Buy Goods:",
+            paymentDetails: "Till Number: 123456",
+            message5: "Great! Your reservation is confirmed:",
+            reservationDetails: "📅 Date: Tomorrow at 3pm\n💇 Service: Haircut\n💰 Amount: KES 500",
+            message6: "⏰ Reminder: Your appointment is tomorrow at 3pm. See you then! 😊"
         },
         footer: {
             brand: "Biashara-Assistant",
@@ -389,8 +392,11 @@ const translations = {
             message1: "Hujambo, una muda wa kunyoa leo?",
             message2: "Ndio! Tuna nafasi saa 2 asubuhi, 3 asubuhi, na 4 asubuhi. Ipi inakufaa?",
             message3: "Saa 3 inanifaa. Ni kiasi gani?",
-            message4: "KES 500. Unaweza kulipa kupitia M-Pesa. Bofya hapa kulipa:",
-            payButton: "Lipa KES 500"
+            message4: "KES 500. Tafadhali lipa kupitia M-Pesa Buy Goods:",
+            paymentDetails: "Nambari ya Till: 123456",
+            message5: "Vizuri! Mareservi yako imethibitishwa:",
+            reservationDetails: "📅 Tarehe: Kesho saa 3 asubuhi\n💇 Huduma: Kunyoa\n💰 Kiasi: KES 500",
+            message6: "⏰ Ukumbusho: Miadi yako ni kesho saa 3 asubuhi. Tutaonana hapo! 😊"
         },
         footer: {
             brand: "Biashara-Assistant",
@@ -437,7 +443,15 @@ function setLanguage(lang) {
             if (element.tagName === 'OPTION') {
                 element.textContent = translation;
             } else {
-                element.textContent = translation;
+                // Check if element has white-space: pre-line style (for multi-line text)
+                const hasPreLine = element.style.whiteSpace === 'pre-line' || 
+                                   window.getComputedStyle(element).whiteSpace === 'pre-line';
+                if (hasPreLine) {
+                    // For pre-line elements, preserve \n characters
+                    element.textContent = translation;
+                } else {
+                    element.textContent = translation;
+                }
             }
         }
     });
@@ -775,8 +789,8 @@ document.addEventListener('DOMContentLoaded', function() {
         typingIndicator.classList.remove('active');
         
         let currentMessage = 0;
-        const messageDelays = [1000, 2000, 1500, 2000]; // Delay before each message appears
-        const typingDelays = [800, 1000, 800, 1000]; // How long typing indicator shows
+        const messageDelays = [1000, 2000, 1500, 2000, 2500, 3000]; // Delay before each message appears
+        const typingDelays = [800, 1000, 800, 1000, 1000, 1000]; // How long typing indicator shows
         
         function showNextMessage() {
             if (currentMessage >= messages.length) {
