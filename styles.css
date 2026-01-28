@@ -463,8 +463,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .message {
-    display: flex;
+    display: none;
     width: 100%;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
 }
 
 .message-incoming {
@@ -491,6 +494,65 @@ h1, h2, h3, h4, h5, h6 {
 .message-bubble.outgoing {
     background: #DCF8C6;
     border-bottom-right-radius: 4px;
+}
+
+@keyframes messageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Typing indicator */
+.typing-indicator {
+    display: none;
+    justify-content: flex-end;
+    padding: 8px 16px;
+    margin-top: 4px;
+}
+
+.typing-indicator.active {
+    display: flex;
+}
+
+.typing-dots {
+    display: flex;
+    gap: 4px;
+    background: #DCF8C6;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border-bottom-right-radius: 4px;
+}
+
+.typing-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #999;
+    animation: typingDot 1.4s infinite;
+}
+
+.typing-dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes typingDot {
+    0%, 60%, 100% {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+    30% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .mpesa-button {

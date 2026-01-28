@@ -752,4 +752,80 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
     document.head.appendChild(style);
+    
+    // ============================================
+    // Animated Chat Demo
+    // ============================================
+    
+    function animateChatDemo() {
+        const messages = document.querySelectorAll('.message[data-message]');
+        const typingIndicator = document.getElementById('typingIndicator');
+        const chatMessages = document.getElementById('chatMessages');
+        
+        if (!messages.length || !typingIndicator || !chatMessages) return;
+        
+        // Reset all messages to hidden
+        messages.forEach(msg => {
+            msg.style.opacity = '0';
+            msg.style.transform = 'translateY(10px)';
+            msg.style.display = 'none';
+        });
+        
+        // Clear chat and show typing indicator
+        typingIndicator.classList.remove('active');
+        
+        let currentMessage = 0;
+        const messageDelays = [1000, 2000, 1500, 2000]; // Delay before each message appears
+        const typingDelays = [800, 1000, 800, 1000]; // How long typing indicator shows
+        
+        function showNextMessage() {
+            if (currentMessage >= messages.length) {
+                // Restart animation after a delay
+                setTimeout(() => {
+                    animateChatDemo();
+                }, 3000);
+                return;
+            }
+            
+            const message = messages[currentMessage];
+            const isOutgoing = message.classList.contains('message-outgoing');
+            
+            // Show typing indicator for outgoing messages (bot responses)
+            if (isOutgoing) {
+                typingIndicator.classList.add('active');
+                setTimeout(() => {
+                    typingIndicator.classList.remove('active');
+                    // Show the message
+                    message.style.display = 'flex';
+                    setTimeout(() => {
+                        message.style.opacity = '1';
+                        message.style.transform = 'translateY(0)';
+                        // Scroll to bottom
+                        chatMessages.scrollTop = chatMessages.scrollHeight;
+                    }, 50);
+                    currentMessage++;
+                    setTimeout(showNextMessage, messageDelays[currentMessage - 1] || 2000);
+                }, typingDelays[currentMessage] || 1000);
+            } else {
+                // For incoming messages, show directly
+                message.style.display = 'flex';
+                setTimeout(() => {
+                    message.style.opacity = '1';
+                    message.style.transform = 'translateY(0)';
+                    // Scroll to bottom
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }, 50);
+                currentMessage++;
+                setTimeout(showNextMessage, messageDelays[currentMessage - 1] || 2000);
+            }
+        }
+        
+        // Start animation after initial delay
+        setTimeout(showNextMessage, 1000);
+    }
+    
+    // Start chat animation when page loads
+    setTimeout(() => {
+        animateChatDemo();
+    }, 500);
 });
