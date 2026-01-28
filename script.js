@@ -8,6 +8,7 @@ const translations = {
             title: "Your Smart WhatsApp Assistant for Business",
             subtitle: "Replies to customers, takes bookings, and accepts Mpesa — automatically.",
             cta: "Get Started",
+            whatsappButton: "Message us on WhatsApp",
             supporting: "Built for Kenyan businesses 🇰🇪"
         },
         why: {
@@ -78,10 +79,57 @@ const translations = {
             }
         },
         who: {
-            title: "Perfect for Kenyan Small Businesses"
+            title: "Perfect for Kenyan Small Businesses",
+            salon: {
+                heading: "Salons & Barbershops",
+                body: "Let customers book haircuts, treatments, and appointments. Show available time slots and accept deposits.",
+                feature1: "Book appointments",
+                feature2: "Show service menu",
+                feature3: "Accept deposits",
+                feature4: "Send reminders"
+            },
+            restaurant: {
+                heading: "Restaurants & Cafés",
+                body: "Take orders, reservations, and payments. Share daily specials and menu items automatically.",
+                feature1: "Take orders",
+                feature2: "Table reservations",
+                feature3: "Menu sharing",
+                feature4: "Payment collection"
+            },
+            service: {
+                heading: "Service Providers",
+                body: "Capture leads, schedule service calls, and get paid upfront. Perfect for plumbers, electricians, cleaners, and more.",
+                feature1: "Lead capture",
+                feature2: "Schedule calls",
+                feature3: "Quote sharing",
+                feature4: "Payment collection"
+            },
+            retail: {
+                heading: "Retail Shops",
+                body: "Showcase products, answer questions, and process orders. Great for clothing, electronics, and specialty stores.",
+                feature1: "Product catalog",
+                feature2: "Order processing",
+                feature3: "Inventory updates",
+                feature4: "Delivery coordination"
+            }
         },
         pricing: {
-            title: "Simple, Transparent Pricing"
+            title: "Simple, Transparent Pricing",
+            planName: "Starter Plan",
+            dealBadge: "Limited time deal: get Biashara-Assistant free",
+            subtext: "Perfect for small businesses getting started",
+            feature1: "✓ Unlimited customer messages",
+            feature2: "✓ Auto-reply to inquiries",
+            feature3: "✓ Booking system",
+            feature4: "✓ Lead capture",
+            feature5: "✓ M-Pesa payment integration",
+            feature6: "✓ Business hours management",
+            feature7: "✓ Basic analytics",
+            feature8: "✓ Email support",
+            ctaButton: "Start Free Trial",
+            trust1: "No credit card required",
+            trust2: "Cancel anytime",
+            trust3: "7-day free trial"
         },
         form: {
             title: "Get Started in 5 Minutes",
@@ -117,11 +165,17 @@ const translations = {
                 label: "Tell us about your business (optional)",
                 placeholder: "Any specific requirements or questions?"
             },
-            submit: "Start My Free Trial"
+            submit: "Start My Free Trial",
+            trustMessage: "🔒 Your information is secure. We'll never share your data.",
+            legalText: "By submitting, you agree to our",
+            termsLink: "Terms of Service",
+            and: "and",
+            privacyLink: "Privacy Policy"
         },
         cta: {
             title: "Ready to Grow Your Biashara?",
-            subtitle: "Join hundreds of Kenyan businesses using Biashara-Assistant to serve customers better."
+            subtitle: "Join hundreds of Kenyan businesses using Biashara-Assistant to serve customers better.",
+            button: "Start Free Trial Now"
         },
         chat: {
             contactName: "Mama Sarah's Salon",
@@ -160,6 +214,7 @@ const translations = {
             title: "Msaidizi Wako wa WhatsApp wa Kibiashara",
             subtitle: "Hujibu wateja, huchukua mareservi, na hukubali malipo ya M-Pesa — kiotomatiki.",
             cta: "Anza Sasa",
+            whatsappButton: "Tutumie ujumbe kwa WhatsApp",
             supporting: "Imeundwa kwa biashara za Kenya 🇰🇪"
         },
         why: {
@@ -230,10 +285,57 @@ const translations = {
             }
         },
         who: {
-            title: "Inafaa Kwa Biashara Ndogo za Kenya"
+            title: "Inafaa Kwa Biashara Ndogo za Kenya",
+            salon: {
+                heading: "Salon na Vibarberi",
+                body: "Wacha wateja wajireservi kunyoa, matibabu, na miadi. Onyesha nafasi zilizopo na kubali malipo ya awali.",
+                feature1: "Jireservi miadi",
+                feature2: "Onyesha orodha ya huduma",
+                feature3: "Kubali malipo ya awali",
+                feature4: "Tuma ukumbusho"
+            },
+            restaurant: {
+                heading: "Mkahawa na Kahawa",
+                body: "Chukua maagizo, mareservi, na malipo. Shiriki maalum ya kila siku na vitu vya menyu kiotomatiki.",
+                feature1: "Chukua maagizo",
+                feature2: "Mareservi ya meza",
+                feature3: "Kushiriki menyu",
+                feature4: "Kukusanya malipo"
+            },
+            service: {
+                heading: "Watoa Huduma",
+                body: "Kamata wateja wanaowezekana, ratibu wito wa huduma, na ulipwe mapema. Inafaa kwa wafundi wa bomba, waelektroniki, wafuaji, na wengineo.",
+                feature1: "Kamata wateja wanaowezekana",
+                feature2: "Ratibu wito",
+                feature3: "Kushiriki bei",
+                feature4: "Kukusanya malipo"
+            },
+            retail: {
+                heading: "Maduka ya Rejareja",
+                body: "Onyesha bidhaa, jibu maswali, na usindike maagizo. Inafaa kwa nguo, vifaa vya elektroniki, na maduka maalum.",
+                feature1: "Katalogi ya bidhaa",
+                feature2: "Usindikaji wa maagizo",
+                feature3: "Sasisho la hesabu",
+                feature4: "Uratibu wa uwasilishaji"
+            }
         },
         pricing: {
-            title: "Bei Rahisi na Wazi"
+            title: "Bei Rahisi na Wazi",
+            planName: "Mpango wa Kuanza",
+            dealBadge: "Pesa maalum ya muda: pata Biashara-Assistant bure",
+            subtext: "Inafaa kwa biashara ndogo zinazoanza",
+            feature1: "✓ Ujumbe usio na kikomo kutoka kwa wateja",
+            feature2: "✓ Jibu la kiotomatiki kwa maswali",
+            feature3: "✓ Mfumo wa mareservi",
+            feature4: "✓ Kukamata wateja wanaowezekana",
+            feature5: "✓ Ujumuishaji wa malipo ya M-Pesa",
+            feature6: "✓ Usimamizi wa masaa ya biashara",
+            feature7: "✓ Uchambuzi wa msingi",
+            feature8: "✓ Msaada wa barua pepe",
+            ctaButton: "Anza Jaribio Bure",
+            trust1: "Hakuna kadi ya mkopo inahitajika",
+            trust2: "Ghairi wakati wowote",
+            trust3: "Jaribio la siku 7 bure"
         },
         form: {
             title: "Anza kwa Dakika 5",
@@ -269,11 +371,17 @@ const translations = {
                 label: "Tuambie kuhusu biashara yako (si lazima)",
                 placeholder: "Mahitaji yoyote maalum au maswali?"
             },
-            submit: "Anza Jaribio Bure"
+            submit: "Anza Jaribio Bure",
+            trustMessage: "🔒 Taarifa zako ziko salama. Hatutawahi kushiriki data yako.",
+            legalText: "Kwa kuwasilisha, unakubali",
+            termsLink: "Sheria za Huduma",
+            and: "na",
+            privacyLink: "Sera ya Faragha"
         },
         cta: {
             title: "Tayari Kukuza Biashara Yako?",
-            subtitle: "Jiunge na mamia ya biashara za Kenya zinazotumia Biashara-Assistant kuwahudumia wateja vyema zaidi."
+            subtitle: "Jiunge na mamia ya biashara za Kenya zinazotumia Biashara-Assistant kuwahudumia wateja vyema zaidi.",
+            button: "Anza Jaribio Bure Sasa"
         },
         chat: {
             contactName: "Salon ya Mama Sarah",
@@ -325,7 +433,12 @@ function setLanguage(lang) {
         const key = element.getAttribute('data-i18n');
         const translation = getTranslation(key, lang);
         if (translation) {
-            element.textContent = translation;
+            // Handle select options differently
+            if (element.tagName === 'OPTION') {
+                element.textContent = translation;
+            } else {
+                element.textContent = translation;
+            }
         }
     });
     
