@@ -869,14 +869,41 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pricing-amount {
-    font-size: 36px;
-    font-weight: 700;
-    color: var(--primary-green);
     margin-bottom: var(--spacing-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
 }
 
 @media (min-width: 768px) {
     .pricing-amount {
+        gap: 6px;
+    }
+}
+
+.pricing-amount-row {
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.price-original,
+.price-previous {
+    font-size: 16px;
+    color: var(--text-muted);
+    text-decoration: line-through;
+}
+
+.price-current {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primary-green);
+}
+
+@media (min-width: 768px) {
+    .price-current {
         font-size: 48px;
     }
 }
@@ -890,6 +917,17 @@ h1, h2, h3, h4, h5, h6 {
 .pricing-subtext {
     color: var(--text-secondary);
     margin-bottom: var(--spacing-lg);
+}
+
+.pricing-deal-badge {
+    display: inline-block;
+    margin-bottom: var(--spacing-sm);
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: #ECFDF5;
+    color: var(--success);
+    font-size: 13px;
+    font-weight: 600;
 }
 
 .pricing-features {
