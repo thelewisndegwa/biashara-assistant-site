@@ -390,8 +390,10 @@ h1, h2, h3, h4, h5, h6 {
 .hero-illustration {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 14px;
 }
 
 /* Industry demo tabs (hero chat) */
@@ -400,7 +402,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     gap: 8px;
     justify-content: center;
-    margin-bottom: 14px;
+    margin-top: 6px;
     max-width: 420px;
 }
 
@@ -433,6 +435,39 @@ h1, h2, h3, h4, h5, h6 {
 .industry-pill:focus-visible {
     outline: 2px solid var(--primary-green);
     outline-offset: 2px;
+}
+
+/* Mobile: keep tabs in one clean scroll row */
+@media (max-width: 768px) {
+    .industry-tabs {
+        max-width: 320px; /* align with phone mockup */
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        justify-content: flex-start;
+        padding: 2px 6px;
+        margin-bottom: 12px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+    }
+
+    .industry-tabs::-webkit-scrollbar {
+        display: none; /* Chrome/Safari */
+    }
+
+    .industry-pill {
+        flex: 0 0 auto;
+        padding: 9px 12px;
+        min-height: 36px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .industry-pill {
+        font-size: 11px;
+        padding: 9px 10px;
+    }
 }
 
 .phone-mockup {
@@ -618,6 +653,7 @@ h1, h2, h3, h4, h5, h6 {
     right: -20px;
     animation: float 3s ease-in-out infinite;
     z-index: 3;
+    pointer-events: none;
 }
 
 @keyframes float {
@@ -626,6 +662,21 @@ h1, h2, h3, h4, h5, h6 {
     }
     50% {
         transform: translateY(-20px);
+    }
+}
+
+@media (max-width: 768px) {
+    /* Keep it inside the phone so it doesn't overlap the CTA above */
+    .floating-whatsapp-icon {
+        top: 10px;
+        right: 10px;
+        z-index: 3;
+        opacity: 0.95;
+    }
+
+    .floating-whatsapp-icon svg {
+        width: 44px;
+        height: 44px;
     }
 }
 
