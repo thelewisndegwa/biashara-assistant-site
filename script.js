@@ -268,6 +268,16 @@ const translations = {
                 m6: "Here it is. Would you like to join a department or volunteer?"
             }
         },
+        nav: {
+            home: "Home",
+            blog: "Blog",
+            why: "Why",
+            how: "How",
+            features: "Features",
+            who: "Who",
+            pricing: "Pricing",
+            getStarted: "Get Started"
+        },
         footer: {
             brand: "Biashara-Assistant",
             tagline: "Your WhatsApp business assistant",
@@ -556,6 +566,16 @@ const translations = {
                 m6: "Hii hapa. Ungependa kujiunga idara au kujitolea?"
             }
         },
+        nav: {
+            home: "Nyumbani",
+            blog: "Blogu",
+            why: "Kwa Nini",
+            how: "Jinsi",
+            features: "Vipengele",
+            who: "Kwa Nani",
+            pricing: "Bei",
+            getStarted: "Anza"
+        },
         footer: {
             brand: "Biashara-Assistant",
             tagline: "Msaidizi wako wa WhatsApp wa biashara",
@@ -661,29 +681,45 @@ document.addEventListener('DOMContentLoaded', function() {
             setLanguage(newLang);
         });
     }
+
+    // Top nav mobile menu toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (navToggle && navLinks) {
+        navToggle.addEventListener('click', function() {
+            const isOpen = navLinks.classList.toggle('is-open');
+            navToggle.setAttribute('aria-expanded', isOpen);
+        });
+    }
+
+    function closeMobileNav() {
+        if (navLinks) navLinks.classList.remove('is-open');
+        if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
+    }
+
     // Handle smooth scrolling for anchor links
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
-    
+    const fixedNavOffset = document.getElementById('topNav') ? 56 : 0;
+
     anchorLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
-            
+
             // Skip if it's just "#"
             if (href === '#' || href === '#!') {
                 e.preventDefault();
                 return;
             }
-            
+
             const targetId = href.substring(1);
             const targetElement = document.getElementById(targetId);
-            
+
             if (targetElement) {
                 e.preventDefault();
-                
-                // Calculate offset for fixed headers if needed
-                const offset = 0;
-                const targetPosition = targetElement.offsetTop - offset;
-                
+                closeMobileNav();
+
+                const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - fixedNavOffset;
+
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
