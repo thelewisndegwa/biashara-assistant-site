@@ -26,6 +26,30 @@ const translations = {
                 body: "Accept M-Pesa payments directly through WhatsApp. No need to share numbers or wait for confirmations—payments happen in the chat."
             }
         },
+        customerService: {
+            title: "High-Class Customer Service—Automatically",
+            subtitle: "We help you deliver a premium experience so every customer feels taken care of, even when you're busy.",
+            card1: {
+                title: "Instant Response, 24/7",
+                body: "Customers get a reply right away—no waiting or \"we'll get back to you.\" It feels like a business that's always there for them."
+            },
+            card2: {
+                title: "Consistent & Professional",
+                body: "Accurate info every time—services, prices, hours, location. No mixed messages. That consistency is what people expect from a premium experience."
+            },
+            card3: {
+                title: "Seamless Booking & Payment",
+                body: "Book and pay via M-Pesa in the same chat. No calling around or chasing confirmations. Smooth and simple feels premium."
+            },
+            card4: {
+                title: "No Dropped Leads",
+                body: "Every inquiry is answered and captured. No one left on \"read.\" High-class service means nobody falls through the cracks."
+            },
+            card5: {
+                title: "Your Brand, Your Way",
+                body: "You set your hours, services, and tone. The assistant represents your business so every reply feels like your front desk."
+            }
+        },
         how: {
             title: "How It Works",
             step1: {
@@ -272,6 +296,7 @@ const translations = {
             home: "Home",
             blog: "Blog",
             why: "Why",
+            customerService: "Customer Service",
             how: "How",
             features: "Features",
             who: "Who",
@@ -322,6 +347,30 @@ const translations = {
             card3: {
                 title: "Lipwa Haraka Zaidi",
                 body: "Kubali malipo ya M-Pesa moja kwa moja kupitia WhatsApp. Hakuna haja ya kushiriki nambari au kusubiri uthibitisho—malipo hufanyika kwenye mazungumzo."
+            }
+        },
+        customerService: {
+            title: "Huduma ya Wateja ya Hali ya Juu—Kiotomatiki",
+            subtitle: "Tunakusaidia kutoa uzoefu wa hali ya juu ili kila mteja ajisikie anaitunzwa, hata unapokuwa bize.",
+            card1: {
+                title: "Jibu la Haraka, Masaa 24",
+                body: "Wateja wanapata jibu mara moja—hakuna kusubiri au \"tutarudi.\" Inajisikia kama biashara iliyo daima hapa kwao."
+            },
+            card2: {
+                title: "Thabiti na ya Kiprofesheni",
+                body: "Taarifa sahihi kila wakati—huduma, bei, masaa, eneo. Hakuna ujumbe uliochanganyika. Uthabiti huo ndio unaotarajiwa na watu kutoka uzoefu wa hali ya juu."
+            },
+            card3: {
+                title: "Kujireservi na Malipo Rahisi",
+                body: "Jireservi na ulipe kupitia M-Pesa kwenye mazungumzo yale yale. Hakuna kupiga simu au kufuatilia uthibitisho. Uwazi na urahisi unajisikia wa hali ya juu."
+            },
+            card4: {
+                title: "Hakuna Wateja Waliopotea",
+                body: "Kila swali linajibiwa na kukamatwa. Hakuna aliyeachwa \"imesomwa.\" Huduma ya hali ya juu inamaanisha hakuna anayepotea."
+            },
+            card5: {
+                title: "Chapa Yako, Njia Yako",
+                body: "Wewe unaweka masaa yako, huduma, na lugha. Msaidizi anawakilishi biashara yako ili kila jibu lijisikie kama ofisi yako ya mbele."
             }
         },
         how: {
@@ -570,6 +619,7 @@ const translations = {
             home: "Nyumbani",
             blog: "Blogu",
             why: "Kwa Nini",
+            customerService: "Huduma ya Wateja",
             how: "Jinsi",
             features: "Vipengele",
             who: "Kwa Nani",

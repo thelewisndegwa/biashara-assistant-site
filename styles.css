@@ -401,9 +401,23 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
+.section-subheading {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-xl);
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    font-size: 1.0625rem;
+}
+
 @media (min-width: 768px) {
     .section-heading {
         font-size: var(--font-size-section-desktop);
+    }
+    .section-subheading {
+        font-size: 1.125rem;
     }
 }
 
@@ -896,6 +910,10 @@ h1, h2, h3, h4, h5, h6 {
 .why-section {
     padding: var(--spacing-xl) 0;
     background-color: var(--bg-light);
+}
+
+.customer-service-section {
+    background-color: var(--bg-white);
 }
 
 @media (min-width: 768px) {
