@@ -168,7 +168,7 @@ const translations = {
             ctaButton: "Start Free Trial",
             trust1: "No credit card required",
             trust2: "Cancel anytime",
-            trust3: "7-day free trial"
+            trust3: "14-day free trial"
         },
         form: {
             title: "Get Started in 5 Minutes",
@@ -491,7 +491,7 @@ const translations = {
             ctaButton: "Anza Jaribio Bure",
             trust1: "Hakuna kadi ya mkopo inahitajika",
             trust2: "Ghairi wakati wowote",
-            trust3: "Jaribio la siku 7 bure"
+            trust3: "Jaribio la siku 14 bure"
         },
         form: {
             title: "Anza kwa Dakika 5",
@@ -779,8 +779,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // ============================================
-    // Form Handling (Frontend Only)
+    // Form Handling (Google Sheets waitlist + WhatsApp)
     // ============================================
+    
+    // Replace with your Apps Script Web App URL after deploying (see instructions in comments)
+    const WAITLIST_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx56O2PaGNawCA6CtIWHX2wxGN-_fKdEAzla8weHbt2ttlnTMf8R6kSGOlGC3bLcTey/exec';
     
     const signupForm = document.getElementById('signupForm');
     
@@ -788,17 +791,22 @@ document.addEventListener('DOMContentLoaded', function() {
         signupForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Get form data
             const formData = new FormData(this);
             const data = Object.fromEntries(formData);
             
-            // Basic validation
             if (!validateForm(data)) {
                 return;
             }
 
-            // Send details to WhatsApp
-            const whatsappNumber = '16086081288'; // International format without +
+            // 1. Send to Google Sheets waitlist (form POST to hidden iframe)
+            if (WAITLIST_SCRIPT_URL && WAITLIST_SCRIPT_URL !== 'YOUR_APPS_SCRIPT_WEB_APP_URL') {
+                this.action = WAITLIST_SCRIPT_URL;
+                this.target = 'waitlistFrame';
+                this.submit();
+            }
+
+            // 2. Open WhatsApp with pre-filled message
+            const whatsappNumber = '16086081288';
             const messageLines = [
                 'New Biashara-Assistant signup request:',
                 `Business Name: ${data.businessName || ''}`,
@@ -812,11 +820,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const whatsappText = messageLines.join('\n');
             const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`;
             window.open(whatsappUrl, '_blank');
-            
-            // Show success message (since there's no backend)
+
             showFormSuccess();
-            
-            // Reset form
             this.reset();
         });
     }
