@@ -821,11 +821,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // ============================================
-    // Form Handling (Google Sheets waitlist + WhatsApp)
+    // Form Handling (WhatsApp)
     // ============================================
-    
-    // Replace with your Apps Script Web App URL after deploying (see instructions in comments)
-    const WAITLIST_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxMEVMxhIyRVcxNxl7SFbRzPNFOxGrDEcNL3qADfplu3iSU6gIJfIz9WPOHcnd_d9RX/exec';
     
     const signupForm = document.getElementById('signupForm');
     
@@ -840,14 +837,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            // 1. Send to Google Sheets waitlist (form POST to hidden iframe)
-            if (WAITLIST_SCRIPT_URL && WAITLIST_SCRIPT_URL !== 'YOUR_APPS_SCRIPT_WEB_APP_URL') {
-                this.action = WAITLIST_SCRIPT_URL;
-                this.target = 'waitlistFrame';
-                this.submit();
-            }
-
-            // 2. Open WhatsApp with pre-filled message
+            // Open WhatsApp with pre-filled message
             const whatsappNumber = '16086081288';
             const messageLines = [
                 'New Biashara-Assistant signup request:',
