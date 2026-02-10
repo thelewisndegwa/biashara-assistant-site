@@ -825,7 +825,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ============================================
     
     // Replace with your Apps Script Web App URL after deploying (see instructions in comments)
-    const WAITLIST_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx56O2PaGNawCA6CtIWHX2wxGN-_fKdEAzla8weHbt2ttlnTMf8R6kSGOlGC3bLcTey/exec';
+    const WAITLIST_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxMEVMxhIyRVcxNxl7SFbRzPNFOxGrDEcNL3qADfplu3iSU6gIJfIz9WPOHcnd_d9RX/exec';
     
     const signupForm = document.getElementById('signupForm');
     
