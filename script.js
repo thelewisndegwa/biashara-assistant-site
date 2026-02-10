@@ -219,6 +219,7 @@ const translations = {
             button: "Start Free Trial Now"
         },
         chatDemoTabs: {
+            label: "See example for",
             salon: "Salon",
             clinic: "Clinic",
             realestate: "Real Estate",
@@ -541,6 +542,7 @@ const translations = {
             button: "Anza Jaribio Bure Sasa"
         },
         chatDemoTabs: {
+            label: "Ona mfano kwa",
             salon: "Salon",
             clinic: "Kliniki",
             realestate: "Mali",
@@ -1073,12 +1075,9 @@ document.addEventListener('DOMContentLoaded', function() {
     let userStoppedAutoRotate = false;
     let chatAnimationRunId = 0;
 
-    function setActiveIndustryPill(industry) {
-        document.querySelectorAll('.industry-pill').forEach(btn => {
-            const isActive = btn.getAttribute('data-industry') === industry;
-            btn.classList.toggle('active', isActive);
-            btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
-        });
+    function setActiveIndustrySelect(industry) {
+        const select = document.getElementById('industrySelect');
+        if (select) select.value = industry;
     }
 
     function clearChatMessages(chatMessages, typingIndicator) {
@@ -1101,7 +1100,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!chatMessages || !typingIndicator || !contactNameEl || !contactStatusEl) return;
 
         currentChatIndustry = industry;
-        setActiveIndustryPill(industry);
+        setActiveIndustrySelect(industry);
 
         // Reset typing indicator
         typingIndicator.classList.remove('active');
@@ -1254,15 +1253,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 12000);
     }
 
-    // Hook up tab clicks
-    document.querySelectorAll('.industry-pill').forEach(btn => {
-        btn.addEventListener('click', () => {
+    // Hook up industry dropdown
+    const industrySelect = document.getElementById('industrySelect');
+    if (industrySelect) {
+        industrySelect.addEventListener('change', () => {
             userStoppedAutoRotate = true;
             stopAutoRotate();
-            const industry = btn.getAttribute('data-industry') || 'salon';
+            const industry = industrySelect.value || 'salon';
             renderChatDemo(industry);
         });
-    });
+    }
 
     // Initial render + animation + auto-rotate
     renderChatDemo('salon');
