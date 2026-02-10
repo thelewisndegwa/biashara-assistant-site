@@ -27,7 +27,7 @@ const translations = {
             }
         },
         customerService: {
-            title: "High-Class Customer Service—Automatically",
+            title: "Premium Customer Service",
             subtitle: "We help you deliver a premium experience so every customer feels taken care of, even when you're busy.",
             card1: {
                 title: "Instant Response, 24/7",
@@ -350,7 +350,7 @@ const translations = {
             }
         },
         customerService: {
-            title: "Huduma ya Wateja ya Hali ya Juu—Kiotomatiki",
+            title: "Huduma ya Wateja Bora",
             subtitle: "Tunakusaidia kutoa uzoefu wa hali ya juu ili kila mteja ajisikie anaitunzwa, hata unapokuwa bize.",
             card1: {
                 title: "Jibu la Haraka, Masaa 24",
