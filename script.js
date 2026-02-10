@@ -105,7 +105,7 @@ const translations = {
         who: {
             title: "Perfect for Kenyan Small Businesses",
             salon: {
-                heading: "Salons & Barbershops",
+                heading: "Salon / Barber / Spa",
                 body: "Fast bookings and walk-ins. Show services & prices, book appointments, send reminders, and accept deposits automatically.",
                 feature1: "Service menu & prices",
                 feature2: "Instant bookings",
@@ -151,6 +151,14 @@ const translations = {
                 feature2: "Events & departments",
                 feature3: "Giving information",
                 feature4: "Volunteer signup"
+            },
+            ecommerce: {
+                heading: "E-commerce",
+                body: "Sell online without a website. Share your catalog, take orders, collect M-Pesa payments, and update customers on delivery—all via WhatsApp.",
+                feature1: "Product catalog",
+                feature2: "Order taking",
+                feature3: "M-Pesa payments",
+                feature4: "Delivery updates"
             }
         },
         pricing: {
@@ -189,12 +197,13 @@ const translations = {
             businessType: {
                 label: "What type of business? *",
                 default: "Select your business type",
-                salon: "Salon/Barbershop",
+                salon: "Salon / Barber / Spa",
                 clinic: "Clinic",
                 realestate: "Real Estate",
                 school: "School",
                 hotel: "Hotel",
                 church: "Church",
+                ecommerce: "E-commerce",
                 other: "Other"
             },
             email: {
@@ -220,12 +229,13 @@ const translations = {
         },
         chatDemoTabs: {
             label: "See example for",
-            salon: "Salon",
+            salon: "Salon / Barber / Spa",
             clinic: "Clinic",
             realestate: "Real Estate",
             school: "School",
             hotel: "Hotel",
-            church: "Church"
+            church: "Church",
+            ecommerce: "E-commerce"
         },
         chatDemo: {
             salon: {
@@ -290,6 +300,17 @@ const translations = {
                 m4: "Youth fellowship: Sat 3pm. Want the weekly schedule?",
                 m5: "Yes.",
                 m6: "Here it is. Would you like to join a department or volunteer?"
+            },
+            ecommerce: {
+                contactName: "Shop Kenya",
+                status: "online",
+                m1: "Do you have the blue dress in size M?",
+                m2: "Yes—KES 2,500. Pay via M-Pesa Buy Goods:",
+                pay: "Till Number: 123456",
+                m3: "Paid. Do you deliver?",
+                m4: "Yes. Nairobi free. Outside Nairobi + KES 200. Share your location.",
+                m5: "Westlands.",
+                m6: "Order confirmed. We'll dispatch today. You'll get a tracking update."
             }
         },
         nav: {
@@ -428,7 +449,7 @@ const translations = {
         who: {
             title: "Inafaa Kwa Biashara Ndogo za Kenya",
             salon: {
-                heading: "Salon na Vibarberi",
+                heading: "Salon / Kinyozi / Spa",
                 body: "Mareservi ya haraka na wateja wa kuja moja kwa moja. Onyesha huduma na bei, jireservi miadi, tuma ukumbusho, na kubali malipo ya awali kiotomatiki.",
                 feature1: "Orodha ya huduma na bei",
                 feature2: "Mareservi ya haraka",
@@ -474,6 +495,14 @@ const translations = {
                 feature2: "Matukio na idara",
                 feature3: "Taarifa za kutoa",
                 feature4: "Kujisajili kama mtu wa kujitolea"
+            },
+            ecommerce: {
+                heading: "Biashara ya Mtandao",
+                body: "Uza mtandaoni bila tovuti. Shiriki katalogi, pokea maagizo, kusanya malipo ya M-Pesa, na wasilisha wateja kuhusu usafirishaji—yote kupitia WhatsApp.",
+                feature1: "Katalogi ya bidhaa",
+                feature2: "Kupokea maagizo",
+                feature3: "Malipo ya M-Pesa",
+                feature4: "Taarifa za usafirishaji"
             }
         },
         pricing: {
@@ -512,12 +541,13 @@ const translations = {
             businessType: {
                 label: "Ni aina gani ya biashara? *",
                 default: "Chagua aina ya biashara yako",
-                salon: "Salon/Kinyozi",
+                salon: "Salon / Kinyozi / Spa",
                 clinic: "Kliniki",
                 realestate: "Mali za Isimu",
                 school: "Shule",
                 hotel: "Hoteli",
                 church: "Kanisa",
+                ecommerce: "Biashara ya Mtandao",
                 other: "Nyingine"
             },
             email: {
@@ -543,12 +573,13 @@ const translations = {
         },
         chatDemoTabs: {
             label: "Ona mfano kwa",
-            salon: "Salon",
+            salon: "Salon / Kinyozi / Spa",
             clinic: "Kliniki",
             realestate: "Mali",
             school: "Shule",
             hotel: "Hoteli",
-            church: "Kanisa"
+            church: "Kanisa",
+            ecommerce: "Biashara ya Mtandao"
         },
         chatDemo: {
             salon: {
@@ -613,6 +644,17 @@ const translations = {
                 m4: "Youth fellowship: Jumamosi 3pm. Unataka ratiba ya wiki?",
                 m5: "Ndiyo.",
                 m6: "Hii hapa. Ungependa kujiunga idara au kujitolea?"
+            },
+            ecommerce: {
+                contactName: "Shop Kenya",
+                status: "huko mtandaoni",
+                m1: "Mna vazi la blau la saizi M?",
+                m2: "Ndiyo—KES 2,500. Lipa kwa M-Pesa Buy Goods:",
+                pay: "Nambari ya Till: 123456",
+                m3: "Nimalipa. Mnawasilisha?",
+                m4: "Ndiyo. Nairobi bure. Nje ya Nairobi + KES 200. Tuma eneo lako.",
+                m5: "Westlands.",
+                m6: "Order imethibitishwa. Tutatuma leo. Utapata taarifa ya usafirishaji."
             }
         },
         nav: {
@@ -1020,7 +1062,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Animated Chat Demo
     // ============================================
 
-    const CHAT_INDUSTRIES = ['salon', 'clinic', 'realestate', 'school', 'hotel', 'church'];
+    const CHAT_INDUSTRIES = ['salon', 'clinic', 'realestate', 'school', 'hotel', 'church', 'ecommerce'];
 
     // Defines bubble structure per industry (keys live under translations.{lang}.chatDemo.<industry>.*)
     const CHAT_DEMO_STRUCTURE = {
@@ -1068,6 +1110,14 @@ document.addEventListener('DOMContentLoaded', function() {
         church: [
             { dir: 'in', keys: ['m1'] },
             { dir: 'out', keys: ['m2'] },
+            { dir: 'in', keys: ['m3'] },
+            { dir: 'out', keys: ['m4'] },
+            { dir: 'in', keys: ['m5'] },
+            { dir: 'out', keys: ['m6'] },
+        ],
+        ecommerce: [
+            { dir: 'in', keys: ['m1'] },
+            { dir: 'out', keys: ['m2', 'pay'], prelineKeys: ['pay'] },
             { dir: 'in', keys: ['m3'] },
             { dir: 'out', keys: ['m4'] },
             { dir: 'in', keys: ['m5'] },
