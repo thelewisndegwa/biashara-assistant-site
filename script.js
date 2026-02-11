@@ -6,7 +6,7 @@ const translations = {
     en: {
         hero: {
             title: "The AI-Powered Front Desk Your Business Deserves",
-            subtitle: "Give your customers a 5-star WhatsApp experience — instant replies, seamless bookings, and M-Pesa payments, 24/7. No extra staff needed.",
+            subtitle: "Give your customers a 5-star WhatsApp experience — instant replies in English and Swahili, seamless bookings, and M-Pesa payments, 24/7. No extra staff needed.",
             cta: "Get Started",
             whatsappButton: "Message us on WhatsApp",
             supporting: "Trusted by businesses across Kenya 🇰🇪"
@@ -106,10 +106,11 @@ const translations = {
             dealBadge: "Limited offer: try Biashara-Assistant free",
             subtext: "Everything you need to deliver world-class service",
             feature2: "✓ Auto-reply to inquiries",
-            feature3: "✓ Booking system",
-            feature4: "✓ M-Pesa payment integration",
-            feature5: "✓ Basic analytics",
-            feature6: "✓ Email support",
+            feature3: "✓ Bilingual support (English & Swahili)",
+            feature4: "✓ Booking system",
+            feature5: "✓ M-Pesa payment integration",
+            feature6: "✓ Basic analytics",
+            feature7: "✓ Email support",
             ctaButton: "Start Free Trial",
             trust1: "No credit card required",
             trust2: "Cancel anytime",
@@ -259,7 +260,7 @@ const translations = {
     sw: {
         hero: {
             title: "Ofisi ya Mbele ya AI Ambayo Biashara Yako Inastahili",
-            subtitle: "Wape wateja wako uzoefu wa nyota 5 kwenye WhatsApp — majibu ya haraka, mareservi rahisi, na malipo ya M-Pesa, masaa 24. Bila wafanyakazi wa ziada.",
+            subtitle: "Wape wateja wako uzoefu wa nyota 5 kwenye WhatsApp — majibu ya haraka kwa Kiingereza na Kiswahili, mareservi rahisi, na malipo ya M-Pesa, masaa 24. Bila wafanyakazi wa ziada.",
             cta: "Anza Sasa",
             whatsappButton: "Tutumie ujumbe kwa WhatsApp",
             supporting: "Inaaminika na biashara kote Kenya 🇰🇪"
@@ -359,10 +360,11 @@ const translations = {
             dealBadge: "Ofa ya muda: jaribu Biashara-Assistant bure",
             subtext: "Kila kitu unachohitaji kutoa huduma ya kiwango cha juu",
             feature2: "✓ Jibu la kiotomatiki kwa maswali",
-            feature3: "✓ Mfumo wa mareservi",
-            feature4: "✓ Ujumuishaji wa malipo ya M-Pesa",
-            feature5: "✓ Uchambuzi wa msingi",
-            feature6: "✓ Msaada wa barua pepe",
+            feature3: "✓ Msaada wa lugha mbili (Kiingereza na Kiswahili)",
+            feature4: "✓ Mfumo wa mareservi",
+            feature5: "✓ Ujumuishaji wa malipo ya M-Pesa",
+            feature6: "✓ Uchambuzi wa msingi",
+            feature7: "✓ Msaada wa barua pepe",
             ctaButton: "Anza Jaribio Bure",
             trust1: "Hakuna kadi ya mkopo inahitajika",
             trust2: "Ghairi wakati wowote",
