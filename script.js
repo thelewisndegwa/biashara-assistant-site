@@ -870,7 +870,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Animated Chat Demo
     // ============================================
 
-    const CHAT_INDUSTRIES = ['barber', 'spa', 'clinic', 'realestate', 'hotel'];
+    const CHAT_INDUSTRIES = ['hotel', 'realestate', 'spa', 'clinic', 'barber'];
 
     // Defines bubble structure per industry (keys live under translations.{lang}.chatDemo.<industry>.*)
     const CHAT_DEMO_STRUCTURE = {
@@ -917,7 +917,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ],
         };
 
-    let currentChatIndustry = 'barber';
+    let currentChatIndustry = 'hotel';
     let chatAutoRotateTimer = null;
     let userStoppedAutoRotate = false;
     let chatAnimationRunId = 0;
@@ -1112,7 +1112,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Initial render + animation + auto-rotate
-    renderChatDemo('barber');
+    renderChatDemo('hotel');
     startAutoRotate();
 
     // ============================================
