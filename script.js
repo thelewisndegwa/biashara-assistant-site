@@ -5,49 +5,41 @@
 const translations = {
     en: {
         hero: {
-            title: "Your Smart WhatsApp Assistant for Business",
-            subtitle: "Turns your WhatsApp into a 24/7 premium front desk — instantly answering customers, booking services, and collecting M-Pesa payments without extra staff.",
+            title: "The AI-Powered Front Desk Your Business Deserves",
+            subtitle: "Give your customers a 5-star WhatsApp experience — instant replies, seamless bookings, and M-Pesa payments, 24/7. No extra staff needed.",
             cta: "Get Started",
             whatsappButton: "Message us on WhatsApp",
-            supporting: "Built for Kenyan businesses 🇰🇪"
+            supporting: "Trusted by businesses across Kenya 🇰🇪"
         },
         why: {
-            title: "Why Choose Biashara-Assistant?",
+            title: "Why Leading Businesses Choose Us",
             card1: {
-                title: "Save Hours Every Day",
-                body: "Stop manually replying to every message. Biashara-Assistant handles customer inquiries 24/7, so you can focus on growing your business."
+                title: "Reclaim Your Team's Time",
+                body: "Free your staff from repetitive inquiries. Biashara-Assistant handles customer questions around the clock so your team can focus on high-value work."
             },
             card2: {
-                title: "Never Miss a Customer",
-                body: "Instant replies mean customers get answers immediately, even when you're busy. Turn every inquiry into a sale."
+                title: "Convert Every Inquiry",
+                body: "Instant, professional replies mean no customer is left waiting. Faster responses directly translate to higher conversion rates and more revenue."
             },
             card3: {
-                title: "Get Paid Faster",
-                body: "Accept M-Pesa payments directly through WhatsApp. No need to share numbers or wait for confirmations—payments happen in the chat."
+                title: "Seamless M-Pesa Collection",
+                body: "Accept payments directly in the conversation. No friction, no follow-ups — customers pay via M-Pesa without ever leaving the chat."
             }
         },
         customerService: {
-            title: "Premium Customer Service",
-            subtitle: "We help you deliver a premium experience so every customer feels taken care of, even when you're busy.",
+            title: "Deliver a 5-Star Experience",
+            subtitle: "Your customers expect fast, professional service. We make sure every interaction reflects the quality of your brand.",
             card1: {
                 title: "Instant Response, 24/7",
-                body: "Customers get a reply right away—no waiting or \"we'll get back to you.\" It feels like a business that's always there for them."
+                body: "Every customer gets an immediate, professional reply — day or night. No voicemail, no \"we'll get back to you.\" Just premium responsiveness."
             },
             card2: {
-                title: "Consistent & Professional",
-                body: "Accurate info every time—services, prices, hours, location. No mixed messages. That consistency is what people expect from a premium experience."
+                title: "Consistent & On-Brand",
+                body: "Accurate services, pricing, hours, and location — every time. No mixed messages. The consistency your reputation depends on."
             },
             card3: {
-                title: "Seamless Booking & Payment",
-                body: "Book and pay via M-Pesa in the same chat. No calling around or chasing confirmations. Smooth and simple feels premium."
-            },
-            card4: {
-                title: "No Dropped Leads",
-                body: "Every inquiry is answered and captured. No one left on \"read.\" High-class service means nobody falls through the cracks."
-            },
-            card5: {
-                title: "Your Brand, Your Way",
-                body: "You set your hours, services, and tone. The assistant represents your business so every reply feels like your front desk."
+                title: "Zero Missed Opportunities",
+                body: "Every inquiry is answered and captured automatically. No leads slip through the cracks, no customers left on \"read.\""
             }
         },
         how: {
@@ -61,56 +53,27 @@ const translations = {
                 body: "Link your business WhatsApp number. We'll guide you through the simple setup process."
             },
             step3: {
-                title: "Customize Your Bot",
-                body: "Set your business hours, services, prices, and payment options. Make it yours."
-            },
-            step4: {
-                title: "Start Receiving Customers",
-                body: "Your bot is live! Customers can now book, ask questions, and pay—all automatically."
-            }
-        },
-        features: {
-            title: "Everything You Need to Run Your Business",
-            card1: {
-                badge: "24/7 Available",
-                heading: "Smart Auto-Reply",
-                body: "Automatically answer common questions about your services, hours, and location."
-            },
-            card2: {
-                badge: "Instant Notifications",
-                heading: "Easy Bookings",
-                body: "Customers can book appointments or services directly through WhatsApp. You get instant notifications."
-            },
-            card3: {
-                badge: "Auto-Saved",
-                heading: "Capture Every Lead",
-                body: "Automatically collect customer names, phone numbers, and inquiry details. Never lose a potential sale."
-            },
-            card4: {
-                badge: "Secure",
-                heading: "M-Pesa Payments",
-                body: "Accept payments directly in the chat. Customers pay via M-Pesa without leaving WhatsApp."
-            },
-            card5: {
-                badge: "Customizable",
-                heading: "Smart Scheduling",
-                body: "Set your business hours. The bot automatically tells customers when you're available."
-            },
-            card6: {
-                badge: "Insights",
-                heading: "Track Your Growth",
-                body: "See how many customers you're reaching, bookings made, and payments received—all in one place."
+                title: "Deliver Premium Service",
+                body: "You're live. Every customer now gets instant, professional responses — bookings, answers, and payments handled automatically."
             }
         },
         who: {
-            title: "Perfect for Kenyan Small Businesses",
-            salon: {
-                heading: "Salon / Barber / Spa",
+            title: "Built for Businesses That Demand More",
+            barber: {
+                heading: "Barbershops",
                 body: "Fast bookings and walk-ins. Show services & prices, book appointments, send reminders, and accept deposits automatically.",
                 feature1: "Service menu & prices",
                 feature2: "Instant bookings",
                 feature3: "Walk-in support",
                 feature4: "Automated reminders"
+            },
+            spa: {
+                heading: "Spas",
+                body: "Let clients book treatments, massages, and packages. Show available slots, collect deposits via M-Pesa, and send appointment reminders.",
+                feature1: "Treatment menu",
+                feature2: "Slot booking",
+                feature3: "M-Pesa deposits",
+                feature4: "Appointment reminders"
             },
             clinic: {
                 heading: "Clinics",
@@ -128,14 +91,6 @@ const translations = {
                 feature3: "Viewing scheduling",
                 feature4: "Agent handoff"
             },
-            school: {
-                heading: "Schools",
-                body: "Reduce admin workload. Answer admissions questions, share fees, requirements, important dates, and escalate complex inquiries.",
-                feature1: "Admissions info",
-                feature2: "Fees & requirements",
-                feature3: "Important dates",
-                feature4: "Structured inquiries"
-            },
             hotel: {
                 heading: "Hotels",
                 body: "Convert inquiries to bookings. Show room types & rates, check availability, handle reservation requests, share amenities and directions.",
@@ -143,36 +98,18 @@ const translations = {
                 feature2: "Availability inquiry",
                 feature3: "Reservation requests",
                 feature4: "Amenities & directions"
-            },
-            church: {
-                heading: "Churches",
-                body: "Information and engagement. Share service times, events, departments, giving information, and volunteer signup opportunities.",
-                feature1: "Service times",
-                feature2: "Events & departments",
-                feature3: "Giving information",
-                feature4: "Volunteer signup"
-            },
-            ecommerce: {
-                heading: "E-commerce",
-                body: "Sell online without a website. Share your catalog, take orders, collect M-Pesa payments, and update customers on delivery—all via WhatsApp.",
-                feature1: "Product catalog",
-                feature2: "Order taking",
-                feature3: "M-Pesa payments",
-                feature4: "Delivery updates"
             }
         },
         pricing: {
             title: "Simple, Transparent Pricing",
-            planName: "Starter Plan",
-            dealBadge: "Limited time deal: get Biashara-Assistant free",
-            subtext: "Perfect for small businesses getting started",
+            planName: "Professional Plan",
+            dealBadge: "Limited offer: try Biashara-Assistant free",
+            subtext: "Everything you need to deliver world-class service",
             feature2: "✓ Auto-reply to inquiries",
             feature3: "✓ Booking system",
-            feature4: "✓ Lead capture",
-            feature5: "✓ M-Pesa payment integration",
-            feature6: "✓ Business hours management",
-            feature7: "✓ Basic analytics",
-            feature8: "✓ Email support",
+            feature4: "✓ M-Pesa payment integration",
+            feature5: "✓ Basic analytics",
+            feature6: "✓ Email support",
             ctaButton: "Start Free Trial",
             trust1: "No credit card required",
             trust2: "Cancel anytime",
@@ -183,7 +120,7 @@ const translations = {
             subtitle: "Fill out the form below and we'll set up your Biashara-Assistant right away.",
             businessName: {
                 label: "Business Name *",
-                placeholder: "e.g., Mama Sarah's Salon"
+                placeholder: "e.g., Kamau's Barbershop"
             },
             yourName: {
                 label: "Your Name *",
@@ -197,13 +134,11 @@ const translations = {
             businessType: {
                 label: "What type of business? *",
                 default: "Select your business type",
-                salon: "Salon / Barber / Spa",
+                barber: "Barbershop",
+                spa: "Spa",
                 clinic: "Clinic",
                 realestate: "Real Estate",
-                school: "School",
                 hotel: "Hotel",
-                church: "Church",
-                ecommerce: "E-commerce",
                 other: "Other"
             },
             email: {
@@ -223,32 +158,38 @@ const translations = {
             privacyLink: "Privacy Policy"
         },
         cta: {
-            title: "Ready to Grow Your Biashara?",
-            subtitle: "Join hundreds of Kenyan businesses using Biashara-Assistant to serve customers better.",
+            title: "Ready to Elevate Your Customer Experience?",
+            subtitle: "Join the businesses using Biashara-Assistant to deliver faster service, capture more revenue, and stand out from the competition.",
             button: "Start Free Trial Now"
         },
         chatDemoTabs: {
             label: "See example for",
-            salon: "Salon / Barber / Spa",
+            barber: "Barber",
+            spa: "Spa",
             clinic: "Clinic",
             realestate: "Real Estate",
-            school: "School",
-            hotel: "Hotel",
-            church: "Church",
-            ecommerce: "E-commerce"
+            hotel: "Hotel"
         },
         chatDemo: {
-            salon: {
-                contactName: "Mama Sarah's Salon",
+            barber: {
+                contactName: "Kamau's Barbershop",
                 status: "online",
-                m1: "Hi, are you available tomorrow?",
-                m2: "Yes—2pm, 3pm, or 4pm. Which works for you?",
-                m3: "3pm.",
-                m4: "Great. Haircut is KES 500. Pay via M-Pesa Buy Goods:",
-                pay: "Till Number: 123456",
-                m5: "Booked ✅",
-                details: "📅 Tomorrow 3:00pm\n💇 Haircut\n💰 KES 500",
-                m6: "Reminder: today at 3pm. See you soon."
+                m1: "Hi, can I book a haircut today?",
+                m2: "Sure! What service? (Haircut / Beard trim / Both)",
+                m3: "Both.",
+                m4: "Available slots: 11:00am or 3:00pm. Which works?",
+                m5: "3:00pm.",
+                m6: "Booked! KES 500 total. Pay on arrival or via M-Pesa. See you at 3!"
+            },
+            spa: {
+                contactName: "Serene Spa & Wellness",
+                status: "online",
+                m1: "Hi, I'd like to book a massage.",
+                m2: "Welcome! What type? (Swedish / Deep Tissue / Hot Stone)",
+                m3: "Deep Tissue.",
+                m4: "Available: Today 2pm or Tomorrow 10am. Which do you prefer?",
+                m5: "Today 2pm.",
+                m6: "Great—KES 3,500. Send deposit of KES 1,000 via M-Pesa to confirm. See you at 2!"
             },
             clinic: {
                 contactName: "GreenCare Clinic",
@@ -271,16 +212,6 @@ const translations = {
                 m6: "When can you view? (Sat 11am / Sat 2pm / Sun 1pm)",
                 m7: "Thanks—an agent will contact you to confirm."
             },
-            school: {
-                contactName: "Bright Future School",
-                status: "online",
-                m1: "Hi, I want to join Form 1.",
-                m2: "Great—what term are you applying for?",
-                m3: "Term 2.",
-                m4: "Requirements: birth cert, KCPE result slip, 2 passport photos.",
-                m5: "Fees & key dates are available. Want the full fee structure?",
-                m6: "Share the student's name + KCPE marks and we'll guide the next step."
-            },
             hotel: {
                 contactName: "Coastline Hotel",
                 status: "online",
@@ -291,35 +222,13 @@ const translations = {
                 m5: "Deluxe.",
                 m6: "Thanks—share your name + phone. Staff will confirm availability and send payment details."
             },
-            church: {
-                contactName: "NewLife Church",
-                status: "online",
-                m1: "What time is service?",
-                m2: "Sunday services: 8am & 10:30am. Midweek: Wed 6pm.",
-                m3: "Any youth events?",
-                m4: "Youth fellowship: Sat 3pm. Want the weekly schedule?",
-                m5: "Yes.",
-                m6: "Here it is. Would you like to join a department or volunteer?"
             },
-            ecommerce: {
-                contactName: "Shop Kenya",
-                status: "online",
-                m1: "Do you have the blue dress in size M?",
-                m2: "Yes—KES 2,500. Pay via M-Pesa Buy Goods:",
-                pay: "Till Number: 123456",
-                m3: "Paid. Do you deliver?",
-                m4: "Yes. Nairobi free. Outside Nairobi + KES 200. Share your location.",
-                m5: "Westlands.",
-                m6: "Order confirmed. We'll dispatch today. You'll get a tracking update."
-            }
-        },
         nav: {
             home: "Home",
             blog: "Blog",
             why: "Why",
             customerService: "Customer Service",
             how: "How",
-            features: "Features",
             who: "Who",
             pricing: "Pricing",
             getStarted: "Get Started"
@@ -349,49 +258,41 @@ const translations = {
     },
     sw: {
         hero: {
-            title: "Msaidizi Wako wa WhatsApp wa Kibiashara",
-            subtitle: "Inageuza WhatsApp yako kuwa ofisi ya mbele ya hali ya juu masaa 24 — kujibu wateja mara moja, kujireservi huduma, na kukusanya malipo ya M-Pesa bila wafanyakazi wa ziada.",
+            title: "Ofisi ya Mbele ya AI Ambayo Biashara Yako Inastahili",
+            subtitle: "Wape wateja wako uzoefu wa nyota 5 kwenye WhatsApp — majibu ya haraka, mareservi rahisi, na malipo ya M-Pesa, masaa 24. Bila wafanyakazi wa ziada.",
             cta: "Anza Sasa",
             whatsappButton: "Tutumie ujumbe kwa WhatsApp",
-            supporting: "Imeundwa kwa biashara za Kenya 🇰🇪"
+            supporting: "Inaaminika na biashara kote Kenya 🇰🇪"
         },
         why: {
-            title: "Kwa Nini Uchague Biashara-Assistant?",
+            title: "Kwa Nini Biashara Zinazoongoza Zinatuchagua",
             card1: {
-                title: "Okoa Masaa Kila Siku",
-                body: "Acha kujibu kila ujumbe mwenyewe. Biashara-Assistant hushughulikia maswali ya wateja masaa 24, ili uweze kuzingatia kukuza biashara yako."
+                title: "Okoa Muda wa Timu Yako",
+                body: "Wachie wafanyakazi wako maswali ya kujirudia. Biashara-Assistant hushughulikia maswali ya wateja masaa 24 ili timu yako izingatie kazi ya thamani zaidi."
             },
             card2: {
-                title: "Usikose Mteja Yeyote",
-                body: "Majibu ya haraka yanamaanisha wateja hupata majibu mara moja, hata unapokuwa bize. Badilisha kila swali kuwa mauzo."
+                title: "Badilisha Kila Swali Kuwa Mauzo",
+                body: "Majibu ya haraka na ya kitaalamu yanamaanisha hakuna mteja anayesubiri. Majibu ya haraka yanasababisha viwango vya juu vya ubadilishaji na mapato zaidi."
             },
             card3: {
-                title: "Lipwa Haraka Zaidi",
-                body: "Kubali malipo ya M-Pesa moja kwa moja kupitia WhatsApp. Hakuna haja ya kushiriki nambari au kusubiri uthibitisho—malipo hufanyika kwenye mazungumzo."
+                title: "Malipo ya M-Pesa Bila Msuguano",
+                body: "Kubali malipo moja kwa moja kwenye mazungumzo. Hakuna usumbufu, hakuna kufuatilia — wateja hulipa kupitia M-Pesa bila kuacha mazungumzo."
             }
         },
         customerService: {
-            title: "Huduma ya Wateja Bora",
-            subtitle: "Tunakusaidia kutoa uzoefu wa hali ya juu ili kila mteja ajisikie anaitunzwa, hata unapokuwa bize.",
+            title: "Toa Uzoefu wa Nyota 5",
+            subtitle: "Wateja wako wanatarajia huduma ya haraka na ya kitaalamu. Tunahakikisha kila mwingiliano unaonyesha ubora wa chapa yako.",
             card1: {
                 title: "Jibu la Haraka, Masaa 24",
-                body: "Wateja wanapata jibu mara moja—hakuna kusubiri au \"tutarudi.\" Inajisikia kama biashara iliyo daima hapa kwao."
+                body: "Kila mteja anapata jibu la kitaalamu mara moja — usiku au mchana. Hakuna ujumbe wa sauti, hakuna \"tutarudi.\" Ni ujibuji wa hali ya juu tu."
             },
             card2: {
-                title: "Thabiti na ya Kiprofesheni",
-                body: "Taarifa sahihi kila wakati—huduma, bei, masaa, eneo. Hakuna ujumbe uliochanganyika. Uthabiti huo ndio unaotarajiwa na watu kutoka uzoefu wa hali ya juu."
+                title: "Thabiti na Kwa Chapa Yako",
+                body: "Huduma sahihi, bei, masaa, na eneo — kila wakati. Hakuna ujumbe uliochanganyika. Uthabiti ambao sifa yako inategemea."
             },
             card3: {
-                title: "Kujireservi na Malipo Rahisi",
-                body: "Jireservi na ulipe kupitia M-Pesa kwenye mazungumzo yale yale. Hakuna kupiga simu au kufuatilia uthibitisho. Uwazi na urahisi unajisikia wa hali ya juu."
-            },
-            card4: {
-                title: "Hakuna Wateja Waliopotea",
-                body: "Kila swali linajibiwa na kukamatwa. Hakuna aliyeachwa \"imesomwa.\" Huduma ya hali ya juu inamaanisha hakuna anayepotea."
-            },
-            card5: {
-                title: "Chapa Yako, Njia Yako",
-                body: "Wewe unaweka masaa yako, huduma, na lugha. Msaidizi anawakilishi biashara yako ili kila jibu lijisikie kama ofisi yako ya mbele."
+                title: "Hakuna Fursa Zilizopotea",
+                body: "Kila swali linajibiwa na kukamatwa kiotomatiki. Hakuna wateja wanaopotea, hakuna aliyeachwa \"imesomwa.\""
             }
         },
         how: {
@@ -405,56 +306,27 @@ const translations = {
                 body: "Unganisha nambari yako ya WhatsApp ya biashara. Tutakuongoza kupitia mchakato rahisi wa kusanidi."
             },
             step3: {
-                title: "Sanidi Boti Yako",
-                body: "Weka masaa ya biashara yako, huduma, bei, na chaguzi za malipo. Ifanye iwe yako."
-            },
-            step4: {
-                title: "Anza Kupokea Wateja",
-                body: "Boti yako iko hai! Wateja sasa wanaweza kujireservi, kuuliza maswali, na kulipa—yote kiotomatiki."
-            }
-        },
-        features: {
-            title: "Kila Kitu Unachohitaji Kuendesha Biashara Yako",
-            card1: {
-                badge: "Inapatikana Masaa 24",
-                heading: "Jibu la Kiotomatiki la Kipaji",
-                body: "Jibu maswali ya kawaida kuhusu huduma zako, masaa, na eneo kiotomatiki."
-            },
-            card2: {
-                badge: "Arifa za Haraka",
-                heading: "Mareservi Rahisi",
-                body: "Wateja wanaweza kujireservi au huduma moja kwa moja kupitia WhatsApp. Unapata arifa za haraka."
-            },
-            card3: {
-                badge: "Imehifadhiwa Kiotomatiki",
-                heading: "Kamata Kila Mteja",
-                body: "Kusanya majina ya wateja, nambari za simu, na maelezo ya maswali kiotomatiki. Usikose uuzaji wowote unaowezekana."
-            },
-            card4: {
-                badge: "Salama",
-                heading: "Malipo ya M-Pesa",
-                body: "Kubali malipo moja kwa moja kwenye mazungumzo. Wateja hulipa kupitia M-Pesa bila kuacha WhatsApp."
-            },
-            card5: {
-                badge: "Inaweza Kusanishwa",
-                heading: "Ratiba ya Kipaji",
-                body: "Weka masaa ya biashara yako. Boti inawaambia wateja kiotomatiki wakati unapatikana."
-            },
-            card6: {
-                badge: "Ufahamu",
-                heading: "Fuata Ukuaji Wako",
-                body: "Ona wateja wangapi unawafikia, mareservi yaliyofanywa, na malipo yaliyopokelewa—yote katika sehemu moja."
+                title: "Toa Huduma ya Hali ya Juu",
+                body: "Uko hai. Kila mteja sasa anapata majibu ya haraka na ya kitaalamu — mareservi, majibu, na malipo yanashughulikiwa kiotomatiki."
             }
         },
         who: {
-            title: "Inafaa Kwa Biashara Ndogo za Kenya",
-            salon: {
-                heading: "Salon / Kinyozi / Spa",
-                body: "Mareservi ya haraka na wateja wa kuja moja kwa moja. Onyesha huduma na bei, jireservi miadi, tuma ukumbusho, na kubali malipo ya awali kiotomatiki.",
+            title: "Imeundwa kwa Biashara Zinazotaka Zaidi",
+            barber: {
+                heading: "Vinyozi",
+                body: "Mareservi ya haraka na watembezi. Onyesha huduma na bei, reservi miadi, tuma vikumbusho, na kubali amana kiotomatiki.",
                 feature1: "Orodha ya huduma na bei",
-                feature2: "Mareservi ya haraka",
-                feature3: "Msaada wa wateja wa kuja moja kwa moja",
-                feature4: "Ukumbusho wa kiotomatiki"
+                feature2: "Mareservi ya papo hapo",
+                feature3: "Msaada wa watembezi",
+                feature4: "Vikumbusho vya kiotomatiki"
+            },
+            spa: {
+                heading: "Spa",
+                body: "Ruhusu wateja kureservi matibabu, massage, na paketi. Onyesha nafasi zilizo wazi, kusanya amana kwa M-Pesa, na kutuma vikumbusho vya miadi.",
+                feature1: "Orodha ya matibabu",
+                feature2: "Kureservi nafasi",
+                feature3: "Amana za M-Pesa",
+                feature4: "Vikumbusho vya miadi"
             },
             clinic: {
                 heading: "Kliniki",
@@ -472,14 +344,6 @@ const translations = {
                 feature3: "Kuratibu maonyesho",
                 feature4: "Kuwasilisha kwa wakala"
             },
-            school: {
-                heading: "Shule",
-                body: "Punguza mzigo wa utawala. Jibu maswali ya uandikishaji, shiriki ada, mahitaji, tarehe muhimu, na ongeza maswali magumu.",
-                feature1: "Taarifa za uandikishaji",
-                feature2: "Ada na mahitaji",
-                feature3: "Tarehe muhimu",
-                feature4: "Maswali yaliyopangwa"
-            },
             hotel: {
                 heading: "Hoteli",
                 body: "Badilisha maswali kuwa mareservi. Onyesha aina za vyumba na bei, angalia upatikanaji, shughulikia maombi ya mareservi, shiriki vifaa na maelekezo.",
@@ -487,36 +351,18 @@ const translations = {
                 feature2: "Swali la upatikanaji",
                 feature3: "Maombi ya mareservi",
                 feature4: "Vifaa na maelekezo"
-            },
-            church: {
-                heading: "Makanisa",
-                body: "Taarifa na ushiriki. Shiriki nyakati za ibada, matukio, idara, taarifa za kutoa, na fursa za kujisajili kama mtu wa kujitolea.",
-                feature1: "Nyakati za ibada",
-                feature2: "Matukio na idara",
-                feature3: "Taarifa za kutoa",
-                feature4: "Kujisajili kama mtu wa kujitolea"
-            },
-            ecommerce: {
-                heading: "Biashara ya Mtandao",
-                body: "Uza mtandaoni bila tovuti. Shiriki katalogi, pokea maagizo, kusanya malipo ya M-Pesa, na wasilisha wateja kuhusu usafirishaji—yote kupitia WhatsApp.",
-                feature1: "Katalogi ya bidhaa",
-                feature2: "Kupokea maagizo",
-                feature3: "Malipo ya M-Pesa",
-                feature4: "Taarifa za usafirishaji"
             }
         },
         pricing: {
             title: "Bei Rahisi na Wazi",
-            planName: "Mpango wa Kuanza",
-            dealBadge: "Pesa maalum ya muda: pata Biashara-Assistant bure",
-            subtext: "Inafaa kwa biashara ndogo zinazoanza",
+            planName: "Mpango wa Kitaalamu",
+            dealBadge: "Ofa ya muda: jaribu Biashara-Assistant bure",
+            subtext: "Kila kitu unachohitaji kutoa huduma ya kiwango cha juu",
             feature2: "✓ Jibu la kiotomatiki kwa maswali",
             feature3: "✓ Mfumo wa mareservi",
-            feature4: "✓ Kukamata wateja wanaowezekana",
-            feature5: "✓ Ujumuishaji wa malipo ya M-Pesa",
-            feature6: "✓ Usimamizi wa masaa ya biashara",
-            feature7: "✓ Uchambuzi wa msingi",
-            feature8: "✓ Msaada wa barua pepe",
+            feature4: "✓ Ujumuishaji wa malipo ya M-Pesa",
+            feature5: "✓ Uchambuzi wa msingi",
+            feature6: "✓ Msaada wa barua pepe",
             ctaButton: "Anza Jaribio Bure",
             trust1: "Hakuna kadi ya mkopo inahitajika",
             trust2: "Ghairi wakati wowote",
@@ -527,7 +373,7 @@ const translations = {
             subtitle: "Jaza fomu hapa chini na tutasanidi Biashara-Assistant yako mara moja.",
             businessName: {
                 label: "Jina la Biashara *",
-                placeholder: "mf., Salon ya Mama Sarah"
+                placeholder: "mf., Kinyozi ya Kamau"
             },
             yourName: {
                 label: "Jina Lako *",
@@ -541,13 +387,11 @@ const translations = {
             businessType: {
                 label: "Ni aina gani ya biashara? *",
                 default: "Chagua aina ya biashara yako",
-                salon: "Salon / Kinyozi / Spa",
+                barber: "Kinyozi",
+                spa: "Spa",
                 clinic: "Kliniki",
                 realestate: "Mali za Isimu",
-                school: "Shule",
                 hotel: "Hoteli",
-                church: "Kanisa",
-                ecommerce: "Biashara ya Mtandao",
                 other: "Nyingine"
             },
             email: {
@@ -567,32 +411,38 @@ const translations = {
             privacyLink: "Sera ya Faragha"
         },
         cta: {
-            title: "Tayari Kukuza Biashara Yako?",
-            subtitle: "Jiunge na mamia ya biashara za Kenya zinazotumia Biashara-Assistant kuwahudumia wateja vyema zaidi.",
+            title: "Tayari Kuinua Uzoefu wa Wateja Wako?",
+            subtitle: "Jiunge na biashara zinazotumia Biashara-Assistant kutoa huduma ya haraka, kupata mapato zaidi, na kujitofautisha na washindani.",
             button: "Anza Jaribio Bure Sasa"
         },
         chatDemoTabs: {
             label: "Ona mfano kwa",
-            salon: "Salon / Kinyozi / Spa",
+            barber: "Kinyozi",
+            spa: "Spa",
             clinic: "Kliniki",
             realestate: "Mali",
-            school: "Shule",
-            hotel: "Hoteli",
-            church: "Kanisa",
-            ecommerce: "Biashara ya Mtandao"
+            hotel: "Hoteli"
         },
         chatDemo: {
-            salon: {
-                contactName: "Salon ya Mama Sarah",
+            barber: {
+                contactName: "Kinyozi ya Kamau",
                 status: "huko mtandaoni",
-                m1: "Hujambo, mna nafasi kesho?",
-                m2: "Ndio—saa 2, 3, au 4. Ipi inakufaa?",
-                m3: "Saa 3.",
-                m4: "Sawa. Kunyoa ni KES 500. Lipa kwa M-Pesa Buy Goods:",
-                pay: "Nambari ya Till: 123456",
-                m5: "Imethibitishwa ✅",
-                details: "📅 Kesho saa 3:00\n💇 Kunyoa\n💰 KES 500",
-                m6: "Ukumbusho: leo saa 3. Tutaonana."
+                m1: "Hujambo, naweza kujireservi kunyolewa leo?",
+                m2: "Sawa! Huduma gani? (Kunyolewa / Ndevu / Vyote)",
+                m3: "Vyote.",
+                m4: "Nafasi: 11:00 au 3:00. Ipi inafaa?",
+                m5: "3:00.",
+                m6: "Imereservwa! KES 500 jumla. Lipa ukifika au kwa M-Pesa. Tutaonana saa 9!"
+            },
+            spa: {
+                contactName: "Serene Spa & Ustawi",
+                status: "huko mtandaoni",
+                m1: "Hujambo, ningependa kujireservi massage.",
+                m2: "Karibu! Aina gani? (Swedish / Deep Tissue / Hot Stone)",
+                m3: "Deep Tissue.",
+                m4: "Nafasi: Leo 2pm au Kesho 10am. Unapendelea ipi?",
+                m5: "Leo 2pm.",
+                m6: "Sawa—KES 3,500. Tuma amana ya KES 1,000 kwa M-Pesa kuthibitisha. Tutaonana saa 8!"
             },
             clinic: {
                 contactName: "GreenCare Kliniki",
@@ -615,16 +465,6 @@ const translations = {
                 m6: "Unaweza kuja kuona lini? (Jumamosi 11 / Jumamosi 2 / Jumapili 1)",
                 m7: "Asante—wakala atakupigia kuthibitisha."
             },
-            school: {
-                contactName: "Bright Future School",
-                status: "huko mtandaoni",
-                m1: "Hujambo, nataka kujiunga Form 1.",
-                m2: "Sawa—unaomba muhula gani?",
-                m3: "Muhula wa 2.",
-                m4: "Mahitaji: cheti cha kuzaliwa, slip ya KCPE, picha 2 za pasipoti.",
-                m5: "Ada na tarehe muhimu zipo. Unataka muundo kamili wa ada?",
-                m6: "Tuma jina la mwanafunzi + alama za KCPE tuanze."
-            },
             hotel: {
                 contactName: "Coastline Hoteli",
                 status: "huko mtandaoni",
@@ -635,35 +475,13 @@ const translations = {
                 m5: "Deluxe.",
                 m6: "Asante—tuma jina + simu. Wafanyakazi watathibitisha upatikanaji na kutuma malipo."
             },
-            church: {
-                contactName: "NewLife Church",
-                status: "huko mtandaoni",
-                m1: "Ibada ni saa ngapi?",
-                m2: "Ibada za Jumapili: 8am & 10:30am. Kati ya wiki: Jumatano 6pm.",
-                m3: "Kuna youth events?",
-                m4: "Youth fellowship: Jumamosi 3pm. Unataka ratiba ya wiki?",
-                m5: "Ndiyo.",
-                m6: "Hii hapa. Ungependa kujiunga idara au kujitolea?"
             },
-            ecommerce: {
-                contactName: "Shop Kenya",
-                status: "huko mtandaoni",
-                m1: "Mna vazi la blau la saizi M?",
-                m2: "Ndiyo—KES 2,500. Lipa kwa M-Pesa Buy Goods:",
-                pay: "Nambari ya Till: 123456",
-                m3: "Nimalipa. Mnawasilisha?",
-                m4: "Ndiyo. Nairobi bure. Nje ya Nairobi + KES 200. Tuma eneo lako.",
-                m5: "Westlands.",
-                m6: "Order imethibitishwa. Tutatuma leo. Utapata taarifa ya usafirishaji."
-            }
-        },
         nav: {
             home: "Nyumbani",
             blog: "Blogu",
             why: "Kwa Nini",
             customerService: "Huduma ya Wateja",
             how: "Jinsi",
-            features: "Vipengele",
             who: "Kwa Nani",
             pricing: "Bei",
             getStarted: "Anza"
@@ -1052,16 +870,24 @@ document.addEventListener('DOMContentLoaded', function() {
     // Animated Chat Demo
     // ============================================
 
-    const CHAT_INDUSTRIES = ['salon', 'clinic', 'realestate', 'school', 'hotel', 'church', 'ecommerce'];
+    const CHAT_INDUSTRIES = ['barber', 'spa', 'clinic', 'realestate', 'hotel'];
 
     // Defines bubble structure per industry (keys live under translations.{lang}.chatDemo.<industry>.*)
     const CHAT_DEMO_STRUCTURE = {
-        salon: [
+        barber: [
             { dir: 'in', keys: ['m1'] },
             { dir: 'out', keys: ['m2'] },
             { dir: 'in', keys: ['m3'] },
-            { dir: 'out', keys: ['m4', 'pay'], prelineKeys: ['pay'] },
-            { dir: 'out', keys: ['m5', 'details'], prelineKeys: ['details'] },
+            { dir: 'out', keys: ['m4'] },
+            { dir: 'in', keys: ['m5'] },
+            { dir: 'out', keys: ['m6'] },
+        ],
+        spa: [
+            { dir: 'in', keys: ['m1'] },
+            { dir: 'out', keys: ['m2'] },
+            { dir: 'in', keys: ['m3'] },
+            { dir: 'out', keys: ['m4'] },
+            { dir: 'in', keys: ['m5'] },
             { dir: 'out', keys: ['m6'] },
         ],
         clinic: [
@@ -1081,14 +907,6 @@ document.addEventListener('DOMContentLoaded', function() {
             { dir: 'out', keys: ['m6'] },
             { dir: 'out', keys: ['m7'] },
         ],
-        school: [
-            { dir: 'in', keys: ['m1'] },
-            { dir: 'out', keys: ['m2'] },
-            { dir: 'in', keys: ['m3'] },
-            { dir: 'out', keys: ['m4'] },
-            { dir: 'out', keys: ['m5'] },
-            { dir: 'out', keys: ['m6'] },
-        ],
         hotel: [
             { dir: 'in', keys: ['m1'] },
             { dir: 'out', keys: ['m2'] },
@@ -1097,25 +915,9 @@ document.addEventListener('DOMContentLoaded', function() {
             { dir: 'in', keys: ['m5'] },
             { dir: 'out', keys: ['m6'] },
         ],
-        church: [
-            { dir: 'in', keys: ['m1'] },
-            { dir: 'out', keys: ['m2'] },
-            { dir: 'in', keys: ['m3'] },
-            { dir: 'out', keys: ['m4'] },
-            { dir: 'in', keys: ['m5'] },
-            { dir: 'out', keys: ['m6'] },
-        ],
-        ecommerce: [
-            { dir: 'in', keys: ['m1'] },
-            { dir: 'out', keys: ['m2', 'pay'], prelineKeys: ['pay'] },
-            { dir: 'in', keys: ['m3'] },
-            { dir: 'out', keys: ['m4'] },
-            { dir: 'in', keys: ['m5'] },
-            { dir: 'out', keys: ['m6'] },
-        ],
-    };
+        };
 
-    let currentChatIndustry = 'salon';
+    let currentChatIndustry = 'barber';
     let chatAutoRotateTimer = null;
     let userStoppedAutoRotate = false;
     let chatAnimationRunId = 0;
@@ -1304,12 +1106,34 @@ document.addEventListener('DOMContentLoaded', function() {
         industrySelect.addEventListener('change', () => {
             userStoppedAutoRotate = true;
             stopAutoRotate();
-            const industry = industrySelect.value || 'salon';
+            const industry = industrySelect.value || 'clinic';
             renderChatDemo(industry);
         });
     }
 
     // Initial render + animation + auto-rotate
-    renderChatDemo('salon');
+    renderChatDemo('barber');
     startAutoRotate();
+
+    // ============================================
+    // Scroll Reveal (Intersection Observer)
+    // ============================================
+    const revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
+    if (revealEls.length && 'IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+        );
+        revealEls.forEach((el) => revealObserver.observe(el));
+    } else {
+        // Fallback: show everything immediately
+        revealEls.forEach((el) => el.classList.add('is-visible'));
+    }
 });
