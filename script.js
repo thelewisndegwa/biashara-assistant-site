@@ -9,7 +9,7 @@ const translations = {
             subtitle: "Give your customers a 5-star WhatsApp experience — instant replies in English and Swahili, seamless bookings, and M-Pesa payments, 24/7. No extra staff needed.",
             cta: "Get Started",
             whatsappButton: "Message us on WhatsApp",
-            supporting: "Trusted by businesses across Kenya 🇰🇪"
+            supporting: "Built for Kenyan businesses, by Kenyans 🇰🇪"
         },
         why: {
             title: "Why Leading Businesses Choose Us",
@@ -114,7 +114,7 @@ const translations = {
             ctaButton: "Start Free Trial",
             trust1: "No credit card required",
             trust2: "Cancel anytime",
-            trust3: "14-day free trial"
+            trust3: "1-month free trial"
         },
         form: {
             title: "Get Started in 5 Minutes",
@@ -263,7 +263,7 @@ const translations = {
             subtitle: "Wape wateja wako uzoefu wa nyota 5 kwenye WhatsApp — majibu ya haraka kwa Kiingereza na Kiswahili, mareservi rahisi, na malipo ya M-Pesa, masaa 24. Bila wafanyakazi wa ziada.",
             cta: "Anza Sasa",
             whatsappButton: "Tutumie ujumbe kwa WhatsApp",
-            supporting: "Inaaminika na biashara kote Kenya 🇰🇪"
+            supporting: "Imeundwa kwa biashara za Kenya, na Wakenya 🇰🇪"
         },
         why: {
             title: "Kwa Nini Biashara Zinazoongoza Zinatuchagua",
@@ -368,7 +368,7 @@ const translations = {
             ctaButton: "Anza Jaribio Bure",
             trust1: "Hakuna kadi ya mkopo inahitajika",
             trust2: "Ghairi wakati wowote",
-            trust3: "Jaribio la siku 14 bure"
+            trust3: "Jaribio la mwezi 1 bure"
         },
         form: {
             title: "Anza kwa Dakika 5",
