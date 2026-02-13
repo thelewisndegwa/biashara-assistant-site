@@ -97,7 +97,7 @@ const translations = {
             subtitle: "Fill out the form below and we'll set up your Biashara-Assistant right away.",
             businessName: {
                 label: "Business Name *",
-                placeholder: "e.g., Kamau's Barbershop"
+                placeholder: "e.g., FreshCutz Barbershop"
             },
             yourName: {
                 label: "Your Name *",
@@ -143,7 +143,7 @@ const translations = {
         },
         chatDemo: {
             barber: {
-                contactName: "Kamau's Barbershop",
+                contactName: "FreshCutz Barbershop",
                 status: "online",
                 m1: "Hi, can I book a haircut today?",
                 m2: "Sure! What service? (Haircut / Beard trim / Both)",
@@ -290,7 +290,7 @@ const translations = {
             subtitle: "Jaza fomu hapa chini na tutasanidi Biashara-Assistant yako mara moja.",
             businessName: {
                 label: "Jina la Biashara *",
-                placeholder: "mf., Kinyozi ya Kamau"
+                placeholder: "mf., FreshCutz Kinyozi"
             },
             yourName: {
                 label: "Jina Lako *",
@@ -336,7 +336,7 @@ const translations = {
         },
         chatDemo: {
             barber: {
-                contactName: "Kinyozi ya Kamau",
+                contactName: "FreshCutz Kinyozi",
                 status: "huko mtandaoni",
                 m1: "Hujambo, naweza kujireservi kunyolewa leo?",
                 m2: "Sawa! Huduma gani? (Kunyolewa / Ndevu / Vyote)",
