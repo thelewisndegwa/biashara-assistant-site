@@ -75,30 +75,6 @@ const translations = {
                 feature3: "M-Pesa deposits",
                 feature4: "Appointment reminders"
             },
-            clinic: {
-                heading: "Clinics",
-                body: "Build trust with accurate appointments. Show services, doctor availability, handle insurance inquiries, and escalate to staff when needed.",
-                feature1: "Doctor availability",
-                feature2: "Appointment booking",
-                feature3: "Insurance info",
-                feature4: "Staff escalation"
-            },
-            realestate: {
-                heading: "Real Estate Agents",
-                body: "Qualify leads automatically. Capture property inquiries, budget, location preferences, schedule viewings, and hand off to agents.",
-                feature1: "Lead qualification",
-                feature2: "Budget capture",
-                feature3: "Viewing scheduling",
-                feature4: "Agent handoff"
-            },
-            hotel: {
-                heading: "Hotels",
-                body: "Convert inquiries to bookings. Show room types & rates, check availability, handle reservation requests, share amenities and directions.",
-                feature1: "Room types & rates",
-                feature2: "Availability inquiry",
-                feature3: "Reservation requests",
-                feature4: "Amenities & directions"
-            }
         },
         pricing: {
             title: "Simple, Transparent Pricing",
@@ -137,9 +113,6 @@ const translations = {
                 default: "Select your business type",
                 barber: "Barbershop",
                 spa: "Spa",
-                clinic: "Clinic",
-                realestate: "Real Estate",
-                hotel: "Hotel",
                 other: "Other"
             },
             email: {
@@ -166,10 +139,7 @@ const translations = {
         chatDemoTabs: {
             label: "See example for",
             barber: "Barber",
-            spa: "Spa",
-            clinic: "Clinic",
-            realestate: "Real Estate",
-            hotel: "Hotel"
+            spa: "Spa"
         },
         chatDemo: {
             barber: {
@@ -191,37 +161,6 @@ const translations = {
                 m4: "Available: Today 2pm or Tomorrow 10am. Which do you prefer?",
                 m5: "Today 2pm.",
                 m6: "Great—KES 3,500. Send deposit of KES 1,000 via M-Pesa to confirm. See you at 2!"
-            },
-            clinic: {
-                contactName: "GreenCare Clinic",
-                status: "online",
-                m1: "Hi, I need to see a doctor.",
-                m2: "Sure—what service do you need? (Consultation / Lab / Dental)",
-                m3: "Consultation.",
-                m4: "Available times: 10:30am or 2:00pm. Which do you prefer?",
-                m5: "2:00pm.",
-                m6: "Please share your full name + NHIF/insurance (if any). A staff member will confirm shortly."
-            },
-            realestate: {
-                contactName: "Nairobi Homes",
-                status: "online",
-                m1: "I'm looking for a 2 bedroom.",
-                m2: "Great—what location do you prefer?",
-                m3: "Kilimani.",
-                m4: "Budget range?",
-                m5: "Up to 60k.",
-                m6: "When can you view? (Sat 11am / Sat 2pm / Sun 1pm)",
-                m7: "Thanks—an agent will contact you to confirm."
-            },
-            hotel: {
-                contactName: "Coastline Hotel",
-                status: "online",
-                m1: "Do you have rooms this weekend?",
-                m2: "Sure—what dates and how many guests?",
-                m3: "Fri–Sun, 2 adults.",
-                m4: "Options: Standard / Deluxe. Which do you prefer?",
-                m5: "Deluxe.",
-                m6: "Thanks—share your name + phone. Staff will confirm availability and send payment details."
             },
             },
         nav: {
@@ -329,30 +268,6 @@ const translations = {
                 feature3: "Amana za M-Pesa",
                 feature4: "Vikumbusho vya miadi"
             },
-            clinic: {
-                heading: "Kliniki",
-                body: "Jenga uaminifu kwa miadi sahihi. Onyesha huduma, upatikanaji wa daktari, shughulikia maswali ya bima, na ongeza kwa wafanyakazi inapohitajika.",
-                feature1: "Upatikanaji wa daktari",
-                feature2: "Kujireservi miadi",
-                feature3: "Taarifa za bima",
-                feature4: "Kuongeza kwa wafanyakazi"
-            },
-            realestate: {
-                heading: "Wakala wa Mali za Isimu",
-                body: "Thibitisha wateja wanaowezekana kiotomatiki. Kamata maswali ya mali, bajeti, mapendeleo ya eneo, ratibu maonyesho, na wasilisha kwa wakala.",
-                feature1: "Uthibitishaji wa wateja wanaowezekana",
-                feature2: "Kukamata bajeti",
-                feature3: "Kuratibu maonyesho",
-                feature4: "Kuwasilisha kwa wakala"
-            },
-            hotel: {
-                heading: "Hoteli",
-                body: "Badilisha maswali kuwa mareservi. Onyesha aina za vyumba na bei, angalia upatikanaji, shughulikia maombi ya mareservi, shiriki vifaa na maelekezo.",
-                feature1: "Aina za vyumba na bei",
-                feature2: "Swali la upatikanaji",
-                feature3: "Maombi ya mareservi",
-                feature4: "Vifaa na maelekezo"
-            }
         },
         pricing: {
             title: "Bei Rahisi na Wazi",
@@ -391,9 +306,6 @@ const translations = {
                 default: "Chagua aina ya biashara yako",
                 barber: "Kinyozi",
                 spa: "Spa",
-                clinic: "Kliniki",
-                realestate: "Mali za Isimu",
-                hotel: "Hoteli",
                 other: "Nyingine"
             },
             email: {
@@ -420,10 +332,7 @@ const translations = {
         chatDemoTabs: {
             label: "Ona mfano kwa",
             barber: "Kinyozi",
-            spa: "Spa",
-            clinic: "Kliniki",
-            realestate: "Mali",
-            hotel: "Hoteli"
+            spa: "Spa"
         },
         chatDemo: {
             barber: {
@@ -445,37 +354,6 @@ const translations = {
                 m4: "Nafasi: Leo 2pm au Kesho 10am. Unapendelea ipi?",
                 m5: "Leo 2pm.",
                 m6: "Sawa—KES 3,500. Tuma amana ya KES 1,000 kwa M-Pesa kuthibitisha. Tutaonana saa 8!"
-            },
-            clinic: {
-                contactName: "GreenCare Kliniki",
-                status: "huko mtandaoni",
-                m1: "Hujambo, nahitaji kumuona daktari.",
-                m2: "Sawa—unahitaji huduma gani? (Ushauri / Maabara / Meno)",
-                m3: "Ushauri.",
-                m4: "Nafasi: 10:30 au 2:00. Unapendelea ipi?",
-                m5: "2:00.",
-                m6: "Tafadhali tuma jina kamili + NHIF/bima (kama ipo). Mfanyakazi atathibitisha hivi karibuni."
-            },
-            realestate: {
-                contactName: "Nairobi Homes",
-                status: "huko mtandaoni",
-                m1: "Natafuta nyumba ya vyumba 2.",
-                m2: "Sawa—unapendelea eneo gani?",
-                m3: "Kilimani.",
-                m4: "Bajeti yako ni kiasi gani?",
-                m5: "Hadi 60k.",
-                m6: "Unaweza kuja kuona lini? (Jumamosi 11 / Jumamosi 2 / Jumapili 1)",
-                m7: "Asante—wakala atakupigia kuthibitisha."
-            },
-            hotel: {
-                contactName: "Coastline Hoteli",
-                status: "huko mtandaoni",
-                m1: "Mna vyumba wikendi hii?",
-                m2: "Sawa—tarehe gani na wageni wangapi?",
-                m3: "Ijumaa–Jumapili, watu wazima 2.",
-                m4: "Chaguo: Standard / Deluxe. Unapendelea ipi?",
-                m5: "Deluxe.",
-                m6: "Asante—tuma jina + simu. Wafanyakazi watathibitisha upatikanaji na kutuma malipo."
             },
             },
         nav: {
@@ -872,7 +750,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Animated Chat Demo
     // ============================================
 
-    const CHAT_INDUSTRIES = ['hotel', 'realestate', 'spa', 'clinic', 'barber'];
+    const CHAT_INDUSTRIES = ['barber', 'spa'];
 
     // Defines bubble structure per industry (keys live under translations.{lang}.chatDemo.<industry>.*)
     const CHAT_DEMO_STRUCTURE = {
@@ -892,34 +770,9 @@ document.addEventListener('DOMContentLoaded', function() {
             { dir: 'in', keys: ['m5'] },
             { dir: 'out', keys: ['m6'] },
         ],
-        clinic: [
-            { dir: 'in', keys: ['m1'] },
-            { dir: 'out', keys: ['m2'] },
-            { dir: 'in', keys: ['m3'] },
-            { dir: 'out', keys: ['m4'] },
-            { dir: 'in', keys: ['m5'] },
-            { dir: 'out', keys: ['m6'] },
-        ],
-        realestate: [
-            { dir: 'in', keys: ['m1'] },
-            { dir: 'out', keys: ['m2'] },
-            { dir: 'in', keys: ['m3'] },
-            { dir: 'out', keys: ['m4'] },
-            { dir: 'in', keys: ['m5'] },
-            { dir: 'out', keys: ['m6'] },
-            { dir: 'out', keys: ['m7'] },
-        ],
-        hotel: [
-            { dir: 'in', keys: ['m1'] },
-            { dir: 'out', keys: ['m2'] },
-            { dir: 'in', keys: ['m3'] },
-            { dir: 'out', keys: ['m4'] },
-            { dir: 'in', keys: ['m5'] },
-            { dir: 'out', keys: ['m6'] },
-        ],
         };
 
-    let currentChatIndustry = 'hotel';
+    let currentChatIndustry = 'barber';
     let chatAutoRotateTimer = null;
     let userStoppedAutoRotate = false;
     let chatAnimationRunId = 0;
@@ -1108,13 +961,13 @@ document.addEventListener('DOMContentLoaded', function() {
         industrySelect.addEventListener('change', () => {
             userStoppedAutoRotate = true;
             stopAutoRotate();
-            const industry = industrySelect.value || 'clinic';
+            const industry = industrySelect.value || 'barber';
             renderChatDemo(industry);
         });
     }
 
     // Initial render + animation + auto-rotate
-    renderChatDemo('hotel');
+    renderChatDemo('barber');
     startAutoRotate();
 
     // ============================================
