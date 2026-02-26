@@ -75,6 +75,14 @@ const translations = {
                 feature3: "M-Pesa deposits",
                 feature4: "Appointment reminders"
             },
+            realestate: {
+                heading: "Real Estate Agents",
+                body: "Qualify leads automatically. Capture property inquiries, budget, location preferences, schedule viewings, and hand off to agents.",
+                feature1: "Lead qualification",
+                feature2: "Budget capture",
+                feature3: "Viewing scheduling",
+                feature4: "Agent handoff"
+            }
         },
         pricing: {
             title: "Simple, Transparent Pricing",
@@ -113,6 +121,7 @@ const translations = {
                 default: "Select your business type",
                 barber: "Barbershop",
                 spa: "Spa",
+                realestate: "Real Estate",
                 other: "Other"
             },
             email: {
@@ -139,7 +148,8 @@ const translations = {
         chatDemoTabs: {
             label: "See example for",
             barber: "Barber",
-            spa: "Spa"
+            spa: "Spa",
+            realestate: "Real Estate"
         },
         chatDemo: {
             barber: {
@@ -162,7 +172,18 @@ const translations = {
                 m5: "Today 2pm.",
                 m6: "Great—KES 3,500. Send deposit of KES 1,000 via M-Pesa to confirm. See you at 2!"
             },
+            realestate: {
+                contactName: "Nairobi Homes",
+                status: "online",
+                m1: "I'm looking for a 2 bedroom.",
+                m2: "Great—what location do you prefer?",
+                m3: "Kilimani.",
+                m4: "Budget range?",
+                m5: "Up to 60k.",
+                m6: "When can you view? (Sat 11am / Sat 2pm / Sun 1pm)",
+                m7: "Thanks—an agent will contact you to confirm."
             },
+        },
         nav: {
             home: "Home",
             blog: "Blog",
@@ -268,6 +289,14 @@ const translations = {
                 feature3: "Amana za M-Pesa",
                 feature4: "Vikumbusho vya miadi"
             },
+            realestate: {
+                heading: "Wakala wa Mali za Isimu",
+                body: "Thibitisha wateja wanaowezekana kiotomatiki. Kamata maswali ya mali, bajeti, mapendeleo ya eneo, ratibu maonyesho, na wasilisha kwa wakala.",
+                feature1: "Uthibitishaji wa wateja wanaowezekana",
+                feature2: "Kukamata bajeti",
+                feature3: "Kuratibu maonyesho",
+                feature4: "Kuwasilisha kwa wakala"
+            }
         },
         pricing: {
             title: "Bei Rahisi na Wazi",
@@ -306,6 +335,7 @@ const translations = {
                 default: "Chagua aina ya biashara yako",
                 barber: "Kinyozi",
                 spa: "Spa",
+                realestate: "Mali za Isimu",
                 other: "Nyingine"
             },
             email: {
@@ -332,7 +362,8 @@ const translations = {
         chatDemoTabs: {
             label: "Ona mfano kwa",
             barber: "Kinyozi",
-            spa: "Spa"
+            spa: "Spa",
+            realestate: "Mali"
         },
         chatDemo: {
             barber: {
@@ -355,7 +386,18 @@ const translations = {
                 m5: "Leo 2pm.",
                 m6: "Sawa—KES 3,500. Tuma amana ya KES 1,000 kwa M-Pesa kuthibitisha. Tutaonana saa 8!"
             },
+            realestate: {
+                contactName: "Nairobi Homes",
+                status: "huko mtandaoni",
+                m1: "Natafuta nyumba ya vyumba 2.",
+                m2: "Sawa—unapendelea eneo gani?",
+                m3: "Kilimani.",
+                m4: "Bajeti yako ni kiasi gani?",
+                m5: "Hadi 60k.",
+                m6: "Unaweza kuja kuona lini? (Jumamosi 11 / Jumamosi 2 / Jumapili 1)",
+                m7: "Asante—wakala atakupigia kuthibitisha."
             },
+        },
         nav: {
             home: "Nyumbani",
             blog: "Blogu",
@@ -750,7 +792,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Animated Chat Demo
     // ============================================
 
-    const CHAT_INDUSTRIES = ['barber', 'spa'];
+    const CHAT_INDUSTRIES = ['realestate', 'barber', 'spa'];
 
     // Defines bubble structure per industry (keys live under translations.{lang}.chatDemo.<industry>.*)
     const CHAT_DEMO_STRUCTURE = {
@@ -770,9 +812,18 @@ document.addEventListener('DOMContentLoaded', function() {
             { dir: 'in', keys: ['m5'] },
             { dir: 'out', keys: ['m6'] },
         ],
+        realestate: [
+            { dir: 'in', keys: ['m1'] },
+            { dir: 'out', keys: ['m2'] },
+            { dir: 'in', keys: ['m3'] },
+            { dir: 'out', keys: ['m4'] },
+            { dir: 'in', keys: ['m5'] },
+            { dir: 'out', keys: ['m6'] },
+            { dir: 'out', keys: ['m7'] },
+        ],
         };
 
-    let currentChatIndustry = 'barber';
+    let currentChatIndustry = 'realestate';
     let chatAutoRotateTimer = null;
     let userStoppedAutoRotate = false;
     let chatAnimationRunId = 0;
@@ -961,13 +1012,13 @@ document.addEventListener('DOMContentLoaded', function() {
         industrySelect.addEventListener('change', () => {
             userStoppedAutoRotate = true;
             stopAutoRotate();
-            const industry = industrySelect.value || 'barber';
+            const industry = industrySelect.value || 'realestate';
             renderChatDemo(industry);
         });
     }
 
     // Initial render + animation + auto-rotate
-    renderChatDemo('barber');
+    renderChatDemo('realestate');
     startAutoRotate();
 
     // ============================================
