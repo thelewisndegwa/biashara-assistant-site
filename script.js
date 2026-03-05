@@ -59,13 +59,13 @@ const translations = {
         },
         who: {
             title: "Built for Businesses That Demand More",
-            barber: {
-                heading: "Barbershops",
-                body: "Fast bookings and walk-ins. Show services & prices, book appointments, send reminders, and accept deposits automatically.",
-                feature1: "Service menu & prices",
-                feature2: "Instant bookings",
-                feature3: "Walk-in support",
-                feature4: "Automated reminders"
+            restaurant: {
+                heading: "Restaurants",
+                body: "Let customers browse your menu, make reservations, and order ahead — all through WhatsApp. Handle peak hours without missing a single inquiry.",
+                feature1: "Menu & daily specials",
+                feature2: "Table reservations",
+                feature3: "Takeaway & delivery orders",
+                feature4: "M-Pesa payments"
             },
             spa: {
                 heading: "Spas",
@@ -105,7 +105,7 @@ const translations = {
             subtitle: "Fill out the form below and we'll set up your Biashara-Assistant right away.",
             businessName: {
                 label: "Business Name *",
-                placeholder: "e.g., FreshCutz Barbershop"
+                placeholder: "e.g., Mama Oliech Restaurant"
             },
             yourName: {
                 label: "Your Name *",
@@ -119,7 +119,7 @@ const translations = {
             businessType: {
                 label: "What type of business? *",
                 default: "Select your business type",
-                barber: "Barbershop",
+                restaurant: "Restaurant",
                 spa: "Spa",
                 realestate: "Real Estate",
                 other: "Other"
@@ -147,20 +147,20 @@ const translations = {
         },
         chatDemoTabs: {
             label: "See example for",
-            barber: "Barber",
+            restaurant: "Restaurant",
             spa: "Spa",
             realestate: "Real Estate"
         },
         chatDemo: {
-            barber: {
-                contactName: "FreshCutz Barbershop",
+            restaurant: {
+                contactName: "Mama Oliech Restaurant",
                 status: "online",
-                m1: "Hi, can I book a haircut today?",
-                m2: "Sure! What service? (Haircut / Beard trim / Both)",
-                m3: "Both.",
-                m4: "Available slots: 11:00am or 3:00pm. Which works?",
-                m5: "3:00pm.",
-                m6: "Booked! KES 500 total. Pay on arrival or via M-Pesa. See you at 3!"
+                m1: "Hi, do you have a table for 4 tonight?",
+                m2: "Welcome! What time works for you? (6pm / 7:30pm / 8:30pm)",
+                m3: "7:30pm.",
+                m4: "Great! Any dietary preferences or special requests?",
+                m5: "Window seat if possible.",
+                m6: "Done! Table for 4 at 7:30pm by the window. See you tonight!"
             },
             spa: {
                 contactName: "Serene Spa & Wellness",
@@ -273,13 +273,13 @@ const translations = {
         },
         who: {
             title: "Imeundwa kwa Biashara Zinazotaka Zaidi",
-            barber: {
-                heading: "Vinyozi",
-                body: "Mareservi ya haraka na watembezi. Onyesha huduma na bei, reservi miadi, tuma vikumbusho, na kubali amana kiotomatiki.",
-                feature1: "Orodha ya huduma na bei",
-                feature2: "Mareservi ya papo hapo",
-                feature3: "Msaada wa watembezi",
-                feature4: "Vikumbusho vya kiotomatiki"
+            restaurant: {
+                heading: "Mikahawa",
+                body: "Ruhusu wateja kutazama menyu yako, kufanya mareservi, na kuagiza mapema — yote kupitia WhatsApp. Shughulikia masaa ya kilele bila kupoteza swali lolote.",
+                feature1: "Menyu na maalum za siku",
+                feature2: "Mareservi ya meza",
+                feature3: "Agizo la kuchukua na uwasilishaji",
+                feature4: "Malipo ya M-Pesa"
             },
             spa: {
                 heading: "Spa",
@@ -319,7 +319,7 @@ const translations = {
             subtitle: "Jaza fomu hapa chini na tutasanidi Biashara-Assistant yako mara moja.",
             businessName: {
                 label: "Jina la Biashara *",
-                placeholder: "mf., FreshCutz Kinyozi"
+                placeholder: "mf., Mama Oliech Mkahawa"
             },
             yourName: {
                 label: "Jina Lako *",
@@ -333,7 +333,7 @@ const translations = {
             businessType: {
                 label: "Ni aina gani ya biashara? *",
                 default: "Chagua aina ya biashara yako",
-                barber: "Kinyozi",
+                restaurant: "Mkahawa",
                 spa: "Spa",
                 realestate: "Mali za Isimu",
                 other: "Nyingine"
@@ -361,20 +361,20 @@ const translations = {
         },
         chatDemoTabs: {
             label: "Ona mfano kwa",
-            barber: "Kinyozi",
+            restaurant: "Mkahawa",
             spa: "Spa",
             realestate: "Mali"
         },
         chatDemo: {
-            barber: {
-                contactName: "FreshCutz Kinyozi",
+            restaurant: {
+                contactName: "Mama Oliech Mkahawa",
                 status: "huko mtandaoni",
-                m1: "Hujambo, naweza kujireservi kunyolewa leo?",
-                m2: "Sawa! Huduma gani? (Kunyolewa / Ndevu / Vyote)",
-                m3: "Vyote.",
-                m4: "Nafasi: 11:00 au 3:00. Ipi inafaa?",
-                m5: "3:00.",
-                m6: "Imereservwa! KES 500 jumla. Lipa ukifika au kwa M-Pesa. Tutaonana saa 9!"
+                m1: "Hujambo, mna meza ya watu 4 leo usiku?",
+                m2: "Karibu! Saa ngapi inafaa? (6pm / 7:30pm / 8:30pm)",
+                m3: "7:30pm.",
+                m4: "Sawa! Mna maombi maalum au vyakula mnavyopendelea?",
+                m5: "Meza ya dirishani ikiwezekana.",
+                m6: "Imefanywa! Meza ya watu 4 saa 1:30 usiku karibu na dirisha. Tutaonana leo!"
             },
             spa: {
                 contactName: "Serene Spa & Ustawi",
@@ -792,11 +792,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Animated Chat Demo
     // ============================================
 
-    const CHAT_INDUSTRIES = ['realestate', 'barber', 'spa'];
+    const CHAT_INDUSTRIES = ['restaurant', 'realestate', 'spa'];
 
     // Defines bubble structure per industry (keys live under translations.{lang}.chatDemo.<industry>.*)
     const CHAT_DEMO_STRUCTURE = {
-        barber: [
+        restaurant: [
             { dir: 'in', keys: ['m1'] },
             { dir: 'out', keys: ['m2'] },
             { dir: 'in', keys: ['m3'] },
@@ -823,7 +823,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ],
         };
 
-    let currentChatIndustry = 'realestate';
+    let currentChatIndustry = 'restaurant';
     let chatAutoRotateTimer = null;
     let userStoppedAutoRotate = false;
     let chatAnimationRunId = 0;
@@ -1012,13 +1012,13 @@ document.addEventListener('DOMContentLoaded', function() {
         industrySelect.addEventListener('change', () => {
             userStoppedAutoRotate = true;
             stopAutoRotate();
-            const industry = industrySelect.value || 'realestate';
+            const industry = industrySelect.value || 'restaurant';
             renderChatDemo(industry);
         });
     }
 
     // Initial render + animation + auto-rotate
-    renderChatDemo('realestate');
+    renderChatDemo('restaurant');
     startAutoRotate();
 
     // ============================================
