@@ -67,14 +67,6 @@ const translations = {
                 feature3: "Takeaway & delivery orders",
                 feature4: "M-Pesa payments"
             },
-            spa: {
-                heading: "Spas",
-                body: "Let clients book treatments, massages, and packages. Show available slots, collect deposits via M-Pesa, and send appointment reminders.",
-                feature1: "Treatment menu",
-                feature2: "Slot booking",
-                feature3: "M-Pesa deposits",
-                feature4: "Appointment reminders"
-            },
             realestate: {
                 heading: "Real Estate Agents",
                 body: "Qualify leads automatically. Capture property inquiries, budget, location preferences, schedule viewings, and hand off to agents.",
@@ -120,7 +112,6 @@ const translations = {
                 label: "What type of business? *",
                 default: "Select your business type",
                 restaurant: "Restaurant",
-                spa: "Spa",
                 realestate: "Real Estate",
                 other: "Other"
             },
@@ -148,7 +139,6 @@ const translations = {
         chatDemoTabs: {
             label: "See example for",
             restaurant: "Restaurant",
-            spa: "Spa",
             realestate: "Real Estate"
         },
         chatDemo: {
@@ -161,16 +151,6 @@ const translations = {
                 m4: "Great! Any dietary preferences or special requests?",
                 m5: "Window seat if possible.",
                 m6: "Done! Table for 4 at 7:30pm by the window. See you tonight!"
-            },
-            spa: {
-                contactName: "Serene Spa & Wellness",
-                status: "online",
-                m1: "Hi, I'd like to book a massage.",
-                m2: "Welcome! What type? (Swedish / Deep Tissue / Hot Stone)",
-                m3: "Deep Tissue.",
-                m4: "Available: Today 2pm or Tomorrow 10am. Which do you prefer?",
-                m5: "Today 2pm.",
-                m6: "Great—KES 3,500. Send deposit of KES 1,000 via M-Pesa to confirm. See you at 2!"
             },
             realestate: {
                 contactName: "Nairobi Homes",
@@ -281,14 +261,6 @@ const translations = {
                 feature3: "Agizo la kuchukua na uwasilishaji",
                 feature4: "Malipo ya M-Pesa"
             },
-            spa: {
-                heading: "Spa",
-                body: "Ruhusu wateja kureservi matibabu, massage, na paketi. Onyesha nafasi zilizo wazi, kusanya amana kwa M-Pesa, na kutuma vikumbusho vya miadi.",
-                feature1: "Orodha ya matibabu",
-                feature2: "Kureservi nafasi",
-                feature3: "Amana za M-Pesa",
-                feature4: "Vikumbusho vya miadi"
-            },
             realestate: {
                 heading: "Wakala wa Mali za Isimu",
                 body: "Thibitisha wateja wanaowezekana kiotomatiki. Kamata maswali ya mali, bajeti, mapendeleo ya eneo, ratibu maonyesho, na wasilisha kwa wakala.",
@@ -334,7 +306,6 @@ const translations = {
                 label: "Ni aina gani ya biashara? *",
                 default: "Chagua aina ya biashara yako",
                 restaurant: "Mkahawa",
-                spa: "Spa",
                 realestate: "Mali za Isimu",
                 other: "Nyingine"
             },
@@ -362,7 +333,6 @@ const translations = {
         chatDemoTabs: {
             label: "Ona mfano kwa",
             restaurant: "Mkahawa",
-            spa: "Spa",
             realestate: "Mali"
         },
         chatDemo: {
@@ -375,16 +345,6 @@ const translations = {
                 m4: "Sawa! Mna maombi maalum au vyakula mnavyopendelea?",
                 m5: "Meza ya dirishani ikiwezekana.",
                 m6: "Imefanywa! Meza ya watu 4 saa 1:30 usiku karibu na dirisha. Tutaonana leo!"
-            },
-            spa: {
-                contactName: "Serene Spa & Ustawi",
-                status: "huko mtandaoni",
-                m1: "Hujambo, ningependa kujireservi massage.",
-                m2: "Karibu! Aina gani? (Swedish / Deep Tissue / Hot Stone)",
-                m3: "Deep Tissue.",
-                m4: "Nafasi: Leo 2pm au Kesho 10am. Unapendelea ipi?",
-                m5: "Leo 2pm.",
-                m6: "Sawa—KES 3,500. Tuma amana ya KES 1,000 kwa M-Pesa kuthibitisha. Tutaonana saa 8!"
             },
             realestate: {
                 contactName: "Nairobi Homes",
@@ -792,19 +752,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Animated Chat Demo
     // ============================================
 
-    const CHAT_INDUSTRIES = ['restaurant', 'realestate', 'spa'];
+    const CHAT_INDUSTRIES = ['restaurant', 'realestate'];
 
     // Defines bubble structure per industry (keys live under translations.{lang}.chatDemo.<industry>.*)
     const CHAT_DEMO_STRUCTURE = {
         restaurant: [
-            { dir: 'in', keys: ['m1'] },
-            { dir: 'out', keys: ['m2'] },
-            { dir: 'in', keys: ['m3'] },
-            { dir: 'out', keys: ['m4'] },
-            { dir: 'in', keys: ['m5'] },
-            { dir: 'out', keys: ['m6'] },
-        ],
-        spa: [
             { dir: 'in', keys: ['m1'] },
             { dir: 'out', keys: ['m2'] },
             { dir: 'in', keys: ['m3'] },
