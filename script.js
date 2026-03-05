@@ -105,7 +105,7 @@ const translations = {
             subtitle: "Fill out the form below and we'll set up your Biashara-Assistant right away.",
             businessName: {
                 label: "Business Name *",
-                placeholder: "e.g., Mama Oliech Restaurant"
+                placeholder: "e.g., The Savanna Grill"
             },
             yourName: {
                 label: "Your Name *",
@@ -153,7 +153,7 @@ const translations = {
         },
         chatDemo: {
             restaurant: {
-                contactName: "Mama Oliech Restaurant",
+                contactName: "The Savanna Grill",
                 status: "online",
                 m1: "Hi, do you have a table for 4 tonight?",
                 m2: "Welcome! What time works for you? (6pm / 7:30pm / 8:30pm)",
@@ -319,7 +319,7 @@ const translations = {
             subtitle: "Jaza fomu hapa chini na tutasanidi Biashara-Assistant yako mara moja.",
             businessName: {
                 label: "Jina la Biashara *",
-                placeholder: "mf., Mama Oliech Mkahawa"
+                placeholder: "mf., The Savanna Grill"
             },
             yourName: {
                 label: "Jina Lako *",
@@ -367,7 +367,7 @@ const translations = {
         },
         chatDemo: {
             restaurant: {
-                contactName: "Mama Oliech Mkahawa",
+                contactName: "The Savanna Grill",
                 status: "huko mtandaoni",
                 m1: "Hujambo, mna meza ya watu 4 leo usiku?",
                 m2: "Karibu! Saa ngapi inafaa? (6pm / 7:30pm / 8:30pm)",
