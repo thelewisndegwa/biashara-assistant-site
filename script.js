@@ -76,22 +76,6 @@ const translations = {
                 feature4: "Agent handoff"
             }
         },
-        pricing: {
-            title: "Simple, Transparent Pricing",
-            planName: "Professional Plan",
-            dealBadge: "Limited offer: try Biashara-Assistant free",
-            subtext: "Everything you need to deliver world-class service",
-            feature2: "✓ Auto-reply to inquiries",
-            feature3: "✓ Bilingual support (English & Swahili)",
-            feature4: "✓ Booking system",
-            feature5: "✓ M-Pesa payment integration",
-            feature6: "✓ Basic analytics",
-            feature7: "✓ Email support",
-            ctaButton: "Start Free Trial",
-            trust1: "No credit card required",
-            trust2: "Cancel anytime",
-            trust3: "1-month free trial"
-        },
         form: {
             title: "Get Started in 5 Minutes",
             subtitle: "Fill out the form below and we'll set up your Biashara-Assistant right away.",
@@ -171,7 +155,6 @@ const translations = {
             customerService: "Customer Service",
             how: "How",
             who: "Who",
-            pricing: "Pricing",
             getStarted: "Get Started"
         },
         footer: {
@@ -182,7 +165,6 @@ const translations = {
             legal: "Legal",
             features: "Features",
             howItWorks: "How It Works",
-            pricing: "Pricing",
             faq: "FAQ",
             aboutUs: "About Us",
             contact: "Contact",
@@ -270,22 +252,6 @@ const translations = {
                 feature4: "Kuwasilisha kwa wakala"
             }
         },
-        pricing: {
-            title: "Bei Rahisi na Wazi",
-            planName: "Mpango wa Kitaalamu",
-            dealBadge: "Ofa ya muda: jaribu Biashara-Assistant bure",
-            subtext: "Kila kitu unachohitaji kutoa huduma ya kiwango cha juu",
-            feature2: "✓ Jibu la kiotomatiki kwa maswali",
-            feature3: "✓ Msaada wa lugha mbili (Kiingereza na Kiswahili)",
-            feature4: "✓ Mfumo wa mareservi",
-            feature5: "✓ Ujumuishaji wa malipo ya M-Pesa",
-            feature6: "✓ Uchambuzi wa msingi",
-            feature7: "✓ Msaada wa barua pepe",
-            ctaButton: "Anza Jaribio Bure",
-            trust1: "Hakuna kadi ya mkopo inahitajika",
-            trust2: "Ghairi wakati wowote",
-            trust3: "Jaribio la mwezi 1 bure"
-        },
         form: {
             title: "Anza kwa Dakika 5",
             subtitle: "Jaza fomu hapa chini na tutasanidi Biashara-Assistant yako mara moja.",
@@ -365,7 +331,6 @@ const translations = {
             customerService: "Huduma ya Wateja",
             how: "Jinsi",
             who: "Kwa Nani",
-            pricing: "Bei",
             getStarted: "Anza"
         },
         footer: {
@@ -376,7 +341,6 @@ const translations = {
             legal: "Kisheria",
             features: "Vipengele",
             howItWorks: "Inavyofanya Kazi",
-            pricing: "Bei",
             faq: "Maswali Yanayoulizwa Mara Kwa Mara",
             aboutUs: "Kuhusu Sisi",
             contact: "Wasiliana",
