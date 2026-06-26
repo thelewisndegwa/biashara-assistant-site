@@ -5,8 +5,8 @@
 const translations = {
     en: {
         hero: {
-            title: "The AI-Powered Front Desk Your Business Deserves",
-            subtitle: "Give your customers a 5-star WhatsApp experience — instant replies in English and Swahili, seamless bookings, and M-Pesa payments, 24/7. No extra staff needed.",
+            title: "Stop Losing Bookings to Slow WhatsApp Replies",
+            subtitle: "Your customers message you at night, on weekends, and during rush hour. Biashara-Assistant replies instantly in English and Swahili — handling bookings, questions, and M-Pesa payments 24/7, so you never miss a sale.",
             cta: "Get Started",
             whatsappButton: "Message us on WhatsApp",
             supporting: "Built for Kenyan businesses, by Kenyans 🇰🇪"
@@ -74,6 +74,22 @@ const translations = {
                 feature2: "Budget capture",
                 feature3: "Viewing scheduling",
                 feature4: "Agent handoff"
+            },
+            hotels: {
+                heading: "Hotels",
+                body: "Handle room inquiries and reservations around the clock. Share availability, rates, and amenities — and collect deposits via M-Pesa without lifting a finger.",
+                feature1: "Room availability & rates",
+                feature2: "Reservation booking",
+                feature3: "Check-in info & amenities",
+                feature4: "M-Pesa deposits"
+            },
+            travel: {
+                heading: "Travel Agencies",
+                body: "Answer package inquiries instantly. Capture destinations, dates, and budgets, send quotes, and confirm bookings — all before a competitor replies.",
+                feature1: "Package & destination inquiries",
+                feature2: "Quote requests",
+                feature3: "Booking confirmations",
+                feature4: "Agent handoff"
             }
         },
         form: {
@@ -97,6 +113,8 @@ const translations = {
                 default: "Select your business type",
                 restaurant: "Restaurant",
                 realestate: "Real Estate",
+                hotels: "Hotel",
+                travel: "Travel Agency",
                 other: "Other"
             },
             email: {
@@ -108,7 +126,7 @@ const translations = {
                 label: "Tell us about your business (optional)",
                 placeholder: "Any specific requirements or questions?"
             },
-            submit: "Start My Free Trial",
+            submit: "Set Up My Assistant",
             trustMessage: "🔒 Your information is secure. We'll never share your data.",
             legalText: "By submitting, you agree to our",
             termsLink: "Terms of Service",
@@ -118,12 +136,42 @@ const translations = {
         cta: {
             title: "Ready to Elevate Your Customer Experience?",
             subtitle: "Join the businesses using Biashara-Assistant to deliver faster service, capture more revenue, and stand out from the competition.",
-            button: "Start Free Trial Now"
+            button: "Get Started Today"
+        },
+        faq: {
+            title: "Frequently Asked Questions",
+            subtitle: "Common questions before you get started — answered honestly.",
+            q1: {
+                question: "Will the replies sound robotic?",
+                answer: "No. Biashara-Assistant is trained on your business — your menu, services, prices, and tone. Customers get natural, helpful replies that sound like your team, not a generic chatbot."
+            },
+            q2: {
+                question: "What if a customer needs to speak to a real person?",
+                answer: "The assistant handles routine questions and bookings, then hands off to you or your team when needed. You stay in control — nothing goes out without your approval during setup."
+            },
+            q3: {
+                question: "Do I need technical skills to set this up?",
+                answer: "Not at all. Fill out a short form and we'll walk you through connecting your WhatsApp Business number. Most businesses are live within a day."
+            },
+            q4: {
+                question: "Is my WhatsApp number safe?",
+                answer: "Yes. You keep your existing business number. We never share your data with third parties, and you can pause or stop the service at any time."
+            },
+            q5: {
+                question: "How fast can I go live?",
+                answer: "Most setups take less than 24 hours after you submit your details. We'll contact you on WhatsApp to confirm everything before going live."
+            },
+            q6: {
+                question: "How do I get started?",
+                answer: "Fill out the form below or message us on WhatsApp. There's no payment required upfront — we'll set up your assistant and show you how it works before you commit."
+            }
         },
         chatDemoTabs: {
             label: "See example for",
             restaurant: "Restaurant",
-            realestate: "Real Estate"
+            realestate: "Real Estate",
+            hotels: "Hotels",
+            travel: "Travel"
         },
         chatDemo: {
             restaurant: {
@@ -146,6 +194,26 @@ const translations = {
                 m5: "Up to 60k.",
                 m6: "When can you view? (Sat 11am / Sat 2pm / Sun 1pm)",
                 m7: "Thanks—an agent will contact you to confirm."
+            },
+            hotels: {
+                contactName: "Mombasa Bay Hotel",
+                status: "online",
+                m1: "Do you have a room for 2 this Friday?",
+                m2: "Welcome! Deluxe (KES 8,500) or Standard (KES 6,500)?",
+                m3: "Deluxe please.",
+                m4: "Any special requests? (late check-in, airport pickup, etc.)",
+                m5: "Late check-in around 9pm.",
+                m6: "Booked! Deluxe for 2, Friday. Check-in from 9pm. See you then!"
+            },
+            travel: {
+                contactName: "SafariLink Travel",
+                status: "online",
+                m1: "I need a Zanzibar package for 2 in July.",
+                m2: "Wonderful! What's your budget range?",
+                m3: "Around 150k.",
+                m4: "We have a 5-day package with flights & hotel from KES 142,000.",
+                m5: "That works — how do we book?",
+                m6: "Perfect! An agent will send your itinerary and payment details shortly."
             },
         },
         nav: {
@@ -181,8 +249,8 @@ const translations = {
     },
     sw: {
         hero: {
-            title: "Ofisi ya Mbele ya AI Ambayo Biashara Yako Inastahili",
-            subtitle: "Wape wateja wako uzoefu wa nyota 5 kwenye WhatsApp — majibu ya haraka kwa Kiingereza na Kiswahili, mareservi rahisi, na malipo ya M-Pesa, masaa 24. Bila wafanyakazi wa ziada.",
+            title: "Acha Kupoteza Mareservi Kutokana na Majibu ya Polepole wa WhatsApp",
+            subtitle: "Wateja wako wanakutumia ujumbe usiku, wikendi, na wakati wa shughuli nyingi. Biashara-Assistant hujibu papo hapo kwa Kiingereza na Kiswahili — ikishughulikia mareservi, maswali, na malipo ya M-Pesa masaa 24, ili usipoteze mauzo.",
             cta: "Anza Sasa",
             whatsappButton: "Tutumie ujumbe kwa WhatsApp",
             supporting: "Imeundwa kwa biashara za Kenya, na Wakenya 🇰🇪"
@@ -250,6 +318,22 @@ const translations = {
                 feature2: "Kukamata bajeti",
                 feature3: "Kuratibu maonyesho",
                 feature4: "Kuwasilisha kwa wakala"
+            },
+            hotels: {
+                heading: "Hoteli",
+                body: "Shughulikia maswali na mareservi ya vyumba masaa 24. Shiriki upatikanaji, bei, na huduma — na kukusanya amana kupitia M-Pesa bila juhudi.",
+                feature1: "Upatikanaji wa vyumba na bei",
+                feature2: "Mareservi ya vyumba",
+                feature3: "Maelezo ya kuingia na huduma",
+                feature4: "Amana za M-Pesa"
+            },
+            travel: {
+                heading: "Mashirika ya Usafiri",
+                body: "Jibu maswali ya vifurushi papo hapo. Kamata marudio, tarehe, na bajeti, tuma bei, na thibitisha mareservi — kabla mshindani hajajibu.",
+                feature1: "Maswali ya vifurushi na marudio",
+                feature2: "Maombi ya bei",
+                feature3: "Uthibitishaji wa mareservi",
+                feature4: "Kuwasilisha kwa wakala"
             }
         },
         form: {
@@ -273,6 +357,8 @@ const translations = {
                 default: "Chagua aina ya biashara yako",
                 restaurant: "Mkahawa",
                 realestate: "Mali za Isimu",
+                hotels: "Hoteli",
+                travel: "Shirika la Usafiri",
                 other: "Nyingine"
             },
             email: {
@@ -284,7 +370,7 @@ const translations = {
                 label: "Tuambie kuhusu biashara yako (si lazima)",
                 placeholder: "Mahitaji yoyote maalum au maswali?"
             },
-            submit: "Anza Jaribio Bure",
+            submit: "Sanidi Msaidizi Wangu",
             trustMessage: "🔒 Taarifa zako ziko salama. Hatutawahi kushiriki data yako.",
             legalText: "Kwa kuwasilisha, unakubali",
             termsLink: "Sheria za Huduma",
@@ -294,12 +380,42 @@ const translations = {
         cta: {
             title: "Tayari Kuinua Uzoefu wa Wateja Wako?",
             subtitle: "Jiunge na biashara zinazotumia Biashara-Assistant kutoa huduma ya haraka, kupata mapato zaidi, na kujitofautisha na washindani.",
-            button: "Anza Jaribio Bure Sasa"
+            button: "Anza Leo"
+        },
+        faq: {
+            title: "Maswali Yanayoulizwa Mara Kwa Mara",
+            subtitle: "Maswali ya kawaida kabla ya kuanza — yamejibiwa kwa uwazi.",
+            q1: {
+                question: "Je, majibu yatasikika kama roboti?",
+                answer: "Hapana. Biashara-Assistant inafunzwa kuhusu biashara yako — menyu, huduma, bei, na mtindo wako. Wateja hupata majibu ya asili na ya msaada yanayosikika kama timu yako, si chatbot ya kawaida."
+            },
+            q2: {
+                question: "Je, ikiwa mteja anahitaji kuongea na mtu halisi?",
+                answer: "Msaidizi hushughulikia maswali ya kawaida na mareservi, kisha anakuwasilisha wewe au timu yako inapohitajika. Unadhibiti kila kitu — hakuna kinachotoka bila idhini yako wakati wa kusanidi."
+            },
+            q3: {
+                question: "Je, ninahitaji ujuzi wa kiufundi kusanidi?",
+                answer: "Hapana kabisa. Jaza fomu fupi na tutakuongoza kuunganisha nambari yako ya WhatsApp ya biashara. Biashara nyingi zinaanza kufanya kazi ndani ya siku moja."
+            },
+            q4: {
+                question: "Je, nambari yangu ya WhatsApp iko salama?",
+                answer: "Ndiyo. Unabaki na nambari yako ya biashara iliyopo. Hatutawahi kushiriki data yako na wahusika wengine, na unaweza kusimamisha au kuacha huduma wakati wowote."
+            },
+            q5: {
+                question: "Ninaweza kuanza kufanya kazi haraka kiasi gani?",
+                answer: "Usanidi mwingi huchukua chini ya masaa 24 baada ya kuwasilisha maelezo yako. Tutawasiliana nawe kupitia WhatsApp kuthibitisha kila kitu kabla ya kuanza."
+            },
+            q6: {
+                question: "Ninaanzaje?",
+                answer: "Jaza fomu hapa chini au tutumie ujumbe kwa WhatsApp. Hakuna malipo yanayohitajika mapema — tutasanidi msaidizi wako na kukuonyesha jinsi inavyofanya kazi kabla ya kujitolea."
+            }
         },
         chatDemoTabs: {
             label: "Ona mfano kwa",
             restaurant: "Mkahawa",
-            realestate: "Mali"
+            realestate: "Mali",
+            hotels: "Hoteli",
+            travel: "Usafiri"
         },
         chatDemo: {
             restaurant: {
@@ -322,6 +438,26 @@ const translations = {
                 m5: "Hadi 60k.",
                 m6: "Unaweza kuja kuona lini? (Jumamosi 11 / Jumamosi 2 / Jumapili 1)",
                 m7: "Asante—wakala atakupigia kuthibitisha."
+            },
+            hotels: {
+                contactName: "Mombasa Bay Hotel",
+                status: "huko mtandaoni",
+                m1: "Mna chumba cha watu 2 Ijumaa hii?",
+                m2: "Karibu! Deluxe (KES 8,500) au Standard (KES 6,500)?",
+                m3: "Deluxe tafadhali.",
+                m4: "Maombi maalum? (kuingia usiku, usafiri wa uwanja wa ndege, n.k.)",
+                m5: "Kuingia usiku karibu saa 3.",
+                m6: "Imehifadhiwa! Deluxe kwa watu 2, Ijumaa. Kuingia kutoka saa 3. Tutaonana!"
+            },
+            travel: {
+                contactName: "SafariLink Travel",
+                status: "huko mtandaoni",
+                m1: "Nahitaji kifurushi cha Zanzibar kwa watu 2 mwezi wa Julai.",
+                m2: "Vizuri! Bajeti yako ni kiasi gani?",
+                m3: "Karibu 150k.",
+                m4: "Tuna kifurushi cha siku 5 chenye ndege na hoteli kutoka KES 142,000.",
+                m5: "Sawa — tunawezaje kuweka nafasi?",
+                m6: "Kamili! Wakala atakutumia ratiba yako na maelezo ya malipo hivi karibuni."
             },
         },
         nav: {
@@ -716,7 +852,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Animated Chat Demo
     // ============================================
 
-    const CHAT_INDUSTRIES = ['restaurant', 'realestate'];
+    const CHAT_INDUSTRIES = ['restaurant', 'realestate', 'hotels', 'travel'];
 
     // Defines bubble structure per industry (keys live under translations.{lang}.chatDemo.<industry>.*)
     const CHAT_DEMO_STRUCTURE = {
@@ -736,6 +872,22 @@ document.addEventListener('DOMContentLoaded', function() {
             { dir: 'in', keys: ['m5'] },
             { dir: 'out', keys: ['m6'] },
             { dir: 'out', keys: ['m7'] },
+        ],
+        hotels: [
+            { dir: 'in', keys: ['m1'] },
+            { dir: 'out', keys: ['m2'] },
+            { dir: 'in', keys: ['m3'] },
+            { dir: 'out', keys: ['m4'] },
+            { dir: 'in', keys: ['m5'] },
+            { dir: 'out', keys: ['m6'] },
+        ],
+        travel: [
+            { dir: 'in', keys: ['m1'] },
+            { dir: 'out', keys: ['m2'] },
+            { dir: 'in', keys: ['m3'] },
+            { dir: 'out', keys: ['m4'] },
+            { dir: 'in', keys: ['m5'] },
+            { dir: 'out', keys: ['m6'] },
         ],
         };
 

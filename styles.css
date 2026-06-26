@@ -1242,6 +1242,82 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
+   FAQ Section
+   ============================================ */
+
+.faq-section {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--bg-white);
+}
+
+@media (min-width: 768px) {
+    .faq-section {
+        padding: var(--spacing-3xl) 0;
+    }
+}
+
+.faq-list {
+    max-width: 720px;
+    margin: var(--spacing-xl) auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.faq-item {
+    background: var(--bg-off-white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faq-item[open] {
+    border-color: rgba(37, 211, 102, 0.25);
+    box-shadow: var(--shadow-sm);
+}
+
+.faq-question {
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+    line-height: 1.4;
+}
+
+.faq-question::-webkit-details-marker {
+    display: none;
+}
+
+.faq-question::after {
+    content: '+';
+    flex-shrink: 0;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--primary-green);
+    line-height: 1;
+    transition: transform 0.2s ease;
+}
+
+.faq-item[open] .faq-question::after {
+    content: '−';
+}
+
+.faq-answer {
+    padding: 0 var(--spacing-lg) var(--spacing-md);
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ============================================
    Form Section
    ============================================ */
 
@@ -1701,6 +1777,10 @@ h1, h2, h3, h4, h5, h6 {
 /* ============================================
    Accessibility
    ============================================ */
+
+#faq {
+    scroll-margin-top: 80px;
+}
 
 :focus-visible {
     outline: 2px solid var(--primary-green);
