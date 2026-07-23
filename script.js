@@ -5,14 +5,29 @@
 const translations = {
     en: {
         hero: {
-            title: "Stop Losing Bookings to Slow WhatsApp Replies",
-            subtitle: "Your customers message you at night, on weekends, and during rush hour. Biashara-Assistant replies instantly in English and Swahili — handling bookings, questions, and M-Pesa payments 24/7, so you never miss a sale.",
+            title: "Stop Losing Sales to Slow Replies — On Every Channel",
+            subtitle: "Your customers message you on WhatsApp, Instagram, TikTok, Messenger, and more — day and night. Biashara-Assistant replies instantly in English and Swahili from one place, handling bookings, questions, and M-Pesa payments 24/7, so you never miss a sale.",
             cta: "Get Started",
             whatsappButton: "Message us on WhatsApp",
             supporting: "Built for Kenyan businesses, by Kenyans 🇰🇪"
         },
+        channels: {
+            title: "One Assistant, Every Channel",
+            subtitle: "Connect all your customer conversations in one place — including Instagram, TikTok, Facebook Messenger, WhatsApp, Telegram, SMS and Email.",
+            instagram: "Instagram",
+            tiktok: "TikTok",
+            messenger: "Facebook Messenger",
+            whatsapp: "WhatsApp",
+            telegram: "Telegram",
+            sms: "SMS",
+            email: "Email"
+        },
+        inbox: {
+            title: "Inbox",
+            live: "● Live"
+        },
         why: {
-            title: "Why Leading Businesses Choose Us",
+            title: "Why Businesses Choose Biashara-Assistant",
             card1: {
                 title: "Reclaim Your Team's Time",
                 body: "Free your staff from repetitive inquiries. Biashara-Assistant handles customer questions around the clock so your team can focus on high-value work."
@@ -49,8 +64,8 @@ const translations = {
                 body: "Fill out a simple form with your business details. No technical skills needed."
             },
             step2: {
-                title: "Connect Your WhatsApp",
-                body: "Link your business WhatsApp number. We'll guide you through the simple setup process."
+                title: "Connect Your Channels",
+                body: "Link WhatsApp, Instagram, TikTok, Messenger, Telegram, SMS, and email. We'll guide you through the simple setup process."
             },
             step3: {
                 title: "Deliver Premium Service",
@@ -61,7 +76,7 @@ const translations = {
             title: "Built for Businesses That Demand More",
             restaurant: {
                 heading: "Restaurants",
-                body: "Let customers browse your menu, make reservations, and order ahead — all through WhatsApp. Handle peak hours without missing a single inquiry.",
+                body: "Let customers browse your menu, make reservations, and order ahead — across WhatsApp, Instagram, and every channel they use. Handle peak hours without missing a single inquiry.",
                 feature1: "Menu & daily specials",
                 feature2: "Table reservations",
                 feature3: "Takeaway & delivery orders",
@@ -95,6 +110,9 @@ const translations = {
         form: {
             title: "Get Started in 5 Minutes",
             subtitle: "Fill out the form below and we'll set up your Biashara-Assistant right away.",
+            reassurance1: "✓ No payment required upfront",
+            reassurance2: "✓ We help you connect your channels",
+            reassurance3: "✓ Most businesses go live within 24 hours",
             businessName: {
                 label: "Business Name *",
                 placeholder: "e.g., The Savanna Grill"
@@ -104,7 +122,7 @@ const translations = {
                 placeholder: "e.g., Sarah Wanjiku"
             },
             phone: {
-                label: "WhatsApp Business Number *",
+                label: "Business Phone / WhatsApp Number *",
                 placeholder: "e.g., 0712 345 678",
                 helper: "The number customers will message"
             },
@@ -120,7 +138,7 @@ const translations = {
             email: {
                 label: "Email Address *",
                 placeholder: "your@email.com",
-                helper: "We'll send setup instructions here"
+                helper: "We'll reach you here to confirm your setup"
             },
             additionalInfo: {
                 label: "Tell us about your business (optional)",
@@ -128,6 +146,15 @@ const translations = {
             },
             submit: "Set Up My Assistant",
             trustMessage: "🔒 Your information is secure. We'll never share your data.",
+            validation: {
+                required: "This field is required",
+                email: "Please enter a valid email address",
+                phone: "Please enter a valid Kenyan phone number"
+            },
+            success: {
+                title: "You're almost set!",
+                text: "WhatsApp should have opened with your details. Send the message and we'll reply within a few hours to get you live."
+            },
             legalText: "By submitting, you agree to our",
             termsLink: "Terms of Service",
             and: "and",
@@ -136,7 +163,17 @@ const translations = {
         cta: {
             title: "Ready to Elevate Your Customer Experience?",
             subtitle: "Join the businesses using Biashara-Assistant to deliver faster service, capture more revenue, and stand out from the competition.",
-            button: "Get Started Today"
+            button: "Get Started Today",
+            whatsapp: "Chat on WhatsApp"
+        },
+        stats: {
+            s1: { value: "7", label: "Channels connected" },
+            s2: { value: "<30s", label: "Average reply time" },
+            s3: { value: "24/7", label: "Always on for customers" },
+            s4: { value: "EN + SW", label: "English & Swahili" }
+        },
+        a11y: {
+            skipToContent: "Skip to content"
         },
         faq: {
             title: "Frequently Asked Questions",
@@ -151,11 +188,11 @@ const translations = {
             },
             q3: {
                 question: "Do I need technical skills to set this up?",
-                answer: "Not at all. Fill out a short form and we'll walk you through connecting your WhatsApp Business number. Most businesses are live within a day."
+                answer: "Not at all. Fill out a short form and we'll walk you through connecting your channels — WhatsApp, Instagram, Messenger, and more. Most businesses are live within a day."
             },
             q4: {
-                question: "Is my WhatsApp number safe?",
-                answer: "Yes. You keep your existing business number. We never share your data with third parties, and you can pause or stop the service at any time."
+                question: "Are my accounts and data safe?",
+                answer: "Yes. You keep full control of your existing accounts and numbers. We never share your data with third parties, and you can pause or stop the service at any time."
             },
             q5: {
                 question: "How fast can I go live?",
@@ -219,15 +256,17 @@ const translations = {
         nav: {
             home: "Home",
             blog: "Blog",
+            channels: "Channels",
             why: "Why",
             customerService: "Customer Service",
             how: "How",
             who: "Who",
+            faq: "FAQ",
             getStarted: "Get Started"
         },
         footer: {
             brand: "Biashara-Assistant",
-            tagline: "Your WhatsApp business assistant",
+            tagline: "Your all-in-one customer assistant",
             product: "Product",
             company: "Company",
             legal: "Legal",
@@ -249,14 +288,29 @@ const translations = {
     },
     sw: {
         hero: {
-            title: "Acha Kupoteza Mareservi Kutokana na Majibu ya Polepole wa WhatsApp",
-            subtitle: "Wateja wako wanakutumia ujumbe usiku, wikendi, na wakati wa shughuli nyingi. Biashara-Assistant hujibu papo hapo kwa Kiingereza na Kiswahili — ikishughulikia mareservi, maswali, na malipo ya M-Pesa masaa 24, ili usipoteze mauzo.",
+            title: "Acha Kupoteza Mauzo Kutokana na Majibu ya Polepole — Kwenye Kila Njia",
+            subtitle: "Wateja wako wanakutumia ujumbe kwenye WhatsApp, Instagram, TikTok, Messenger, na zaidi — mchana na usiku. Biashara-Assistant hujibu papo hapo kwa Kiingereza na Kiswahili kutoka sehemu moja, ikishughulikia mareservi, maswali, na malipo ya M-Pesa masaa 24, ili usipoteze mauzo.",
             cta: "Anza Sasa",
             whatsappButton: "Tutumie ujumbe kwa WhatsApp",
             supporting: "Imeundwa kwa biashara za Kenya, na Wakenya 🇰🇪"
         },
+        channels: {
+            title: "Msaidizi Mmoja, Kila Njia",
+            subtitle: "Unganisha mazungumzo yote ya wateja wako sehemu moja — ikijumuisha Instagram, TikTok, Facebook Messenger, WhatsApp, Telegram, SMS na Barua Pepe.",
+            instagram: "Instagram",
+            tiktok: "TikTok",
+            messenger: "Facebook Messenger",
+            whatsapp: "WhatsApp",
+            telegram: "Telegram",
+            sms: "SMS",
+            email: "Barua Pepe"
+        },
+        inbox: {
+            title: "Kikasha",
+            live: "● Hai"
+        },
         why: {
-            title: "Kwa Nini Biashara Zinazoongoza Zinatuchagua",
+            title: "Kwa Nini Biashara Zinachagua Biashara-Assistant",
             card1: {
                 title: "Okoa Muda wa Timu Yako",
                 body: "Wachie wafanyakazi wako maswali ya kujirudia. Biashara-Assistant hushughulikia maswali ya wateja masaa 24 ili timu yako izingatie kazi ya thamani zaidi."
@@ -293,8 +347,8 @@ const translations = {
                 body: "Jaza fomu rahisi na maelezo ya biashara yako. Hakuna ujuzi wa kiufundi unahitajika."
             },
             step2: {
-                title: "Unganisha WhatsApp Yako",
-                body: "Unganisha nambari yako ya WhatsApp ya biashara. Tutakuongoza kupitia mchakato rahisi wa kusanidi."
+                title: "Unganisha Njia Zako",
+                body: "Unganisha WhatsApp, Instagram, TikTok, Messenger, Telegram, SMS, na barua pepe. Tutakuongoza kupitia mchakato rahisi wa kusanidi."
             },
             step3: {
                 title: "Toa Huduma ya Hali ya Juu",
@@ -305,7 +359,7 @@ const translations = {
             title: "Imeundwa kwa Biashara Zinazotaka Zaidi",
             restaurant: {
                 heading: "Mikahawa",
-                body: "Ruhusu wateja kutazama menyu yako, kufanya mareservi, na kuagiza mapema — yote kupitia WhatsApp. Shughulikia masaa ya kilele bila kupoteza swali lolote.",
+                body: "Ruhusu wateja kutazama menyu yako, kufanya mareservi, na kuagiza mapema — kwenye WhatsApp, Instagram, na kila njia wanayotumia. Shughulikia masaa ya kilele bila kupoteza swali lolote.",
                 feature1: "Menyu na maalum za siku",
                 feature2: "Mareservi ya meza",
                 feature3: "Agizo la kuchukua na uwasilishaji",
@@ -339,6 +393,9 @@ const translations = {
         form: {
             title: "Anza kwa Dakika 5",
             subtitle: "Jaza fomu hapa chini na tutasanidi Biashara-Assistant yako mara moja.",
+            reassurance1: "✓ Hakuna malipo yanayohitajika mapema",
+            reassurance2: "✓ Tunakusaidia kuunganisha njia zako",
+            reassurance3: "✓ Biashara nyingi zinaanza kufanya kazi ndani ya masaa 24",
             businessName: {
                 label: "Jina la Biashara *",
                 placeholder: "mf., The Savanna Grill"
@@ -348,7 +405,7 @@ const translations = {
                 placeholder: "mf., Sarah Wanjiku"
             },
             phone: {
-                label: "Nambari ya WhatsApp ya Biashara *",
+                label: "Nambari ya Simu / WhatsApp ya Biashara *",
                 placeholder: "mf., 0712 345 678",
                 helper: "Nambari ambayo wateja watatumia"
             },
@@ -364,7 +421,7 @@ const translations = {
             email: {
                 label: "Anwani ya Barua Pepe *",
                 placeholder: "barua@pepe.com",
-                helper: "Tutatumia hii kutuma maelekezo ya kusanidi"
+                helper: "Tutawasiliana nawe hapa kuthibitisha usanidi wako"
             },
             additionalInfo: {
                 label: "Tuambie kuhusu biashara yako (si lazima)",
@@ -372,6 +429,15 @@ const translations = {
             },
             submit: "Sanidi Msaidizi Wangu",
             trustMessage: "🔒 Taarifa zako ziko salama. Hatutawahi kushiriki data yako.",
+            validation: {
+                required: "Sehemu hii inahitajika",
+                email: "Tafadhali weka anwani halali ya barua pepe",
+                phone: "Tafadhali weka nambari halali ya simu ya Kenya"
+            },
+            success: {
+                title: "Karibu kukamilisha!",
+                text: "WhatsApp inapaswa kufunguka na maelezo yako. Tuma ujumbe na tutajibu ndani ya masaa machache ili kukusaidia kuanza."
+            },
             legalText: "Kwa kuwasilisha, unakubali",
             termsLink: "Sheria za Huduma",
             and: "na",
@@ -380,7 +446,17 @@ const translations = {
         cta: {
             title: "Tayari Kuinua Uzoefu wa Wateja Wako?",
             subtitle: "Jiunge na biashara zinazotumia Biashara-Assistant kutoa huduma ya haraka, kupata mapato zaidi, na kujitofautisha na washindani.",
-            button: "Anza Leo"
+            button: "Anza Leo",
+            whatsapp: "Ongea kwenye WhatsApp"
+        },
+        stats: {
+            s1: { value: "7", label: "Njia zilizounganishwa" },
+            s2: { value: "<30s", label: "Muda wa wastani wa kujibu" },
+            s3: { value: "24/7", label: "Daima tayari kwa wateja" },
+            s4: { value: "EN + SW", label: "Kiingereza na Kiswahili" }
+        },
+        a11y: {
+            skipToContent: "Ruka hadi maudhui"
         },
         faq: {
             title: "Maswali Yanayoulizwa Mara Kwa Mara",
@@ -395,11 +471,11 @@ const translations = {
             },
             q3: {
                 question: "Je, ninahitaji ujuzi wa kiufundi kusanidi?",
-                answer: "Hapana kabisa. Jaza fomu fupi na tutakuongoza kuunganisha nambari yako ya WhatsApp ya biashara. Biashara nyingi zinaanza kufanya kazi ndani ya siku moja."
+                answer: "Hapana kabisa. Jaza fomu fupi na tutakuongoza kuunganisha njia zako — WhatsApp, Instagram, Messenger, na zaidi. Biashara nyingi zinaanza kufanya kazi ndani ya siku moja."
             },
             q4: {
-                question: "Je, nambari yangu ya WhatsApp iko salama?",
-                answer: "Ndiyo. Unabaki na nambari yako ya biashara iliyopo. Hatutawahi kushiriki data yako na wahusika wengine, na unaweza kusimamisha au kuacha huduma wakati wowote."
+                question: "Je, akaunti na data yangu ziko salama?",
+                answer: "Ndiyo. Unabaki na udhibiti kamili wa akaunti na nambari zako zilizopo. Hatutawahi kushiriki data yako na wahusika wengine, na unaweza kusimamisha au kuacha huduma wakati wowote."
             },
             q5: {
                 question: "Ninaweza kuanza kufanya kazi haraka kiasi gani?",
@@ -463,15 +539,17 @@ const translations = {
         nav: {
             home: "Nyumbani",
             blog: "Blogu",
+            channels: "Njia",
             why: "Kwa Nini",
             customerService: "Huduma ya Wateja",
             how: "Jinsi",
             who: "Kwa Nani",
+            faq: "Maswali",
             getStarted: "Anza"
         },
         footer: {
             brand: "Biashara-Assistant",
-            tagline: "Msaidizi wako wa WhatsApp wa biashara",
+            tagline: "Msaidizi wako wa wateja wa njia zote",
             product: "Bidhaa",
             company: "Kampuni",
             legal: "Kisheria",
@@ -557,6 +635,10 @@ function getTranslation(key, lang) {
     return typeof value === 'string' ? value : null;
 }
 
+function validationMessage(key) {
+    return getTranslation(`form.validation.${key}`, currentLang) || '';
+}
+
 // ============================================
 // Smooth Scrolling for Anchor Links
 // ============================================
@@ -587,6 +669,41 @@ document.addEventListener('DOMContentLoaded', function() {
     function closeMobileNav() {
         if (navLinks) navLinks.classList.remove('is-open');
         if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
+    }
+
+    // Nav shadow on scroll
+    const topNav = document.getElementById('topNav');
+    if (topNav) {
+        const onNavScroll = () => {
+            topNav.classList.toggle('is-scrolled', window.scrollY > 8);
+        };
+        onNavScroll();
+        window.addEventListener('scroll', onNavScroll, { passive: true });
+    }
+
+    // Sticky mobile CTA — show after hero, hide near form/footer
+    const mobileCtaBar = document.getElementById('mobileCtaBar');
+    const heroSection = document.getElementById('hero');
+    const getStartedSection = document.getElementById('get-started');
+
+    if (mobileCtaBar && heroSection) {
+        const updateMobileCta = () => {
+            const heroBottom = heroSection.getBoundingClientRect().bottom;
+            let hideNearForm = false;
+
+            if (getStartedSection) {
+                const formTop = getStartedSection.getBoundingClientRect().top;
+                hideNearForm = formTop < window.innerHeight * 0.85;
+            }
+
+            const shouldShow = heroBottom < 0 && !hideNearForm && window.innerWidth < 900;
+            mobileCtaBar.hidden = !shouldShow;
+            document.body.classList.toggle('has-mobile-cta', shouldShow);
+        };
+
+        updateMobileCta();
+        window.addEventListener('scroll', updateMobileCta, { passive: true });
+        window.addEventListener('resize', updateMobileCta, { passive: true });
     }
 
     // Handle smooth scrolling for anchor links
@@ -643,7 +760,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'New Biashara-Assistant signup request:',
                 `Business Name: ${data.businessName || ''}`,
                 `Your Name: ${data.yourName || ''}`,
-                `WhatsApp Business Number: ${data.phone || ''}`,
+                `Business Phone / WhatsApp Number: ${data.phone || ''}`,
                 `Business Type: ${data.businessType || ''}`,
                 `Email: ${data.email || ''}`,
                 '',
@@ -673,7 +790,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (!data[fieldName] || data[fieldName].trim() === '') {
                 isValid = false;
-                showFieldError(field, 'This field is required');
+                showFieldError(field, validationMessage('required'));
             } else {
                 clearFieldError(field);
             }
@@ -683,14 +800,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const emailField = document.querySelector('[name="email"]');
         if (data.email && !isValidEmail(data.email)) {
             isValid = false;
-            showFieldError(emailField, 'Please enter a valid email address');
+            showFieldError(emailField, validationMessage('email'));
         }
         
         // Validate phone format (basic Kenyan phone validation)
         const phoneField = document.querySelector('[name="phone"]');
         if (data.phone && !isValidKenyanPhone(data.phone)) {
             isValid = false;
-            showFieldError(phoneField, 'Please enter a valid Kenyan phone number');
+            showFieldError(phoneField, validationMessage('phone'));
         }
         
         return isValid;
@@ -722,10 +839,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const errorElement = document.createElement('span');
         errorElement.className = 'field-error';
         errorElement.textContent = message;
-        errorElement.style.color = '#EF4444';
-        errorElement.style.fontSize = '12px';
-        errorElement.style.marginTop = '4px';
-        errorElement.style.display = 'block';
         
         // Insert after field
         field.parentNode.appendChild(errorElement);
@@ -749,47 +862,26 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function showFormSuccess() {
         const form = document.getElementById('signupForm');
+        const existing = form.querySelector('.form-success');
+        if (existing) existing.remove();
+
         const successMessage = document.createElement('div');
         successMessage.className = 'form-success';
-        const successTitle = currentLang === 'en' ? 'Thank you for signing up!' : 'Asante kwa kujisajili!';
-        const successText = currentLang === 'en' 
-            ? "We'll send setup instructions to your email shortly."
-            : "Tutatumia maelekezo ya kusanidi kwenye barua pepe yako hivi karibuni.";
+        successMessage.setAttribute('role', 'status');
         successMessage.innerHTML = `
-            <div style="
-                background: #F0FDF4;
-                border: 2px solid #10B981;
-                border-radius: 12px;
-                padding: 20px;
-                margin-bottom: 24px;
-                text-align: center;
-            ">
-                <div style="
-                    font-size: 48px;
-                    margin-bottom: 12px;
-                ">✓</div>
-                <h3 style="
-                    color: #10B981;
-                    font-size: 20px;
-                    margin-bottom: 8px;
-                ">${successTitle}</h3>
-                <p style="
-                    color: #065F46;
-                    font-size: 14px;
-                ">${successText}</p>
+            <div class="form-success-inner">
+                <div class="form-success-icon" aria-hidden="true">✓</div>
+                <h3 class="form-success-title">${getTranslation('form.success.title', currentLang)}</h3>
+                <p class="form-success-text">${getTranslation('form.success.text', currentLang)}</p>
             </div>
         `;
         
-        // Insert at the top of the form
         form.insertBefore(successMessage, form.firstChild);
-        
-        // Scroll to success message
         successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
         
-        // Remove success message after 5 seconds
         setTimeout(() => {
             successMessage.remove();
-        }, 5000);
+        }, 8000);
     }
     
     // ============================================
@@ -808,19 +900,19 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Validate on blur
             if (this.hasAttribute('required') && !fieldValue) {
-                showFieldError(this, 'This field is required');
+                showFieldError(this, validationMessage('required'));
                 return;
             }
             
             // Email validation
             if (fieldName === 'email' && fieldValue && !isValidEmail(fieldValue)) {
-                showFieldError(this, 'Please enter a valid email address');
+                showFieldError(this, validationMessage('email'));
                 return;
             }
             
             // Phone validation
             if (fieldName === 'phone' && fieldValue && !isValidKenyanPhone(fieldValue)) {
-                showFieldError(this, 'Please enter a valid Kenyan phone number');
+                showFieldError(this, validationMessage('phone'));
                 return;
             }
         });
@@ -845,6 +937,12 @@ document.addEventListener('DOMContentLoaded', function() {
             border-color: #EF4444;
             box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
         }
+        .field-error {
+            color: #EF4444;
+            font-size: 12px;
+            margin-top: 4px;
+            display: block;
+        }
     `;
     document.head.appendChild(style);
     
@@ -854,39 +952,49 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const CHAT_INDUSTRIES = ['restaurant', 'realestate', 'hotels', 'travel'];
 
+    const CHANNEL_LABELS = {
+        whatsapp: 'WhatsApp',
+        instagram: 'Instagram',
+        tiktok: 'TikTok',
+        messenger: 'Messenger',
+        telegram: 'Telegram',
+        sms: 'SMS',
+        email: 'Email'
+    };
+
     // Defines bubble structure per industry (keys live under translations.{lang}.chatDemo.<industry>.*)
     const CHAT_DEMO_STRUCTURE = {
         restaurant: [
-            { dir: 'in', keys: ['m1'] },
+            { dir: 'in', keys: ['m1'], channel: 'whatsapp' },
             { dir: 'out', keys: ['m2'] },
-            { dir: 'in', keys: ['m3'] },
+            { dir: 'in', keys: ['m3'], channel: 'instagram' },
             { dir: 'out', keys: ['m4'] },
-            { dir: 'in', keys: ['m5'] },
+            { dir: 'in', keys: ['m5'], channel: 'whatsapp' },
             { dir: 'out', keys: ['m6'] },
         ],
         realestate: [
-            { dir: 'in', keys: ['m1'] },
+            { dir: 'in', keys: ['m1'], channel: 'messenger' },
             { dir: 'out', keys: ['m2'] },
-            { dir: 'in', keys: ['m3'] },
+            { dir: 'in', keys: ['m3'], channel: 'sms' },
             { dir: 'out', keys: ['m4'] },
-            { dir: 'in', keys: ['m5'] },
+            { dir: 'in', keys: ['m5'], channel: 'messenger' },
             { dir: 'out', keys: ['m6'] },
             { dir: 'out', keys: ['m7'] },
         ],
         hotels: [
-            { dir: 'in', keys: ['m1'] },
+            { dir: 'in', keys: ['m1'], channel: 'instagram' },
             { dir: 'out', keys: ['m2'] },
-            { dir: 'in', keys: ['m3'] },
+            { dir: 'in', keys: ['m3'], channel: 'tiktok' },
             { dir: 'out', keys: ['m4'] },
-            { dir: 'in', keys: ['m5'] },
+            { dir: 'in', keys: ['m5'], channel: 'sms' },
             { dir: 'out', keys: ['m6'] },
         ],
         travel: [
-            { dir: 'in', keys: ['m1'] },
+            { dir: 'in', keys: ['m1'], channel: 'tiktok' },
             { dir: 'out', keys: ['m2'] },
-            { dir: 'in', keys: ['m3'] },
+            { dir: 'in', keys: ['m3'], channel: 'email' },
             { dir: 'out', keys: ['m4'] },
-            { dir: 'in', keys: ['m5'] },
+            { dir: 'in', keys: ['m5'], channel: 'whatsapp' },
             { dir: 'out', keys: ['m6'] },
         ],
         };
@@ -917,6 +1025,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const typingIndicator = document.getElementById('typingIndicator');
         const contactNameEl = document.getElementById('chatContactName');
         const contactStatusEl = document.getElementById('chatContactStatus');
+        const channelBadgeEl = document.getElementById('chatChannelBadge');
 
         if (!chatMessages || !typingIndicator || !contactNameEl || !contactStatusEl) return;
 
@@ -938,10 +1047,27 @@ document.addEventListener('DOMContentLoaded', function() {
         contactStatusEl.setAttribute('data-i18n', `chatDemo.${industry}.status`);
 
         const structure = CHAT_DEMO_STRUCTURE[industry] || [];
+        const firstIncoming = structure.find((msg) => msg.dir === 'in' && msg.channel);
+        if (channelBadgeEl && firstIncoming) {
+            channelBadgeEl.setAttribute('data-channel', firstIncoming.channel);
+            channelBadgeEl.textContent = CHANNEL_LABELS[firstIncoming.channel] || firstIncoming.channel;
+        }
+
         structure.forEach((msg, idx) => {
             const messageEl = document.createElement('div');
             messageEl.className = `message ${msg.dir === 'out' ? 'message-outgoing' : 'message-incoming'}`;
             messageEl.setAttribute('data-message', String(idx + 1));
+
+            const col = document.createElement('div');
+            col.className = 'message-col';
+
+            if (msg.dir === 'in' && msg.channel) {
+                const pill = document.createElement('span');
+                pill.className = 'msg-channel-pill';
+                pill.setAttribute('data-channel', msg.channel);
+                pill.textContent = CHANNEL_LABELS[msg.channel] || msg.channel;
+                col.appendChild(pill);
+            }
 
             const bubble = document.createElement('div');
             bubble.className = `message-bubble ${msg.dir === 'out' ? 'outgoing' : 'incoming'}`;
@@ -960,7 +1086,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 bubble.appendChild(p);
             });
 
-            messageEl.appendChild(bubble);
+            col.appendChild(bubble);
+            messageEl.appendChild(col);
             chatMessages.insertBefore(messageEl, typingIndicator);
         });
 
