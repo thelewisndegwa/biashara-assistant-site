@@ -5,20 +5,20 @@
 const translations = {
     en: {
         hero: {
+            badge: "Built for Kenyan & African businesses",
             title: "Stop Losing Sales to Slow Replies — On Every Channel",
-            subtitle: "Your customers message you on WhatsApp, Instagram, TikTok, Messenger, and more — day and night. Biashara-Assistant replies instantly in English and Swahili from one place, handling bookings, questions, and M-Pesa payments 24/7, so you never miss a sale.",
+            subtitle: "Your customers message you on WhatsApp, Instagram, TikTok, Messenger, and more — day and night. Biashara-Assistant replies instantly in every African language, plus English, from one place — handling bookings, questions, and African payment integrations 24/7, so you never miss a sale.",
             cta: "Get Started",
             whatsappButton: "Message us on WhatsApp",
-            supporting: "Built for Kenyan businesses, by Kenyans 🇰🇪"
+            supporting: "Africans for Africans"
         },
         channels: {
             title: "One Assistant, Every Channel",
-            subtitle: "Connect all your customer conversations in one place — including Instagram, TikTok, Facebook Messenger, WhatsApp, Telegram, SMS and Email.",
+            subtitle: "Connect all your customer conversations in one place — including Instagram, TikTok, Facebook Messenger, WhatsApp, SMS and Email.",
             instagram: "Instagram",
             tiktok: "TikTok",
             messenger: "Facebook Messenger",
             whatsapp: "WhatsApp",
-            telegram: "Telegram",
             sms: "SMS",
             email: "Email"
         },
@@ -37,8 +37,8 @@ const translations = {
                 body: "Instant, professional replies mean no customer is left waiting. Faster responses directly translate to higher conversion rates and more revenue."
             },
             card3: {
-                title: "Seamless M-Pesa Collection",
-                body: "Accept payments directly in the conversation. No friction, no follow-ups — customers pay via M-Pesa without ever leaving the chat."
+                title: "Seamless African Payments",
+                body: "Accept payments directly in the conversation. M-Pesa, mobile money, cards, and local gateways — customers pay without ever leaving the chat."
             }
         },
         customerService: {
@@ -65,57 +65,22 @@ const translations = {
             },
             step2: {
                 title: "Connect Your Channels",
-                body: "Link WhatsApp, Instagram, TikTok, Messenger, Telegram, SMS, and email. We'll guide you through the simple setup process."
+                body: "Link WhatsApp, Instagram, TikTok, Messenger, SMS, and email. We'll guide you through the simple setup process."
             },
             step3: {
                 title: "Deliver Premium Service",
                 body: "You're live. Every customer now gets instant, professional responses — bookings, answers, and payments handled automatically."
             }
         },
-        who: {
-            title: "Built for Businesses That Demand More",
-            restaurant: {
-                heading: "Restaurants",
-                body: "Let customers browse your menu, make reservations, and order ahead — across WhatsApp, Instagram, and every channel they use. Handle peak hours without missing a single inquiry.",
-                feature1: "Menu & daily specials",
-                feature2: "Table reservations",
-                feature3: "Takeaway & delivery orders",
-                feature4: "M-Pesa payments"
-            },
-            realestate: {
-                heading: "Real Estate Agents",
-                body: "Qualify leads automatically. Capture property inquiries, budget, location preferences, schedule viewings, and hand off to agents.",
-                feature1: "Lead qualification",
-                feature2: "Budget capture",
-                feature3: "Viewing scheduling",
-                feature4: "Agent handoff"
-            },
-            hotels: {
-                heading: "Hotels",
-                body: "Handle room inquiries and reservations around the clock. Share availability, rates, and amenities — and collect deposits via M-Pesa without lifting a finger.",
-                feature1: "Room availability & rates",
-                feature2: "Reservation booking",
-                feature3: "Check-in info & amenities",
-                feature4: "M-Pesa deposits"
-            },
-            travel: {
-                heading: "Travel Agencies",
-                body: "Answer package inquiries instantly. Capture destinations, dates, and budgets, send quotes, and confirm bookings — all before a competitor replies.",
-                feature1: "Package & destination inquiries",
-                feature2: "Quote requests",
-                feature3: "Booking confirmations",
-                feature4: "Agent handoff"
-            }
-        },
         form: {
             title: "Get Started in 5 Minutes",
             subtitle: "Fill out the form below and we'll set up your Biashara-Assistant right away.",
-            reassurance1: "✓ No payment required upfront",
-            reassurance2: "✓ We help you connect your channels",
-            reassurance3: "✓ Most businesses go live within 24 hours",
+            reassurance1: "No payment required upfront",
+            reassurance2: "We help you connect your channels",
+            reassurance3: "Most businesses go live within 24 hours",
             businessName: {
                 label: "Business Name *",
-                placeholder: "e.g., The Savanna Grill"
+                placeholder: "e.g., Sunset Café"
             },
             yourName: {
                 label: "Your Name *",
@@ -145,7 +110,7 @@ const translations = {
                 placeholder: "Any specific requirements or questions?"
             },
             submit: "Set Up My Assistant",
-            trustMessage: "🔒 Your information is secure. We'll never share your data.",
+            trustMessage: "Your information is secure. We'll never share your data.",
             validation: {
                 required: "This field is required",
                 email: "Please enter a valid email address",
@@ -167,10 +132,10 @@ const translations = {
             whatsapp: "Chat on WhatsApp"
         },
         stats: {
-            s1: { value: "7", label: "Channels connected" },
+            s1: { value: "6", label: "Channels connected" },
             s2: { value: "<30s", label: "Average reply time" },
             s3: { value: "24/7", label: "Always on for customers" },
-            s4: { value: "EN + SW", label: "English & Swahili" }
+            s4: { value: "Swahili", label: "and English" }
         },
         a11y: {
             skipToContent: "Skip to content"
@@ -212,7 +177,7 @@ const translations = {
         },
         chatDemo: {
             restaurant: {
-                contactName: "The Savanna Grill",
+                contactName: "James M.",
                 status: "online",
                 m1: "Hi, do you have a table for 4 tonight?",
                 m2: "Welcome! What time works for you? (6pm / 7:30pm / 8:30pm)",
@@ -222,7 +187,7 @@ const translations = {
                 m6: "Done! Table for 4 at 7:30pm by the window. See you tonight!"
             },
             realestate: {
-                contactName: "Nairobi Homes",
+                contactName: "Amina K.",
                 status: "online",
                 m1: "I'm looking for a 2 bedroom.",
                 m2: "Great—what location do you prefer?",
@@ -233,7 +198,7 @@ const translations = {
                 m7: "Thanks—an agent will contact you to confirm."
             },
             hotels: {
-                contactName: "Mombasa Bay Hotel",
+                contactName: "Grace N.",
                 status: "online",
                 m1: "Do you have a room for 2 this Friday?",
                 m2: "Welcome! Deluxe (KES 8,500) or Standard (KES 6,500)?",
@@ -243,7 +208,7 @@ const translations = {
                 m6: "Booked! Deluxe for 2, Friday. Check-in from 9pm. See you then!"
             },
             travel: {
-                contactName: "SafariLink Travel",
+                contactName: "David O.",
                 status: "online",
                 m1: "I need a Zanzibar package for 2 in July.",
                 m2: "Wonderful! What's your budget range?",
@@ -257,12 +222,52 @@ const translations = {
             home: "Home",
             blog: "Blog",
             channels: "Channels",
+            demo: "Demo",
             why: "Why",
             customerService: "Customer Service",
             how: "How",
-            who: "Who",
             faq: "FAQ",
             getStarted: "Get Started"
+        },
+        demo: {
+            title: "See It in Action",
+            subtitle: "Watch how Biashara-Assistant handles real customer conversations — instantly, in any language."
+        },
+        who: {
+            title: "Built for Your Industry",
+            subtitle: "Whether you run a café, property agency, hotel, or travel business — Biashara-Assistant speaks your customers' language.",
+            restaurant: {
+                title: "Restaurants & Cafés",
+                body: "Take reservations, answer menu questions, and confirm dietary needs — all while your staff focuses on guests.",
+                f1: "Table bookings",
+                f2: "Menu inquiries",
+                f3: "Opening hours",
+                f4: "Special requests"
+            },
+            realestate: {
+                title: "Real Estate",
+                body: "Qualify leads, share listings, and schedule viewings automatically — so agents spend time closing deals, not answering the same questions.",
+                f1: "Lead qualification",
+                f2: "Viewing bookings",
+                f3: "Budget filtering",
+                f4: "Location matching"
+            },
+            hotels: {
+                title: "Hotels & Lodges",
+                body: "Handle room enquiries, confirm availability, and capture special requests — even at 2am when your front desk is closed.",
+                f1: "Room availability",
+                f2: "Rate comparisons",
+                f3: "Check-in requests",
+                f4: "Amenity questions"
+            },
+            travel: {
+                title: "Travel Agencies",
+                body: "Quote packages, answer destination questions, and move customers toward booking — without keeping them waiting.",
+                f1: "Package quotes",
+                f2: "Itinerary details",
+                f3: "Payment links",
+                f4: "Booking confirmations"
+            }
         },
         footer: {
             brand: "Biashara-Assistant",
@@ -281,349 +286,18 @@ const translations = {
             privacyPolicy: "Privacy Policy",
             refundPolicy: "Refund Policy",
             copyright: "© 2026 Biashara-Assistant. All rights reserved.",
-            madeInKenya: "Made with ❤️ in Kenya",
+            madeInKenyaBefore: "Made with",
+            madeInKenyaAfter: "in Kenya",
             terms: "Terms",
             privacy: "Privacy"
-        }
-    },
-    sw: {
-        hero: {
-            title: "Acha Kupoteza Mauzo Kutokana na Majibu ya Polepole — Kwenye Kila Njia",
-            subtitle: "Wateja wako wanakutumia ujumbe kwenye WhatsApp, Instagram, TikTok, Messenger, na zaidi — mchana na usiku. Biashara-Assistant hujibu papo hapo kwa Kiingereza na Kiswahili kutoka sehemu moja, ikishughulikia mareservi, maswali, na malipo ya M-Pesa masaa 24, ili usipoteze mauzo.",
-            cta: "Anza Sasa",
-            whatsappButton: "Tutumie ujumbe kwa WhatsApp",
-            supporting: "Imeundwa kwa biashara za Kenya, na Wakenya 🇰🇪"
-        },
-        channels: {
-            title: "Msaidizi Mmoja, Kila Njia",
-            subtitle: "Unganisha mazungumzo yote ya wateja wako sehemu moja — ikijumuisha Instagram, TikTok, Facebook Messenger, WhatsApp, Telegram, SMS na Barua Pepe.",
-            instagram: "Instagram",
-            tiktok: "TikTok",
-            messenger: "Facebook Messenger",
-            whatsapp: "WhatsApp",
-            telegram: "Telegram",
-            sms: "SMS",
-            email: "Barua Pepe"
-        },
-        inbox: {
-            title: "Kikasha",
-            live: "● Hai"
-        },
-        why: {
-            title: "Kwa Nini Biashara Zinachagua Biashara-Assistant",
-            card1: {
-                title: "Okoa Muda wa Timu Yako",
-                body: "Wachie wafanyakazi wako maswali ya kujirudia. Biashara-Assistant hushughulikia maswali ya wateja masaa 24 ili timu yako izingatie kazi ya thamani zaidi."
-            },
-            card2: {
-                title: "Badilisha Kila Swali Kuwa Mauzo",
-                body: "Majibu ya haraka na ya kitaalamu yanamaanisha hakuna mteja anayesubiri. Majibu ya haraka yanasababisha viwango vya juu vya ubadilishaji na mapato zaidi."
-            },
-            card3: {
-                title: "Malipo ya M-Pesa Bila Msuguano",
-                body: "Kubali malipo moja kwa moja kwenye mazungumzo. Hakuna usumbufu, hakuna kufuatilia — wateja hulipa kupitia M-Pesa bila kuacha mazungumzo."
-            }
-        },
-        customerService: {
-            title: "Toa Uzoefu wa Nyota 5",
-            subtitle: "Wateja wako wanatarajia huduma ya haraka na ya kitaalamu. Tunahakikisha kila mwingiliano unaonyesha ubora wa chapa yako.",
-            card1: {
-                title: "Jibu la Haraka, Masaa 24",
-                body: "Kila mteja anapata jibu la kitaalamu mara moja — usiku au mchana. Hakuna ujumbe wa sauti, hakuna \"tutarudi.\" Ni ujibuji wa hali ya juu tu."
-            },
-            card2: {
-                title: "Thabiti na Kwa Chapa Yako",
-                body: "Huduma sahihi, bei, masaa, na eneo — kila wakati. Hakuna ujumbe uliochanganyika. Uthabiti ambao sifa yako inategemea."
-            },
-            card3: {
-                title: "Hakuna Fursa Zilizopotea",
-                body: "Kila swali linajibiwa na kukamatwa kiotomatiki. Hakuna wateja wanaopotea, hakuna aliyeachwa \"imesomwa.\""
-            }
-        },
-        how: {
-            title: "Inavyofanya Kazi",
-            step1: {
-                title: "Jisajili kwa Dakika Chache",
-                body: "Jaza fomu rahisi na maelezo ya biashara yako. Hakuna ujuzi wa kiufundi unahitajika."
-            },
-            step2: {
-                title: "Unganisha Njia Zako",
-                body: "Unganisha WhatsApp, Instagram, TikTok, Messenger, Telegram, SMS, na barua pepe. Tutakuongoza kupitia mchakato rahisi wa kusanidi."
-            },
-            step3: {
-                title: "Toa Huduma ya Hali ya Juu",
-                body: "Uko hai. Kila mteja sasa anapata majibu ya haraka na ya kitaalamu — mareservi, majibu, na malipo yanashughulikiwa kiotomatiki."
-            }
-        },
-        who: {
-            title: "Imeundwa kwa Biashara Zinazotaka Zaidi",
-            restaurant: {
-                heading: "Mikahawa",
-                body: "Ruhusu wateja kutazama menyu yako, kufanya mareservi, na kuagiza mapema — kwenye WhatsApp, Instagram, na kila njia wanayotumia. Shughulikia masaa ya kilele bila kupoteza swali lolote.",
-                feature1: "Menyu na maalum za siku",
-                feature2: "Mareservi ya meza",
-                feature3: "Agizo la kuchukua na uwasilishaji",
-                feature4: "Malipo ya M-Pesa"
-            },
-            realestate: {
-                heading: "Wakala wa Mali za Isimu",
-                body: "Thibitisha wateja wanaowezekana kiotomatiki. Kamata maswali ya mali, bajeti, mapendeleo ya eneo, ratibu maonyesho, na wasilisha kwa wakala.",
-                feature1: "Uthibitishaji wa wateja wanaowezekana",
-                feature2: "Kukamata bajeti",
-                feature3: "Kuratibu maonyesho",
-                feature4: "Kuwasilisha kwa wakala"
-            },
-            hotels: {
-                heading: "Hoteli",
-                body: "Shughulikia maswali na mareservi ya vyumba masaa 24. Shiriki upatikanaji, bei, na huduma — na kukusanya amana kupitia M-Pesa bila juhudi.",
-                feature1: "Upatikanaji wa vyumba na bei",
-                feature2: "Mareservi ya vyumba",
-                feature3: "Maelezo ya kuingia na huduma",
-                feature4: "Amana za M-Pesa"
-            },
-            travel: {
-                heading: "Mashirika ya Usafiri",
-                body: "Jibu maswali ya vifurushi papo hapo. Kamata marudio, tarehe, na bajeti, tuma bei, na thibitisha mareservi — kabla mshindani hajajibu.",
-                feature1: "Maswali ya vifurushi na marudio",
-                feature2: "Maombi ya bei",
-                feature3: "Uthibitishaji wa mareservi",
-                feature4: "Kuwasilisha kwa wakala"
-            }
-        },
-        form: {
-            title: "Anza kwa Dakika 5",
-            subtitle: "Jaza fomu hapa chini na tutasanidi Biashara-Assistant yako mara moja.",
-            reassurance1: "✓ Hakuna malipo yanayohitajika mapema",
-            reassurance2: "✓ Tunakusaidia kuunganisha njia zako",
-            reassurance3: "✓ Biashara nyingi zinaanza kufanya kazi ndani ya masaa 24",
-            businessName: {
-                label: "Jina la Biashara *",
-                placeholder: "mf., The Savanna Grill"
-            },
-            yourName: {
-                label: "Jina Lako *",
-                placeholder: "mf., Sarah Wanjiku"
-            },
-            phone: {
-                label: "Nambari ya Simu / WhatsApp ya Biashara *",
-                placeholder: "mf., 0712 345 678",
-                helper: "Nambari ambayo wateja watatumia"
-            },
-            businessType: {
-                label: "Ni aina gani ya biashara? *",
-                default: "Chagua aina ya biashara yako",
-                restaurant: "Mkahawa",
-                realestate: "Mali za Isimu",
-                hotels: "Hoteli",
-                travel: "Shirika la Usafiri",
-                other: "Nyingine"
-            },
-            email: {
-                label: "Anwani ya Barua Pepe *",
-                placeholder: "barua@pepe.com",
-                helper: "Tutawasiliana nawe hapa kuthibitisha usanidi wako"
-            },
-            additionalInfo: {
-                label: "Tuambie kuhusu biashara yako (si lazima)",
-                placeholder: "Mahitaji yoyote maalum au maswali?"
-            },
-            submit: "Sanidi Msaidizi Wangu",
-            trustMessage: "🔒 Taarifa zako ziko salama. Hatutawahi kushiriki data yako.",
-            validation: {
-                required: "Sehemu hii inahitajika",
-                email: "Tafadhali weka anwani halali ya barua pepe",
-                phone: "Tafadhali weka nambari halali ya simu ya Kenya"
-            },
-            success: {
-                title: "Karibu kukamilisha!",
-                text: "WhatsApp inapaswa kufunguka na maelezo yako. Tuma ujumbe na tutajibu ndani ya masaa machache ili kukusaidia kuanza."
-            },
-            legalText: "Kwa kuwasilisha, unakubali",
-            termsLink: "Sheria za Huduma",
-            and: "na",
-            privacyLink: "Sera ya Faragha"
-        },
-        cta: {
-            title: "Tayari Kuinua Uzoefu wa Wateja Wako?",
-            subtitle: "Jiunge na biashara zinazotumia Biashara-Assistant kutoa huduma ya haraka, kupata mapato zaidi, na kujitofautisha na washindani.",
-            button: "Anza Leo",
-            whatsapp: "Ongea kwenye WhatsApp"
-        },
-        stats: {
-            s1: { value: "7", label: "Njia zilizounganishwa" },
-            s2: { value: "<30s", label: "Muda wa wastani wa kujibu" },
-            s3: { value: "24/7", label: "Daima tayari kwa wateja" },
-            s4: { value: "EN + SW", label: "Kiingereza na Kiswahili" }
-        },
-        a11y: {
-            skipToContent: "Ruka hadi maudhui"
-        },
-        faq: {
-            title: "Maswali Yanayoulizwa Mara Kwa Mara",
-            subtitle: "Maswali ya kawaida kabla ya kuanza — yamejibiwa kwa uwazi.",
-            q1: {
-                question: "Je, majibu yatasikika kama roboti?",
-                answer: "Hapana. Biashara-Assistant inafunzwa kuhusu biashara yako — menyu, huduma, bei, na mtindo wako. Wateja hupata majibu ya asili na ya msaada yanayosikika kama timu yako, si chatbot ya kawaida."
-            },
-            q2: {
-                question: "Je, ikiwa mteja anahitaji kuongea na mtu halisi?",
-                answer: "Msaidizi hushughulikia maswali ya kawaida na mareservi, kisha anakuwasilisha wewe au timu yako inapohitajika. Unadhibiti kila kitu — hakuna kinachotoka bila idhini yako wakati wa kusanidi."
-            },
-            q3: {
-                question: "Je, ninahitaji ujuzi wa kiufundi kusanidi?",
-                answer: "Hapana kabisa. Jaza fomu fupi na tutakuongoza kuunganisha njia zako — WhatsApp, Instagram, Messenger, na zaidi. Biashara nyingi zinaanza kufanya kazi ndani ya siku moja."
-            },
-            q4: {
-                question: "Je, akaunti na data yangu ziko salama?",
-                answer: "Ndiyo. Unabaki na udhibiti kamili wa akaunti na nambari zako zilizopo. Hatutawahi kushiriki data yako na wahusika wengine, na unaweza kusimamisha au kuacha huduma wakati wowote."
-            },
-            q5: {
-                question: "Ninaweza kuanza kufanya kazi haraka kiasi gani?",
-                answer: "Usanidi mwingi huchukua chini ya masaa 24 baada ya kuwasilisha maelezo yako. Tutawasiliana nawe kupitia WhatsApp kuthibitisha kila kitu kabla ya kuanza."
-            },
-            q6: {
-                question: "Ninaanzaje?",
-                answer: "Jaza fomu hapa chini au tutumie ujumbe kwa WhatsApp. Hakuna malipo yanayohitajika mapema — tutasanidi msaidizi wako na kukuonyesha jinsi inavyofanya kazi kabla ya kujitolea."
-            }
-        },
-        chatDemoTabs: {
-            label: "Ona mfano kwa",
-            restaurant: "Mkahawa",
-            realestate: "Mali",
-            hotels: "Hoteli",
-            travel: "Usafiri"
-        },
-        chatDemo: {
-            restaurant: {
-                contactName: "The Savanna Grill",
-                status: "huko mtandaoni",
-                m1: "Hujambo, mna meza ya watu 4 leo usiku?",
-                m2: "Karibu! Saa ngapi inafaa? (6pm / 7:30pm / 8:30pm)",
-                m3: "7:30pm.",
-                m4: "Sawa! Mna maombi maalum au vyakula mnavyopendelea?",
-                m5: "Meza ya dirishani ikiwezekana.",
-                m6: "Imefanywa! Meza ya watu 4 saa 1:30 usiku karibu na dirisha. Tutaonana leo!"
-            },
-            realestate: {
-                contactName: "Nairobi Homes",
-                status: "huko mtandaoni",
-                m1: "Natafuta nyumba ya vyumba 2.",
-                m2: "Sawa—unapendelea eneo gani?",
-                m3: "Kilimani.",
-                m4: "Bajeti yako ni kiasi gani?",
-                m5: "Hadi 60k.",
-                m6: "Unaweza kuja kuona lini? (Jumamosi 11 / Jumamosi 2 / Jumapili 1)",
-                m7: "Asante—wakala atakupigia kuthibitisha."
-            },
-            hotels: {
-                contactName: "Mombasa Bay Hotel",
-                status: "huko mtandaoni",
-                m1: "Mna chumba cha watu 2 Ijumaa hii?",
-                m2: "Karibu! Deluxe (KES 8,500) au Standard (KES 6,500)?",
-                m3: "Deluxe tafadhali.",
-                m4: "Maombi maalum? (kuingia usiku, usafiri wa uwanja wa ndege, n.k.)",
-                m5: "Kuingia usiku karibu saa 3.",
-                m6: "Imehifadhiwa! Deluxe kwa watu 2, Ijumaa. Kuingia kutoka saa 3. Tutaonana!"
-            },
-            travel: {
-                contactName: "SafariLink Travel",
-                status: "huko mtandaoni",
-                m1: "Nahitaji kifurushi cha Zanzibar kwa watu 2 mwezi wa Julai.",
-                m2: "Vizuri! Bajeti yako ni kiasi gani?",
-                m3: "Karibu 150k.",
-                m4: "Tuna kifurushi cha siku 5 chenye ndege na hoteli kutoka KES 142,000.",
-                m5: "Sawa — tunawezaje kuweka nafasi?",
-                m6: "Kamili! Wakala atakutumia ratiba yako na maelezo ya malipo hivi karibuni."
-            },
-        },
-        nav: {
-            home: "Nyumbani",
-            blog: "Blogu",
-            channels: "Njia",
-            why: "Kwa Nini",
-            customerService: "Huduma ya Wateja",
-            how: "Jinsi",
-            who: "Kwa Nani",
-            faq: "Maswali",
-            getStarted: "Anza"
-        },
-        footer: {
-            brand: "Biashara-Assistant",
-            tagline: "Msaidizi wako wa wateja wa njia zote",
-            product: "Bidhaa",
-            company: "Kampuni",
-            legal: "Kisheria",
-            features: "Vipengele",
-            howItWorks: "Inavyofanya Kazi",
-            faq: "Maswali Yanayoulizwa Mara Kwa Mara",
-            aboutUs: "Kuhusu Sisi",
-            contact: "Wasiliana",
-            blog: "Blogu",
-            careers: "Kazi",
-            termsOfService: "Sheria za Huduma",
-            privacyPolicy: "Sera ya Faragha",
-            refundPolicy: "Sera ya Rudi Pesa",
-            copyright: "© 2026 Biashara-Assistant. Haki zote zimehifadhiwa.",
-            madeInKenya: "Imetengenezwa kwa ❤️ nchini Kenya",
-            terms: "Sheria",
-            privacy: "Faragha"
         }
     }
 };
 
-// ============================================
-// Language Switcher
-// ============================================
-
-let currentLang = localStorage.getItem('language') || 'en';
-
-function setLanguage(lang) {
-    currentLang = lang;
-    localStorage.setItem('language', lang);
-    document.documentElement.lang = lang;
-    
-    // Update all elements with data-i18n attribute
-    document.querySelectorAll('[data-i18n]').forEach(element => {
-        const key = element.getAttribute('data-i18n');
-        const translation = getTranslation(key, lang);
-        if (translation) {
-            // Handle select options differently
-            if (element.tagName === 'OPTION') {
-                element.textContent = translation;
-            } else {
-                // Check if element has white-space: pre-line style (for multi-line text)
-                const hasPreLine = element.style.whiteSpace === 'pre-line' || 
-                                   window.getComputedStyle(element).whiteSpace === 'pre-line';
-                if (hasPreLine) {
-                    // For pre-line elements, preserve \n characters
-                    element.textContent = translation;
-                } else {
-                    element.textContent = translation;
-                }
-            }
-        }
-    });
-    
-    // Update all elements with data-i18n-placeholder attribute
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
-        const key = element.getAttribute('data-i18n-placeholder');
-        const translation = getTranslation(key, lang);
-        if (translation) {
-            element.placeholder = translation;
-        }
-    });
-    
-    // Update language toggle button text (show the language you can switch TO)
-    const langText = document.getElementById('langText');
-    if (langText) {
-        langText.textContent = lang === 'en' ? 'SW' : 'EN';
-    }
-}
-
-function getTranslation(key, lang) {
+function getTranslation(key) {
     const keys = key.split('.');
-    let value = translations[lang];
-    
+    let value = translations.en;
+
     for (const k of keys) {
         if (value && typeof value === 'object' && k in value) {
             value = value[k];
@@ -631,12 +305,12 @@ function getTranslation(key, lang) {
             return null;
         }
     }
-    
+
     return typeof value === 'string' ? value : null;
 }
 
 function validationMessage(key) {
-    return getTranslation(`form.validation.${key}`, currentLang) || '';
+    return getTranslation(`form.validation.${key}`) || '';
 }
 
 // ============================================
@@ -644,18 +318,6 @@ function validationMessage(key) {
 // ============================================
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize language
-    setLanguage(currentLang);
-    
-    // Language toggle button
-    const langToggle = document.getElementById('langToggle');
-    if (langToggle) {
-        langToggle.addEventListener('click', function() {
-            const newLang = currentLang === 'en' ? 'sw' : 'en';
-            setLanguage(newLang);
-        });
-    }
-
     // Top nav mobile menu toggle
     const navToggle = document.getElementById('navToggle');
     const navLinks = document.getElementById('navLinks');
@@ -664,11 +326,61 @@ document.addEventListener('DOMContentLoaded', function() {
             const isOpen = navLinks.classList.toggle('is-open');
             navToggle.setAttribute('aria-expanded', isOpen);
         });
+
+        document.addEventListener('click', function(e) {
+            if (!navLinks.classList.contains('is-open')) return;
+            if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                closeMobileNav();
+            }
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeMobileNav();
+        });
     }
 
     function closeMobileNav() {
         if (navLinks) navLinks.classList.remove('is-open');
         if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
+    }
+
+    // Active nav link on scroll
+    const navSectionLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+    const sectionIds = Array.from(navSectionLinks)
+        .map((link) => link.getAttribute('href').slice(1))
+        .filter(Boolean);
+
+    if (sectionIds.length && 'IntersectionObserver' in window) {
+        const sectionObserver = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) return;
+                    const id = entry.target.id;
+                    navSectionLinks.forEach((link) => {
+                        const isActive = link.getAttribute('href') === `#${id}`;
+                        link.classList.toggle('nav-link-active', isActive);
+                    });
+                });
+            },
+            { rootMargin: '-40% 0px -50% 0px', threshold: 0 }
+        );
+        sectionIds.forEach((id) => {
+            const el = document.getElementById(id);
+            if (el) sectionObserver.observe(el);
+        });
+    }
+
+    // Floating WhatsApp FAB — show after scrolling past hero
+    const whatsappFab = document.getElementById('whatsappFab');
+    const heroSection = document.getElementById('hero');
+
+    if (whatsappFab && heroSection) {
+        const updateFab = () => {
+            const heroBottom = heroSection.getBoundingClientRect().bottom;
+            whatsappFab.hidden = heroBottom > 0;
+        };
+        updateFab();
+        window.addEventListener('scroll', updateFab, { passive: true });
     }
 
     // Nav shadow on scroll
@@ -683,7 +395,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Sticky mobile CTA — show after hero, hide near form/footer
     const mobileCtaBar = document.getElementById('mobileCtaBar');
-    const heroSection = document.getElementById('hero');
     const getStartedSection = document.getElementById('get-started');
 
     if (mobileCtaBar && heroSection) {
@@ -754,6 +465,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
+            const submitBtn = document.getElementById('submitBtn');
+            if (submitBtn) submitBtn.classList.add('is-loading');
+
             // Open WhatsApp with pre-filled message
             const whatsappNumber = '16086081288';
             const messageLines = [
@@ -770,6 +484,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`;
             window.open(whatsappUrl, '_blank');
 
+            if (submitBtn) submitBtn.classList.remove('is-loading');
             showFormSuccess();
             this.reset();
         });
@@ -870,9 +585,9 @@ document.addEventListener('DOMContentLoaded', function() {
         successMessage.setAttribute('role', 'status');
         successMessage.innerHTML = `
             <div class="form-success-inner">
-                <div class="form-success-icon" aria-hidden="true">✓</div>
-                <h3 class="form-success-title">${getTranslation('form.success.title', currentLang)}</h3>
-                <p class="form-success-text">${getTranslation('form.success.text', currentLang)}</p>
+                <div class="form-success-icon" aria-hidden="true"><svg class="icon"><use href="#icon-check"/></svg></div>
+                <h3 class="form-success-title">${getTranslation('form.success.title')}</h3>
+                <p class="form-success-text">${getTranslation('form.success.text')}</p>
             </div>
         `;
         
@@ -947,276 +662,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.head.appendChild(style);
     
     // ============================================
-    // Animated Chat Demo
-    // ============================================
-
-    const CHAT_INDUSTRIES = ['restaurant', 'realestate', 'hotels', 'travel'];
-
-    const CHANNEL_LABELS = {
-        whatsapp: 'WhatsApp',
-        instagram: 'Instagram',
-        tiktok: 'TikTok',
-        messenger: 'Messenger',
-        telegram: 'Telegram',
-        sms: 'SMS',
-        email: 'Email'
-    };
-
-    // Defines bubble structure per industry (keys live under translations.{lang}.chatDemo.<industry>.*)
-    const CHAT_DEMO_STRUCTURE = {
-        restaurant: [
-            { dir: 'in', keys: ['m1'], channel: 'whatsapp' },
-            { dir: 'out', keys: ['m2'] },
-            { dir: 'in', keys: ['m3'], channel: 'instagram' },
-            { dir: 'out', keys: ['m4'] },
-            { dir: 'in', keys: ['m5'], channel: 'whatsapp' },
-            { dir: 'out', keys: ['m6'] },
-        ],
-        realestate: [
-            { dir: 'in', keys: ['m1'], channel: 'messenger' },
-            { dir: 'out', keys: ['m2'] },
-            { dir: 'in', keys: ['m3'], channel: 'sms' },
-            { dir: 'out', keys: ['m4'] },
-            { dir: 'in', keys: ['m5'], channel: 'messenger' },
-            { dir: 'out', keys: ['m6'] },
-            { dir: 'out', keys: ['m7'] },
-        ],
-        hotels: [
-            { dir: 'in', keys: ['m1'], channel: 'instagram' },
-            { dir: 'out', keys: ['m2'] },
-            { dir: 'in', keys: ['m3'], channel: 'tiktok' },
-            { dir: 'out', keys: ['m4'] },
-            { dir: 'in', keys: ['m5'], channel: 'sms' },
-            { dir: 'out', keys: ['m6'] },
-        ],
-        travel: [
-            { dir: 'in', keys: ['m1'], channel: 'tiktok' },
-            { dir: 'out', keys: ['m2'] },
-            { dir: 'in', keys: ['m3'], channel: 'email' },
-            { dir: 'out', keys: ['m4'] },
-            { dir: 'in', keys: ['m5'], channel: 'whatsapp' },
-            { dir: 'out', keys: ['m6'] },
-        ],
-        };
-
-    let currentChatIndustry = 'restaurant';
-    let chatAutoRotateTimer = null;
-    let userStoppedAutoRotate = false;
-    let chatAnimationRunId = 0;
-
-    function setActiveIndustrySelect(industry) {
-        const select = document.getElementById('industrySelect');
-        if (select) select.value = industry;
-    }
-
-    function clearChatMessages(chatMessages, typingIndicator) {
-        // Remove everything except typing indicator
-        const nodesToRemove = [];
-        chatMessages.childNodes.forEach(node => {
-            if (node !== typingIndicator) nodesToRemove.push(node);
-        });
-        nodesToRemove.forEach(n => chatMessages.removeChild(n));
-    }
-
-    function renderChatDemo(industry) {
-        if (!CHAT_INDUSTRIES.includes(industry)) return;
-
-        const chatMessages = document.getElementById('chatMessages');
-        const typingIndicator = document.getElementById('typingIndicator');
-        const contactNameEl = document.getElementById('chatContactName');
-        const contactStatusEl = document.getElementById('chatContactStatus');
-        const channelBadgeEl = document.getElementById('chatChannelBadge');
-
-        if (!chatMessages || !typingIndicator || !contactNameEl || !contactStatusEl) return;
-
-        currentChatIndustry = industry;
-        setActiveIndustrySelect(industry);
-
-        // Reset typing indicator
-        typingIndicator.classList.remove('active');
-
-        // Make sure typing indicator stays last
-        if (typingIndicator.parentElement === chatMessages) {
-            chatMessages.appendChild(typingIndicator);
-        }
-
-        clearChatMessages(chatMessages, typingIndicator);
-
-        // Set contact header keys
-        contactNameEl.setAttribute('data-i18n', `chatDemo.${industry}.contactName`);
-        contactStatusEl.setAttribute('data-i18n', `chatDemo.${industry}.status`);
-
-        const structure = CHAT_DEMO_STRUCTURE[industry] || [];
-        const firstIncoming = structure.find((msg) => msg.dir === 'in' && msg.channel);
-        if (channelBadgeEl && firstIncoming) {
-            channelBadgeEl.setAttribute('data-channel', firstIncoming.channel);
-            channelBadgeEl.textContent = CHANNEL_LABELS[firstIncoming.channel] || firstIncoming.channel;
-        }
-
-        structure.forEach((msg, idx) => {
-            const messageEl = document.createElement('div');
-            messageEl.className = `message ${msg.dir === 'out' ? 'message-outgoing' : 'message-incoming'}`;
-            messageEl.setAttribute('data-message', String(idx + 1));
-
-            const col = document.createElement('div');
-            col.className = 'message-col';
-
-            if (msg.dir === 'in' && msg.channel) {
-                const pill = document.createElement('span');
-                pill.className = 'msg-channel-pill';
-                pill.setAttribute('data-channel', msg.channel);
-                pill.textContent = CHANNEL_LABELS[msg.channel] || msg.channel;
-                col.appendChild(pill);
-            }
-
-            const bubble = document.createElement('div');
-            bubble.className = `message-bubble ${msg.dir === 'out' ? 'outgoing' : 'incoming'}`;
-
-            const prelineSet = new Set(msg.prelineKeys || []);
-            msg.keys.forEach((k, lineIdx) => {
-                const p = document.createElement('p');
-                p.setAttribute('data-i18n', `chatDemo.${industry}.${k}`);
-                if (prelineSet.has(k)) {
-                    p.classList.add('preline');
-                    if (lineIdx > 0) p.style.marginTop = '8px';
-                    if (k === 'pay') p.style.fontWeight = '600';
-                } else if (lineIdx > 0) {
-                    p.style.marginTop = '8px';
-                }
-                bubble.appendChild(p);
-            });
-
-            col.appendChild(bubble);
-            messageEl.appendChild(col);
-            chatMessages.insertBefore(messageEl, typingIndicator);
-        });
-
-        // Translate freshly injected nodes
-        setLanguage(currentLang);
-
-        // Restart animation safely
-        startChatAnimation();
-    }
-
-    function startChatAnimation() {
-        chatAnimationRunId += 1;
-        const runId = chatAnimationRunId;
-        animateChatDemo(runId);
-    }
-
-    function animateChatDemo(runId) {
-        const messages = document.querySelectorAll('#chatMessages .message[data-message]');
-        const typingIndicator = document.getElementById('typingIndicator');
-        const chatMessages = document.getElementById('chatMessages');
-
-        if (!messages.length || !typingIndicator || !chatMessages) return;
-
-        // Reset all messages to hidden
-        messages.forEach(msg => {
-            msg.style.opacity = '0';
-            msg.style.transform = 'translateY(10px)';
-            msg.style.display = 'none';
-        });
-
-        typingIndicator.classList.remove('active');
-
-        // per-message timing (slightly more natural than fixed arrays)
-        const baseDelayIn = 1100;
-        const baseDelayOut = 1500;
-        const baseTyping = 900;
-        const endLoopPause = 2600;
-
-        let currentMessage = 0;
-
-        function isStillActive() {
-            return runId === chatAnimationRunId;
-        }
-
-        function showNextMessage() {
-            if (!isStillActive()) return;
-
-            if (currentMessage >= messages.length) {
-                setTimeout(() => {
-                    if (!isStillActive()) return;
-                    startChatAnimation();
-                }, endLoopPause);
-                return;
-            }
-
-            const message = messages[currentMessage];
-            const isOutgoing = message.classList.contains('message-outgoing');
-
-            const afterShowDelay = isOutgoing ? baseDelayOut : baseDelayIn;
-
-            if (isOutgoing) {
-                typingIndicator.classList.add('active');
-                setTimeout(() => {
-                    if (!isStillActive()) return;
-                    typingIndicator.classList.remove('active');
-
-                    message.style.display = 'flex';
-                    setTimeout(() => {
-                        if (!isStillActive()) return;
-                        message.style.opacity = '1';
-                        message.style.transform = 'translateY(0)';
-                        chatMessages.scrollTop = chatMessages.scrollHeight;
-                    }, 50);
-
-                    currentMessage += 1;
-                    setTimeout(showNextMessage, afterShowDelay);
-                }, baseTyping);
-            } else {
-                message.style.display = 'flex';
-                setTimeout(() => {
-                    if (!isStillActive()) return;
-                    message.style.opacity = '1';
-                    message.style.transform = 'translateY(0)';
-                    chatMessages.scrollTop = chatMessages.scrollHeight;
-                }, 50);
-
-                currentMessage += 1;
-                setTimeout(showNextMessage, afterShowDelay);
-            }
-        }
-
-        setTimeout(showNextMessage, 700);
-    }
-
-    function stopAutoRotate() {
-        if (chatAutoRotateTimer) {
-            clearInterval(chatAutoRotateTimer);
-            chatAutoRotateTimer = null;
-        }
-    }
-
-    function startAutoRotate() {
-        stopAutoRotate();
-        if (userStoppedAutoRotate) return;
-
-        chatAutoRotateTimer = setInterval(() => {
-            if (userStoppedAutoRotate) return;
-            const idx = CHAT_INDUSTRIES.indexOf(currentChatIndustry);
-            const next = CHAT_INDUSTRIES[(idx + 1) % CHAT_INDUSTRIES.length];
-            renderChatDemo(next);
-        }, 12000);
-    }
-
-    // Hook up industry dropdown
-    const industrySelect = document.getElementById('industrySelect');
-    if (industrySelect) {
-        industrySelect.addEventListener('change', () => {
-            userStoppedAutoRotate = true;
-            stopAutoRotate();
-            const industry = industrySelect.value || 'restaurant';
-            renderChatDemo(industry);
-        });
-    }
-
-    // Initial render + animation + auto-rotate
-    renderChatDemo('restaurant');
-    startAutoRotate();
-
-    // ============================================
     // Scroll Reveal (Intersection Observer)
     // ============================================
     const revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
@@ -1236,5 +681,147 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         // Fallback: show everything immediately
         revealEls.forEach((el) => el.classList.add('is-visible'));
+    }
+
+    // ============================================
+    // Chat Demo Animation
+    // ============================================
+    const demoMessages = document.getElementById('demoMessages');
+    const demoContactName = document.getElementById('demoContactName');
+    const demoContactStatus = document.getElementById('demoContactStatus');
+    const demoTyping = document.getElementById('demoTyping');
+    const demoTabs = document.querySelectorAll('.demo-tab');
+
+    const demoConversations = {
+        restaurant: [
+            { from: 'incoming', text: 'm1' },
+            { from: 'outgoing', text: 'm2' },
+            { from: 'incoming', text: 'm3' },
+            { from: 'outgoing', text: 'm4' },
+            { from: 'incoming', text: 'm5' },
+            { from: 'outgoing', text: 'm6' }
+        ],
+        realestate: [
+            { from: 'incoming', text: 'm1' },
+            { from: 'outgoing', text: 'm2' },
+            { from: 'incoming', text: 'm3' },
+            { from: 'outgoing', text: 'm4' },
+            { from: 'incoming', text: 'm5' },
+            { from: 'outgoing', text: 'm6' },
+            { from: 'outgoing', text: 'm7' }
+        ],
+        hotels: [
+            { from: 'incoming', text: 'm1' },
+            { from: 'outgoing', text: 'm2' },
+            { from: 'incoming', text: 'm3' },
+            { from: 'outgoing', text: 'm4' },
+            { from: 'incoming', text: 'm5' },
+            { from: 'outgoing', text: 'm6' }
+        ],
+        travel: [
+            { from: 'incoming', text: 'm1' },
+            { from: 'outgoing', text: 'm2' },
+            { from: 'incoming', text: 'm3' },
+            { from: 'outgoing', text: 'm4' },
+            { from: 'incoming', text: 'm5' },
+            { from: 'outgoing', text: 'm6' }
+        ]
+    };
+
+    let demoTimer = null;
+    let demoAbort = false;
+
+    function getDemoText(type, key) {
+        const demo = translations.en.chatDemo[type];
+        return demo ? demo[key] : '';
+    }
+
+    function createMessageEl(from, text) {
+        const wrapper = document.createElement('div');
+        wrapper.className = `message message-${from}`;
+
+        const col = document.createElement('div');
+        col.className = 'message-col';
+
+        const bubble = document.createElement('div');
+        bubble.className = `message-bubble ${from === 'incoming' ? 'incoming' : 'outgoing'}`;
+        bubble.textContent = text;
+
+        col.appendChild(bubble);
+        wrapper.appendChild(col);
+        return wrapper;
+    }
+
+    function delay(ms) {
+        return new Promise((resolve, reject) => {
+            if (demoAbort) { reject(); return; }
+            demoTimer = setTimeout(resolve, ms);
+        });
+    }
+
+    async function playDemo(type) {
+        if (!demoMessages) return;
+        demoAbort = true;
+        clearTimeout(demoTimer);
+        demoAbort = false;
+
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const incomingDelay = reducedMotion ? 0 : 600;
+        const outgoingDelay = reducedMotion ? 0 : 900;
+
+        demoMessages.innerHTML = '';
+        const demo = translations.en.chatDemo[type];
+        if (!demo) return;
+
+        if (demoContactName) demoContactName.textContent = demo.contactName;
+        if (demoContactStatus) demoContactStatus.textContent = demo.status;
+
+        const conversation = demoConversations[type] || [];
+
+        for (const msg of conversation) {
+            try {
+                if (msg.from === 'outgoing') {
+                    if (demoTyping) demoTyping.classList.add('active');
+                    await delay(outgoingDelay);
+                    if (demoTyping) demoTyping.classList.remove('active');
+                } else {
+                    await delay(incomingDelay);
+                }
+
+                const el = createMessageEl(msg.from, getDemoText(type, msg.text));
+                demoMessages.appendChild(el);
+                demoMessages.scrollTop = demoMessages.scrollHeight;
+            } catch {
+                break;
+            }
+        }
+    }
+
+    if (demoTabs.length && demoMessages) {
+        demoTabs.forEach((tab) => {
+            tab.addEventListener('click', function() {
+                demoTabs.forEach((t) => {
+                    t.classList.remove('is-active');
+                    t.setAttribute('aria-selected', 'false');
+                });
+                this.classList.add('is-active');
+                this.setAttribute('aria-selected', 'true');
+                playDemo(this.dataset.demo);
+            });
+        });
+
+        const demoObserver = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        playDemo('restaurant');
+                        demoObserver.disconnect();
+                    }
+                });
+            },
+            { threshold: 0.3 }
+        );
+        const demoSection = document.getElementById('demo');
+        if (demoSection) demoObserver.observe(demoSection);
     }
 });
