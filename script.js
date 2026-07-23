@@ -22,10 +22,6 @@ const translations = {
             sms: "SMS",
             email: "Email"
         },
-        inbox: {
-            title: "Inbox",
-            live: "● Live"
-        },
         why: {
             title: "Why Businesses Choose Biashara-Assistant",
             card1: {
@@ -166,108 +162,49 @@ const translations = {
             q6: {
                 question: "How do I get started?",
                 answer: "Fill out the form below or message us on WhatsApp. There's no payment required upfront — we'll set up your assistant and show you how it works before you commit."
+            },
+            q7: {
+                question: "What is Business Biashara CRM?",
+                answer: "Business Biashara CRM is the customer management plugin built into Biashara-Assistant. It automatically saves every inquiry as a contact, stores full conversation history across all channels, and lets you track leads through your sales pipeline — so nothing gets lost in chat."
             }
         },
-        chatDemoTabs: {
-            label: "See example for",
-            restaurant: "Restaurant",
-            realestate: "Real Estate",
-            hotels: "Hotels",
-            travel: "Travel"
-        },
-        chatDemo: {
-            restaurant: {
-                contactName: "James M.",
-                status: "online",
-                m1: "Hi, do you have a table for 4 tonight?",
-                m2: "Welcome! What time works for you? (6pm / 7:30pm / 8:30pm)",
-                m3: "7:30pm.",
-                m4: "Great! Any dietary preferences or special requests?",
-                m5: "Window seat if possible.",
-                m6: "Done! Table for 4 at 7:30pm by the window. See you tonight!"
+        crm: {
+            badge: "Included plugin",
+            title: "Business Biashara CRM",
+            subtitle: "Biashara-Assistant handles the reply. Business Biashara CRM captures every customer, tracks every deal, and keeps your team organised — automatically.",
+            flow: {
+                step1: "Customer messages you",
+                step2: "Assistant replies instantly",
+                step3: "CRM saves the lead"
             },
-            realestate: {
-                contactName: "Amina K.",
-                status: "online",
-                m1: "I'm looking for a 2 bedroom.",
-                m2: "Great—what location do you prefer?",
-                m3: "Kilimani.",
-                m4: "Budget range?",
-                m5: "Up to 60k.",
-                m6: "When can you view? (Sat 11am / Sat 2pm / Sun 1pm)",
-                m7: "Thanks—an agent will contact you to confirm."
+            card1: {
+                title: "Auto-Capture Every Contact",
+                body: "Every WhatsApp, Instagram, or email inquiry becomes a contact in your CRM — name, number, channel, and what they asked for. No manual data entry."
             },
-            hotels: {
-                contactName: "Grace N.",
-                status: "online",
-                m1: "Do you have a room for 2 this Friday?",
-                m2: "Welcome! Deluxe (KES 8,500) or Standard (KES 6,500)?",
-                m3: "Deluxe please.",
-                m4: "Any special requests? (late check-in, airport pickup, etc.)",
-                m5: "Late check-in around 9pm.",
-                m6: "Booked! Deluxe for 2, Friday. Check-in from 9pm. See you then!"
+            card2: {
+                title: "Full Conversation History",
+                body: "See every message across every channel in one customer profile. Your team picks up exactly where the assistant left off — with full context."
             },
-            travel: {
-                contactName: "David O.",
-                status: "online",
-                m1: "I need a Zanzibar package for 2 in July.",
-                m2: "Wonderful! What's your budget range?",
-                m3: "Around 150k.",
-                m4: "We have a 5-day package with flights & hotel from KES 142,000.",
-                m5: "That works — how do we book?",
-                m6: "Perfect! An agent will send your itinerary and payment details shortly."
+            card3: {
+                title: "Pipeline & Deal Tracking",
+                body: "Move leads from inquiry to booking to payment. Track where every deal stands — new, in progress, won, or follow-up needed."
             },
+            card4: {
+                title: "Smart Follow-Ups",
+                body: "Never forget a callback or viewing. The CRM flags customers who need a follow-up and reminds your team before opportunities go cold."
+            },
+            footnote: "Business Biashara CRM comes built in with every Biashara-Assistant setup — no extra tools, no spreadsheets, no leads lost in chat history."
         },
         nav: {
             home: "Home",
             blog: "Blog",
             channels: "Channels",
-            demo: "Demo",
             why: "Why",
+            crm: "CRM",
             customerService: "Customer Service",
             how: "How",
             faq: "FAQ",
             getStarted: "Get Started"
-        },
-        demo: {
-            title: "See It in Action",
-            subtitle: "Watch how Biashara-Assistant handles real customer conversations — instantly, in any language."
-        },
-        who: {
-            title: "Built for Your Industry",
-            subtitle: "Whether you run a café, property agency, hotel, or travel business — Biashara-Assistant speaks your customers' language.",
-            restaurant: {
-                title: "Restaurants & Cafés",
-                body: "Take reservations, answer menu questions, and confirm dietary needs — all while your staff focuses on guests.",
-                f1: "Table bookings",
-                f2: "Menu inquiries",
-                f3: "Opening hours",
-                f4: "Special requests"
-            },
-            realestate: {
-                title: "Real Estate",
-                body: "Qualify leads, share listings, and schedule viewings automatically — so agents spend time closing deals, not answering the same questions.",
-                f1: "Lead qualification",
-                f2: "Viewing bookings",
-                f3: "Budget filtering",
-                f4: "Location matching"
-            },
-            hotels: {
-                title: "Hotels & Lodges",
-                body: "Handle room enquiries, confirm availability, and capture special requests — even at 2am when your front desk is closed.",
-                f1: "Room availability",
-                f2: "Rate comparisons",
-                f3: "Check-in requests",
-                f4: "Amenity questions"
-            },
-            travel: {
-                title: "Travel Agencies",
-                body: "Quote packages, answer destination questions, and move customers toward booking — without keeping them waiting.",
-                f1: "Package quotes",
-                f2: "Itinerary details",
-                f3: "Payment links",
-                f4: "Booking confirmations"
-            }
         },
         footer: {
             brand: "Biashara-Assistant",
@@ -585,7 +522,7 @@ document.addEventListener('DOMContentLoaded', function() {
         successMessage.setAttribute('role', 'status');
         successMessage.innerHTML = `
             <div class="form-success-inner">
-                <div class="form-success-icon" aria-hidden="true"><svg class="icon"><use href="#icon-check"/></svg></div>
+                <div class="form-success-icon" aria-hidden="true">✅</div>
                 <h3 class="form-success-title">${getTranslation('form.success.title')}</h3>
                 <p class="form-success-text">${getTranslation('form.success.text')}</p>
             </div>
@@ -681,147 +618,5 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         // Fallback: show everything immediately
         revealEls.forEach((el) => el.classList.add('is-visible'));
-    }
-
-    // ============================================
-    // Chat Demo Animation
-    // ============================================
-    const demoMessages = document.getElementById('demoMessages');
-    const demoContactName = document.getElementById('demoContactName');
-    const demoContactStatus = document.getElementById('demoContactStatus');
-    const demoTyping = document.getElementById('demoTyping');
-    const demoTabs = document.querySelectorAll('.demo-tab');
-
-    const demoConversations = {
-        restaurant: [
-            { from: 'incoming', text: 'm1' },
-            { from: 'outgoing', text: 'm2' },
-            { from: 'incoming', text: 'm3' },
-            { from: 'outgoing', text: 'm4' },
-            { from: 'incoming', text: 'm5' },
-            { from: 'outgoing', text: 'm6' }
-        ],
-        realestate: [
-            { from: 'incoming', text: 'm1' },
-            { from: 'outgoing', text: 'm2' },
-            { from: 'incoming', text: 'm3' },
-            { from: 'outgoing', text: 'm4' },
-            { from: 'incoming', text: 'm5' },
-            { from: 'outgoing', text: 'm6' },
-            { from: 'outgoing', text: 'm7' }
-        ],
-        hotels: [
-            { from: 'incoming', text: 'm1' },
-            { from: 'outgoing', text: 'm2' },
-            { from: 'incoming', text: 'm3' },
-            { from: 'outgoing', text: 'm4' },
-            { from: 'incoming', text: 'm5' },
-            { from: 'outgoing', text: 'm6' }
-        ],
-        travel: [
-            { from: 'incoming', text: 'm1' },
-            { from: 'outgoing', text: 'm2' },
-            { from: 'incoming', text: 'm3' },
-            { from: 'outgoing', text: 'm4' },
-            { from: 'incoming', text: 'm5' },
-            { from: 'outgoing', text: 'm6' }
-        ]
-    };
-
-    let demoTimer = null;
-    let demoAbort = false;
-
-    function getDemoText(type, key) {
-        const demo = translations.en.chatDemo[type];
-        return demo ? demo[key] : '';
-    }
-
-    function createMessageEl(from, text) {
-        const wrapper = document.createElement('div');
-        wrapper.className = `message message-${from}`;
-
-        const col = document.createElement('div');
-        col.className = 'message-col';
-
-        const bubble = document.createElement('div');
-        bubble.className = `message-bubble ${from === 'incoming' ? 'incoming' : 'outgoing'}`;
-        bubble.textContent = text;
-
-        col.appendChild(bubble);
-        wrapper.appendChild(col);
-        return wrapper;
-    }
-
-    function delay(ms) {
-        return new Promise((resolve, reject) => {
-            if (demoAbort) { reject(); return; }
-            demoTimer = setTimeout(resolve, ms);
-        });
-    }
-
-    async function playDemo(type) {
-        if (!demoMessages) return;
-        demoAbort = true;
-        clearTimeout(demoTimer);
-        demoAbort = false;
-
-        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        const incomingDelay = reducedMotion ? 0 : 600;
-        const outgoingDelay = reducedMotion ? 0 : 900;
-
-        demoMessages.innerHTML = '';
-        const demo = translations.en.chatDemo[type];
-        if (!demo) return;
-
-        if (demoContactName) demoContactName.textContent = demo.contactName;
-        if (demoContactStatus) demoContactStatus.textContent = demo.status;
-
-        const conversation = demoConversations[type] || [];
-
-        for (const msg of conversation) {
-            try {
-                if (msg.from === 'outgoing') {
-                    if (demoTyping) demoTyping.classList.add('active');
-                    await delay(outgoingDelay);
-                    if (demoTyping) demoTyping.classList.remove('active');
-                } else {
-                    await delay(incomingDelay);
-                }
-
-                const el = createMessageEl(msg.from, getDemoText(type, msg.text));
-                demoMessages.appendChild(el);
-                demoMessages.scrollTop = demoMessages.scrollHeight;
-            } catch {
-                break;
-            }
-        }
-    }
-
-    if (demoTabs.length && demoMessages) {
-        demoTabs.forEach((tab) => {
-            tab.addEventListener('click', function() {
-                demoTabs.forEach((t) => {
-                    t.classList.remove('is-active');
-                    t.setAttribute('aria-selected', 'false');
-                });
-                this.classList.add('is-active');
-                this.setAttribute('aria-selected', 'true');
-                playDemo(this.dataset.demo);
-            });
-        });
-
-        const demoObserver = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        playDemo('restaurant');
-                        demoObserver.disconnect();
-                    }
-                });
-            },
-            { threshold: 0.3 }
-        );
-        const demoSection = document.getElementById('demo');
-        if (demoSection) demoObserver.observe(demoSection);
     }
 });

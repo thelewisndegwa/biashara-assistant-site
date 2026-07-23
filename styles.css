@@ -82,33 +82,23 @@
     flex-shrink: 0;
 }
 
-.icon-globe {
-    width: 18px;
-    height: 18px;
+.emoji {
+    display: inline-block;
+    line-height: 1;
+    font-style: normal;
 }
 
-.icon-check {
-    width: 18px;
-    height: 18px;
-    color: var(--primary-green);
+.emoji-check {
+    font-size: 18px;
+    flex-shrink: 0;
 }
 
-.icon-lock {
-    width: 18px;
-    height: 18px;
-    color: var(--text-muted);
+.emoji-social {
+    font-size: 28px;
 }
 
-.icon-heart {
-    width: 16px;
-    height: 16px;
-    color: #EF4444;
-}
-
-.icon-business {
-    width: 48px;
-    height: 48px;
-    color: var(--primary);
+.emoji-fab {
+    font-size: 28px;
 }
 
 html {
@@ -789,9 +779,14 @@ h1, h2, h3, h4, h5, h6 {
     animation: converge-drift 6s ease-in-out infinite;
 }
 
-.converge-node svg {
+.converge-node .icon {
     width: 24px;
     height: 24px;
+    display: block;
+}
+
+.converge-node .emoji {
+    font-size: 22px;
 }
 
 .converge-node.n1 { top: 8%; left: 12%; animation-delay: 0s; }
@@ -1256,6 +1251,14 @@ h1, h2, h3, h4, h5, h6 {
 .orbit-3 { bottom: 4px; right: 0; }
 .orbit-4 { top: 50%; right: -6px; transform: translateY(-50%); }
 
+.orbit-center .emoji {
+    font-size: 18px;
+}
+
+.orbit-item .emoji {
+    font-size: 14px;
+}
+
 .orbit-center .icon {
     width: 18px;
     height: 18px;
@@ -1271,10 +1274,6 @@ h1, h2, h3, h4, h5, h6 {
 .orbit-2 .icon { color: var(--ch-whatsapp); }
 .orbit-3 .icon { color: var(--ch-tiktok); }
 .orbit-4 .icon { color: var(--ch-email); }
-
-.floating-whatsapp-icon {
-    display: none;
-}
 
 @keyframes floatMobile {
     0%, 100% {
@@ -1384,78 +1383,6 @@ h1, h2, h3, h4, h5, h6 {
 .channel-chip[data-channel="email"] .channel-icon { color: var(--ch-email); background: #FEF3C7; }
 
 /* ============================================
-   Demo Section
-   ============================================ */
-
-.demo-section {
-    padding: var(--spacing-2xl) 0;
-    background: linear-gradient(180deg, var(--bg-off-white) 0%, var(--bg-white) 100%);
-}
-
-@media (min-width: 768px) {
-    .demo-section {
-        padding: var(--spacing-3xl) 0;
-    }
-}
-
-.demo-tabs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: var(--spacing-xl);
-}
-
-.demo-tab {
-    padding: 8px 18px;
-    font-size: 14px;
-    font-weight: 600;
-    font-family: var(--font-family);
-    color: var(--text-secondary);
-    background: var(--bg-white);
-    border: 1.5px solid var(--border);
-    border-radius: 999px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.demo-tab:hover {
-    border-color: var(--primary-light);
-    color: var(--primary);
-}
-
-.demo-tab.is-active {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-    color: var(--bg-white);
-    border-color: transparent;
-    box-shadow: 0 4px 12px rgba(91, 79, 207, 0.3);
-}
-
-.demo-mockup {
-    max-width: 420px;
-    margin: 0 auto;
-}
-
-.demo-section .inbox-mockup {
-    max-width: 100%;
-}
-
-.demo-section .inbox-layout {
-    min-height: 380px;
-}
-
-.demo-section .message {
-    display: flex;
-    opacity: 1;
-    transform: translateY(0);
-    animation: messageSlideIn 0.4s ease-out;
-}
-
-.demo-section .chat-messages {
-    min-height: 280px;
-}
-
-/* ============================================
    Why Section
    ============================================ */
 
@@ -1466,6 +1393,208 @@ h1, h2, h3, h4, h5, h6 {
 
 .customer-service-section {
     background-color: var(--bg-white);
+}
+
+/* ============================================
+   CRM Section
+   ============================================ */
+
+.crm-section {
+    padding: var(--spacing-2xl) 0;
+    background: linear-gradient(180deg, #F5F3FF 0%, var(--bg-white) 100%);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+@media (min-width: 768px) {
+    .crm-section {
+        padding: var(--spacing-3xl) 0;
+    }
+}
+
+.crm-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.crm-header .section-subheading {
+    margin-bottom: 0;
+}
+
+.crm-badge {
+    display: inline-block;
+    padding: 5px 14px;
+    margin-bottom: var(--spacing-sm);
+    background: rgba(91, 79, 207, 0.1);
+    border: 1px solid rgba(91, 79, 207, 0.2);
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--primary-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.crm-layout {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.crm-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-lg);
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-sm);
+}
+
+.crm-flow-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    min-width: 100px;
+    max-width: 130px;
+}
+
+.crm-flow-step span {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+.crm-flow-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.crm-flow-icon .emoji,
+.crm-flow-icon {
+    font-size: 24px;
+    line-height: 1;
+}
+
+.crm-flow-icon .icon {
+    width: 24px;
+    height: 24px;
+}
+
+.crm-flow-icon--channels {
+    background: #DCFCE7;
+    color: var(--ch-whatsapp);
+}
+
+.crm-flow-icon--assistant {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--bg-white);
+    box-shadow: 0 4px 12px rgba(91, 79, 207, 0.3);
+}
+
+.crm-flow-icon--crm {
+    background: #EEF2FF;
+    color: var(--primary);
+}
+
+.crm-flow-arrow {
+    font-size: 20px;
+    color: var(--primary-light);
+    font-weight: 300;
+    flex-shrink: 0;
+}
+
+@media (max-width: 520px) {
+    .crm-flow-arrow {
+        display: none;
+    }
+
+    .crm-flow {
+        flex-direction: column;
+    }
+}
+
+.crm-features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+    .crm-features {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+}
+
+.crm-feature-card {
+    background: var(--bg-white);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-lg);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.crm-feature-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: rgba(91, 79, 207, 0.2);
+    transform: translateY(-3px);
+}
+
+.crm-feature-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-md);
+    background: #EEF2FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-sm);
+    font-size: 22px;
+    line-height: 1;
+}
+
+.crm-feature-icon .icon {
+    width: 22px;
+    height: 22px;
+}
+
+.crm-feature-heading {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--text-primary);
+}
+
+.crm-feature-body {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.crm-footnote {
+    text-align: center;
+    margin-top: var(--spacing-xl);
+    font-size: 15px;
+    color: var(--text-secondary);
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
 }
 
 @media (min-width: 768px) {
@@ -1520,11 +1649,12 @@ h1, h2, h3, h4, h5, h6 {
     height: 56px;
     border-radius: var(--radius-md);
     background: #EEF2FF;
-    color: var(--primary);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: var(--spacing-md);
+    font-size: 28px;
+    line-height: 1;
 }
 
 .why-icon svg {
@@ -1617,6 +1747,8 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 32px;
+    line-height: 1;
 }
 
 .step-heading {
@@ -1713,6 +1845,8 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%);
     border-radius: 50%;
     border: 2px solid rgba(91, 79, 207, 0.1);
+    font-size: 52px;
+    line-height: 1;
 }
 
 .business-content {
@@ -1897,13 +2031,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-success-icon {
     margin: 0 auto 8px;
-    color: var(--primary);
-}
-
-.form-success-icon .icon {
-    width: 40px;
-    height: 40px;
-    margin: 0 auto;
+    font-size: 40px;
+    line-height: 1;
 }
 
 .form-success-title {
@@ -2376,9 +2505,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #faq,
 #channels,
-#demo,
-#get-started,
-#industries {
+#crm,
+#get-started {
     scroll-margin-top: 80px;
 }
 
