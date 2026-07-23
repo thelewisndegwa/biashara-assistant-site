@@ -5,12 +5,11 @@
 const translations = {
     en: {
         hero: {
-            badge: "Built for Kenyan & African businesses",
+            badge: "Built for businesses everywhere",
             title: "Stop Losing Sales to Slow Replies — On Every Channel",
-            subtitle: "Your customers message you on WhatsApp, Instagram, TikTok, Messenger, and more — day and night. Biashara-Assistant replies instantly in every African language, plus English, from one place — handling bookings, questions, and African payment integrations 24/7, so you never miss a sale.",
+            subtitle: "Your customers message you on WhatsApp, Instagram, TikTok, Messenger, and more — day and night. Biashara-Assistant replies instantly in multiple languages from one place — handling bookings, questions, and payment integrations 24/7, so you never miss a sale.",
             cta: "Get Started",
-            whatsappButton: "Message us on WhatsApp",
-            supporting: "Africans for Africans"
+            whatsappButton: "Message us on WhatsApp"
         },
         channels: {
             title: "One Assistant, Every Channel",
@@ -33,8 +32,8 @@ const translations = {
                 body: "Instant, professional replies mean no customer is left waiting. Faster responses directly translate to higher conversion rates and more revenue."
             },
             card3: {
-                title: "Seamless African Payments",
-                body: "Accept payments directly in the conversation. M-Pesa, mobile money, cards, and local gateways — customers pay without ever leaving the chat."
+                title: "Seamless In-Chat Payments",
+                body: "Accept payments directly in the conversation. Cards, digital wallets, and local payment gateways — customers pay without ever leaving the chat."
             }
         },
         customerService: {
@@ -56,8 +55,8 @@ const translations = {
         how: {
             title: "How It Works",
             step1: {
-                title: "Sign Up in Minutes",
-                body: "Fill out a simple form with your business details. No technical skills needed."
+                title: "Share Your Details",
+                body: "Fill out a short form with your business details. No technical skills needed."
             },
             step2: {
                 title: "Connect Your Channels",
@@ -69,22 +68,22 @@ const translations = {
             }
         },
         form: {
-            title: "Get Started in 5 Minutes",
-            subtitle: "Fill out the form below and we'll set up your Biashara-Assistant right away.",
-            reassurance1: "No payment required upfront",
-            reassurance2: "We help you connect your channels",
-            reassurance3: "Most businesses go live within 24 hours",
+            title: "Get Started",
+            subtitle: "Tell us about your business. We'll follow up to discuss next steps and whether Biashara-Assistant is a good fit.",
+            reassurance1: "No commitment until you've reviewed the setup",
+            reassurance2: "We'll work with you on channel connections during onboarding",
+            reassurance3: "Setup time varies — we'll confirm a realistic timeline when we talk",
             businessName: {
                 label: "Business Name *",
                 placeholder: "e.g., Sunset Café"
             },
             yourName: {
                 label: "Your Name *",
-                placeholder: "e.g., Sarah Wanjiku"
+                placeholder: "e.g., Sarah Johnson"
             },
             phone: {
                 label: "Business Phone / WhatsApp Number *",
-                placeholder: "e.g., 0712 345 678",
+                placeholder: "e.g., +1 555 123 4567",
                 helper: "The number customers will message"
             },
             businessType: {
@@ -110,7 +109,7 @@ const translations = {
             validation: {
                 required: "This field is required",
                 email: "Please enter a valid email address",
-                phone: "Please enter a valid Kenyan phone number"
+                phone: "Please enter a valid phone number"
             },
             success: {
                 title: "You're almost set!",
@@ -131,7 +130,7 @@ const translations = {
             s1: { value: "6", label: "Channels connected" },
             s2: { value: "<30s", label: "Average reply time" },
             s3: { value: "24/7", label: "Always on for customers" },
-            s4: { value: "Swahili", label: "and English" }
+            s4: { value: "Multi", label: "language support" }
         },
         a11y: {
             skipToContent: "Skip to content"
@@ -149,7 +148,7 @@ const translations = {
             },
             q3: {
                 question: "Do I need technical skills to set this up?",
-                answer: "Not at all. Fill out a short form and we'll walk you through connecting your channels — WhatsApp, Instagram, Messenger, and more. Most businesses are live within a day."
+                answer: "Not at all. Fill out a short form and we'll walk you through connecting your channels — WhatsApp, Instagram, Messenger, and more — when you're ready to go live."
             },
             q4: {
                 question: "Are my accounts and data safe?",
@@ -157,11 +156,11 @@ const translations = {
             },
             q5: {
                 question: "How fast can I go live?",
-                answer: "Most setups take less than 24 hours after you submit your details. We'll contact you on WhatsApp to confirm everything before going live."
+                answer: "It depends on your channels and how your business is set up. After you submit the form, we'll contact you on WhatsApp, walk through what's involved, and agree on a timeline together."
             },
             q6: {
                 question: "How do I get started?",
-                answer: "Fill out the form below or message us on WhatsApp. There's no payment required upfront — we'll set up your assistant and show you how it works before you commit."
+                answer: "Fill out the form below or message us on WhatsApp. We'll follow up to learn about your business, explain how setup works, and answer your questions before you commit."
             },
             q7: {
                 question: "What is Business Biashara CRM?",
@@ -223,8 +222,6 @@ const translations = {
             privacyPolicy: "Privacy Policy",
             refundPolicy: "Refund Policy",
             copyright: "© 2026 Biashara-Assistant. All rights reserved.",
-            madeInKenyaBefore: "Made with",
-            madeInKenyaAfter: "in Kenya",
             terms: "Terms",
             privacy: "Privacy"
         }
@@ -455,9 +452,9 @@ document.addEventListener('DOMContentLoaded', function() {
             showFieldError(emailField, validationMessage('email'));
         }
         
-        // Validate phone format (basic Kenyan phone validation)
+        // Validate phone format (basic international phone validation)
         const phoneField = document.querySelector('[name="phone"]');
-        if (data.phone && !isValidKenyanPhone(data.phone)) {
+        if (data.phone && !isValidPhone(data.phone)) {
             isValid = false;
             showFieldError(phoneField, validationMessage('phone'));
         }
@@ -470,11 +467,9 @@ document.addEventListener('DOMContentLoaded', function() {
         return emailRegex.test(email);
     }
     
-    function isValidKenyanPhone(phone) {
-        // Remove spaces and common formatting
-        const cleaned = phone.replace(/\s+/g, '').replace(/[-\+]/g, '');
-        // Kenyan phone numbers: 07XXXXXXXX or 2547XXXXXXXX
-        const phoneRegex = /^(07\d{8}|2547\d{8})$/;
+    function isValidPhone(phone) {
+        const cleaned = phone.replace(/[\s\-()]/g, '');
+        const phoneRegex = /^\+?\d{7,15}$/;
         return phoneRegex.test(cleaned);
     }
     
@@ -563,7 +558,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             // Phone validation
-            if (fieldName === 'phone' && fieldValue && !isValidKenyanPhone(fieldValue)) {
+            if (fieldName === 'phone' && fieldValue && !isValidPhone(fieldValue)) {
                 showFieldError(this, validationMessage('phone'));
                 return;
             }
