@@ -5,21 +5,21 @@
 const translations = {
     en: {
         hero: {
-            badge: "Built for businesses everywhere",
             title: "Stop Losing Sales to Slow Replies — On Every Channel",
-            subtitle: "Your customers message you on WhatsApp, Instagram, TikTok, Messenger, and more — day and night. Biashara-Assistant replies instantly in multiple languages from one place — handling bookings, questions, and payment integrations 24/7, so you never miss a sale.",
+            subtitle: "Your customers message you on WhatsApp, Instagram, TikTok, Messenger, and more — day and night. Biashara-Assistant replies instantly in multiple languages from one place — handling bookings and questions 24/7, so you never miss a sale.",
             cta: "Get Started",
             whatsappButton: "Message us on WhatsApp"
         },
         channels: {
-            title: "One Assistant, Every Channel",
-            subtitle: "Connect all your customer conversations in one place — including Instagram, TikTok, Facebook Messenger, WhatsApp, SMS and Email.",
-            instagram: "Instagram",
-            tiktok: "TikTok",
-            messenger: "Facebook Messenger",
+            index: "01",
+            title: "AI Omnichannel Sales & Support",
+            body: "The core of what we do. Instant, on-brand replies across every channel your customers already use — qualifying, booking, and closing leads around the clock.",
             whatsapp: "WhatsApp",
+            email: "Email",
             sms: "SMS",
-            email: "Email"
+            calls: "Calls",
+            instagram: "Instagram",
+            facebook: "Facebook"
         },
         why: {
             title: "Why Businesses Choose Biashara-Assistant",
@@ -32,8 +32,8 @@ const translations = {
                 body: "Instant, professional replies mean no customer is left waiting. Faster responses directly translate to higher conversion rates and more revenue."
             },
             card3: {
-                title: "Seamless In-Chat Payments",
-                body: "Accept payments directly in the conversation. Cards, digital wallets, and local payment gateways — customers pay without ever leaving the chat."
+                title: "Every Channel, One Place",
+                body: "WhatsApp, Instagram, TikTok, Messenger, SMS, and email land in one inbox. Your team sees every conversation without switching apps."
             }
         },
         customerService: {
@@ -64,15 +64,12 @@ const translations = {
             },
             step3: {
                 title: "Deliver Premium Service",
-                body: "You're live. Every customer now gets instant, professional responses — bookings, answers, and payments handled automatically."
+                body: "You're live. Every customer now gets instant, professional responses — bookings and answers handled automatically."
             }
         },
         form: {
             title: "Get Started",
             subtitle: "Tell us about your business. We'll follow up to discuss next steps and whether Biashara-Assistant is a good fit.",
-            reassurance1: "No commitment until you've reviewed the setup",
-            reassurance2: "We'll work with you on channel connections during onboarding",
-            reassurance3: "Setup time varies — we'll confirm a realistic timeline when we talk",
             businessName: {
                 label: "Business Name *",
                 placeholder: "e.g., Sunset Café"
@@ -125,12 +122,6 @@ const translations = {
             subtitle: "Join the businesses using Biashara-Assistant to deliver faster service, capture more revenue, and stand out from the competition.",
             button: "Get Started Today",
             whatsapp: "Chat on WhatsApp"
-        },
-        stats: {
-            s1: { value: "6", label: "Channels connected" },
-            s2: { value: "<30s", label: "Average reply time" },
-            s3: { value: "24/7", label: "Always on for customers" },
-            s4: { value: "Multi", label: "language support" }
         },
         a11y: {
             skipToContent: "Skip to content"
@@ -186,7 +177,7 @@ const translations = {
             },
             card3: {
                 title: "Pipeline & Deal Tracking",
-                body: "Move leads from inquiry to booking to payment. Track where every deal stands — new, in progress, won, or follow-up needed."
+                body: "Move leads from inquiry to booking to close. Track where every deal stands — new, in progress, won, or follow-up needed."
             },
             card4: {
                 title: "Smart Follow-Ups",
@@ -206,24 +197,7 @@ const translations = {
             getStarted: "Get Started"
         },
         footer: {
-            brand: "Biashara-Assistant",
-            tagline: "Your all-in-one customer assistant",
-            product: "Product",
-            company: "Company",
-            legal: "Legal",
-            features: "Features",
-            howItWorks: "How It Works",
-            faq: "FAQ",
-            aboutUs: "About Us",
-            contact: "Contact",
-            blog: "Blog",
-            careers: "Careers",
-            termsOfService: "Terms of Service",
-            privacyPolicy: "Privacy Policy",
-            refundPolicy: "Refund Policy",
-            copyright: "© 2026 Biashara-Assistant. All rights reserved.",
-            terms: "Terms",
-            privacy: "Privacy"
+            brand: "Biashara-Assistant"
         }
     }
 };
@@ -311,7 +285,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (whatsappFab && heroSection) {
         const updateFab = () => {
             const heroBottom = heroSection.getBoundingClientRect().bottom;
-            whatsappFab.hidden = heroBottom > 0;
+            const form = document.getElementById('get-started');
+            const hideNearForm = form
+                ? form.getBoundingClientRect().top < window.innerHeight * 0.9
+                : false;
+            whatsappFab.hidden = heroBottom > 0 || hideNearForm;
         };
         updateFab();
         window.addEventListener('scroll', updateFab, { passive: true });
@@ -327,7 +305,7 @@ document.addEventListener('DOMContentLoaded', function() {
         window.addEventListener('scroll', onNavScroll, { passive: true });
     }
 
-    // Sticky mobile CTA — show after hero, hide near form/footer
+    // Sticky mobile CTA — show after hero, hide near form
     const mobileCtaBar = document.getElementById('mobileCtaBar');
     const getStartedSection = document.getElementById('get-started');
 
