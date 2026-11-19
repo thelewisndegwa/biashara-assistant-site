@@ -194,6 +194,7 @@ const translations = {
             customerService: "Customer Service",
             how: "How",
             faq: "FAQ",
+            customerSandbox: "Customer Sandbox",
             getStarted: "Get Started"
         },
         footer: {

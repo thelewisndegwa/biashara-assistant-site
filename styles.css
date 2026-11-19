@@ -475,6 +475,18 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: none;
 }
 
+.btn.btn-nav-secondary {
+    background: transparent;
+    color: var(--text-primary);
+    border-color: var(--border);
+}
+
+.btn.btn-nav-secondary:hover {
+    background: var(--bg-subtle);
+    border-color: var(--primary-light);
+    color: var(--primary-dark);
+}
+
 .btn-full {
     width: 100%;
 }
@@ -2531,4 +2543,49 @@ body.has-mobile-cta .whatsapp-fab {
 
 @keyframes spin {
     to { transform: rotate(360deg); }
+}
+
+/* ============================================
+   Coming Soon
+   ============================================ */
+
+.coming-soon {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: calc(96px + env(safe-area-inset-top, 0)) 0 64px;
+    background:
+        radial-gradient(ellipse 80% 60% at 10% 20%, rgba(194, 59, 85, 0.12), transparent 55%),
+        radial-gradient(ellipse 70% 50% at 90% 80%, rgba(196, 132, 29, 0.14), transparent 50%),
+        linear-gradient(160deg, var(--bg-off-white) 0%, var(--bg-white) 55%, #F6E7C1 100%);
+}
+
+.coming-soon-inner {
+    max-width: 560px;
+    text-align: center;
+}
+
+.coming-soon-eyebrow {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.coming-soon-title {
+    font-family: var(--font-display);
+    font-size: clamp(40px, 8vw, 64px);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.coming-soon-copy {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
 }
