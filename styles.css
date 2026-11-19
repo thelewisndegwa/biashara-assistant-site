@@ -170,14 +170,27 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: var(--spacing-md);
+    gap: 12px;
     min-height: 56px;
-    padding: 12px 20px;
+    padding: 10px 16px;
+    width: 100%;
+}
+
+/* Avoid double horizontal padding from .container */
+.nav-inner.container {
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 @media (min-width: 768px) {
     .nav-inner {
+        gap: var(--spacing-md);
         padding: 12px 40px;
+    }
+
+    .nav-inner.container {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
@@ -185,6 +198,8 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 10px;
+    min-width: 0;
+    flex-shrink: 1;
     font-size: 16px;
     font-weight: 700;
     color: var(--ink);
@@ -192,6 +207,11 @@ body {
     letter-spacing: -0.03em;
     white-space: nowrap;
     transition: color 0.3s ease;
+}
+
+.nav-brand > span:not(.brand-mark) {
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .brand-mark {
@@ -255,11 +275,66 @@ body {
 .nav-actions {
     display: flex;
     align-items: center;
-    gap: 8px;
+    justify-content: flex-end;
+    gap: 6px;
+    flex-shrink: 0;
 }
 
 .btn-nav-cta {
     white-space: nowrap;
+}
+
+.nav-label-short {
+    display: none;
+}
+
+@media (max-width: 639px) {
+    .nav-brand {
+        gap: 8px;
+        font-size: 14px;
+    }
+
+    /* Keep the mark; drop the long name so CTAs stay fully visible */
+    .nav-brand > span:not(.brand-mark) {
+        display: none;
+    }
+
+    .brand-mark {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+        border-radius: 9px;
+        flex-shrink: 0;
+    }
+
+    .nav-actions {
+        gap: 8px;
+        margin-left: auto;
+    }
+
+    .btn.btn-nav-cta {
+        padding: 9px 14px;
+        font-size: 13px;
+    }
+
+    .nav-label-full {
+        display: none;
+    }
+
+    .nav-label-short {
+        display: inline;
+    }
+}
+
+@media (max-width: 359px) {
+    .nav-actions {
+        gap: 6px;
+    }
+
+    .btn.btn-nav-cta {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
 }
 
 /* Hamburger toggle - visible on small screens only */
